@@ -12,13 +12,11 @@ We have built the sensors (including DHT11 temperature & humidity sensor, Camera
 
 #### DHT11 temperature & humidity sensor test results
 
-Only three pins are available for use: VCC, GND, and DATA. The communication process begins with the DATA line sending start signals to DHT11, and DHT11 receives the signals and returns an answer signal. Then the host receives the answer signal and begins to receive 40-bit humiture data (8-bit humidity integer + 8-bit humidity decimal + 8-bit temperature integer + 8-bit temperature decimal + 8-bit checksum).
+Only three pins are available for use: VCC, GND, and DATA. The communication process begins with the DATA line sending start signals to DHT11, and DHT11 receives the signals and returns an answer signal. Then the host receives the answer signal and begins to receive humiture data.
 
 <div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/DHT11.png?raw=true"/></div>
 
-
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png"/></div>
-
 
 #### Camera sensor test results
 
@@ -63,6 +61,6 @@ At first, we tried to use vibration sensor in the KOOKYE Smart Home Sensor Kit t
 
 ## Future Plan
 - Build the simulated physical models of the bridge and install the sensors on the suitable locations of the bridge.
-- determine the appropriate sampling frequencies for both sensors and finish the control part of the codes.
+- Determine the appropriate sampling frequencies for both sensors and finish the control part of the codes.
 - Connect all sensors to OpenChirp and remove the anomaly signals.
 - Analyze the collected signals and identify the alrmaing cases.
