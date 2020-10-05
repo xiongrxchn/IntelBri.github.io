@@ -20,7 +20,7 @@ Only three pins are available for use: VCC, GND, and DATA. The communication pro
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png"/></div>
 
 
-#### Camera sensor test resluts
+#### Camera sensor test results
 
 We have learned how to connect the Raspberry Pi Camera Module to the Raspberry Pi and take pictures, record video, and apply image effects.
 
@@ -28,7 +28,7 @@ We have learned how to connect the Raspberry Pi Camera Module to the Raspberry P
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Motion_detector.png"/></div>
 
-#### SW-420 vibration sensor test resluts
+#### SW-420 vibration sensor test results
 
 The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3V as power supply.When there is no vibration,it output low level voltage and the light signal turns on;When there is any vibration, it output high level voltage and the light signal turns off.
 
