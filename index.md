@@ -46,7 +46,7 @@ The general monitoring metrics intended to measure bridge condition and performa
 3. Traffic flow - the total load of objects passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
 
 ### 3.2 Sensor(s) Used
-![](/Images/Sensors.png)
+![](/Images/sensor_all.png)
 
 (1) Camera sensor: The Raspberry Pi Camera Module v2
 
