@@ -1,8 +1,6 @@
 # IoT based Bridge Health Monitoring Evaluating System
 
-You can use the [editor on GitHub](https://github.com/xiongrxchn/IntelBri.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+• Pengkun Liu; Ruoxin Xiong
 
 
 ## Introduction
@@ -17,7 +15,9 @@ No single structural health monitoring (SHM) method exists that is capable of co
 
 IoT technologies offer the ability to combine several methods to obtain a more complete assessment. Currently, these methods will provide a better picture of the overall bridge condition.
 
+## Progress Reports
 
+##### [Progress Report1](progress_report_1.md)
 
 
 
