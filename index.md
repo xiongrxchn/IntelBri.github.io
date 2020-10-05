@@ -75,7 +75,7 @@ DHT11 Temperature-Humidity Sensor Module Features and Specifications:
 - Sampling rate: ≤ 1 Hz
 ```
 
-Vibration: Vibration Sensor
+Vibration: SW-420 Vibration sensor
 
 ```markdown
 Vibration sensor Features and Specifications:
@@ -89,7 +89,7 @@ Vibration sensor Features and Specifications:
 - Small, cheap and easily available
 ```
 
-The team also use buzzer to warn drivers when identifying alarming signals.
+The team also use a buzzer to warn drivers when identifying alarming signals.
 
 ```markdown
 Buzzer Features and Specifications:
