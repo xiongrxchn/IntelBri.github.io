@@ -4,7 +4,7 @@
 ## Current progress
 
 ### （1）Getting hardware
-We have purchased Raspberry Pi and sensors (DHT11 temperature humidity sensor, camera, Vibration sensor module, Buzzer sensor module) from Taobao.
+We have purchased Raspberry Pi and sensors (DHT11 temperature humidity sensor, Camera, Vibration sensor module, Buzzer sensor module) from [Taobao](https://www.taobao.com/).
 
 ### （2）Set up the development environment
 We learned how to connect the temperature-humidity sensor, camera, vibration and buzzer to the Raspberry pi and test it to get some data.
@@ -26,8 +26,11 @@ During the continuous data collection process, there may be abnormal values, inc
 ### （4）How to unify the time scale of the multi-data of each channel?
 The data in the bridge monitoring system is collected by various sensors such as temperature and humidity, acceleration sensor. Because the working principle of the sensor and the working performance of the instrument are different, the sampling frequency of each sensor cannot be completely consistent. However, for bridge monitoring, it is necessary to understand the structural response of each part of the same period in order to clearly understand the mechanical properties of the overall structure.
 
-### （4）How to achieve optimal sensor placement to obtain reliable and comprehensive health information of bridges?
+### （5）How to achieve optimal sensor placement to obtain reliable and comprehensive health information of bridges?
 We have designed a preliminary sensor placement plan. However, it remains to be answered if this plan can achieve the optimal collection of structural state change information.
+
+###  (6) Incorrect sensors for vibration measurements.
+At first, we tried to use vibration sensor in the KOOKYE Smart Home Sensor Kit to measure the vibration of bridges. However, we didn't realize the vibration sensor only output binary signals until we conduct experiments on the sensor. The vibration sensor will output high level voltage when it detect vibration and output low level voltage when no vibration. So we will purchase a accelerator to measure the virbration signals of bridges in the future.
 
 ## Future Plan
 - Build the model of the bridge and install the sensor on the suitable locations of the bridge.
