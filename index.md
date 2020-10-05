@@ -51,7 +51,8 @@ The general monitoring metrics intended to measure bridge condition and performa
 Camera sensor: The Raspberry Pi Camera Module v2
 
 ```markdown
-The Raspberry Pi Camera Module v2 Features and Specifications:
+Features and Specifications:
+
 - Number of Channels: 1
 - Maximum Supported Resolution: 3280 x 2464
 - Maximum Frame Rate Capture: 30fps
@@ -65,7 +66,8 @@ Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor
 The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
 
 ```markdown
-DHT11 Temperature-Humidity Sensor Features and Specifications:
+Features and Specifications:
+
 - Power supply: 3.3 - 5 V
 - Current: 2.5 mA max use of current during conversion (when data request)
 - Humidity: 20 - 90 % ± 5 %
@@ -78,7 +80,8 @@ Vibration: SW-420 Vibration Sensor
 The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
 
 ```markdown
-Vibration sensor Features and Specifications:
+Features and Specifications:
+
 - Operating Voltage: 3.3V to 5V DC
 - Operating Current: 15mA
 - LEDs indicating output and power
@@ -90,7 +93,8 @@ The team also use a buzzer to warn drivers when identifying alarming signals.
 As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
 
 ```markdown
-Buzzer Features and Specifications:
+Features and Specifications:
+
 - Rated Voltage: 6V DC
 - Operating Voltage: 4-8V DC
 - Rated current: <30mA
