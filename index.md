@@ -10,7 +10,7 @@
 
 ![](/Images/background.png)
 
-The deteriorating and aging infrastructures continue to challenge transportation authorities as they align maintenance and replacement priorities with decreasing funds. According to the 2020 bridge reports from the Federal Highway Administration, more than one third (37 percent) of U.S. bridges—nearly 231,000 spans—need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” A total of 81,000 bridges should be replaced [1]. Our project uses an Internet of Things (IoT) based structural health monitoring system for bridge health evaluation and maintenance. These systems can detect changes in the bridge superstructure and, in some cases, predict impending failures.
+The deteriorating and aging infrastructures continue to challenge transportation authorities as they align maintenance and replacement priorities with decreasing funds. According to the 2020 bridge reports from the Federal Highway Administration, more than one third (37 percent) of U.S. bridges—nearly 231,000 spans, need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” [1]. Our project uses an Internet of Things (IoT) based monitoring system for bridge health evaluation and maintenance. We expect this system can detect changes in the bridge superstructure and, in some cases, predict impending failures.
 
 ### 1.1 Motivation
 
