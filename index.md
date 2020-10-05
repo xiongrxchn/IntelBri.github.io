@@ -14,7 +14,7 @@ The deteriorating and aging infrastructures continue to challenge transportation
 
 ### 1.1 Motivation
 
-Bridge engineers need a reliable way to assess structural integrity of bridges to maintain the continuous operation of the road network while ensuring the safety of the public. Traditional visual inspection techniques are both time consuming and expensive. They are also qualitative and can only assess outward appearance [2]. Any internal damage may go unnoticed for a long period of time. How does a bridge engineer keep track of these problems? A possible solution to these issues is the use of an Internet of Things (IoT) based structural health monitoring system. IoT technologies offer the ability to combine several sensors to obtain a more complete assessment. Currently, these methods will provide a better picture of the overall bridge condition.
+Bridge engineers need a reliable way to assess structural integrity of bridges to maintain the continuous operation of the road network while ensuring the safety of the public. Traditional visual inspection techniques are both time consuming, subjective and costly. They can only assess visual appearance [2]. The internal damages may be unnoticed for a long period of time. To address these issues, our project applies an Internet of Things (IoT) based structural health monitoring system. IoT technologies offer the ability to combine several sensors to obtain a more complete assessment. Currently, these methods will provide a better picture of the overall bridge condition.
 
 ### 1.2 Goals
 
@@ -71,7 +71,7 @@ Features and Specifications:
 - Power supply: 3.3-5V
 - Current: 2.5mA max use of current during conversion (when data request)
 - Humidity: 20-90% ± 5%
-- Temperature: 0-50º ± 2%
+- Temperature: 0-50°C ± 2%
 - Sampling rate: ≤ 1Hz
 ```
 
@@ -94,13 +94,14 @@ Features and Specifications:
 The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
 
 ```markdown
-Features and Specifications：
+Features and Specifications:
 
-- Tri-Axis angular rate sensor (gyro) with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
+- Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
 - Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
-- VDD Supply voltage range of 2.375V–3.46V; VLOGIC (MPU-6050) at 1.8V±5% or VDD
+- VDD Supply voltage range of 2.375V – 3.46V 
+- VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
 - Gyro operating current: 3.6mA (full power, gyro at all rates)
-- 400kHz Fast Mode I²C or up to 20MHz SPI (MPU-6000 only) serial host interfaces 
+- 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 ```
 
 (5) The team also use buzzer to warn drivers when identifying alarming signals.
@@ -108,13 +109,13 @@ Features and Specifications：
 As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
 
 ```markdown
-Features and Specifications：
+Features and Specifications:
 
 - Rated Voltage: 6V DC
-- Operating Voltage: 4-8V DC
-- Rated current: <30mA
+- Operating Voltage: 4 - 8V DC
+- Rated current: < 30mA
 - Sound Type: Continuous Beep
-- Resonant Frequency: ~2300 Hz 
+- Resonant Frequency: ~2300Hz 
 ```
 
 ### 3.3 Signal Conditioning and Processing
