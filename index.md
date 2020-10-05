@@ -32,11 +32,10 @@ The main goal of this project is to establish and calibrate an IoT based bridge 
 
 #### [Progress Report_Oct 5th](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/progress_report_1.md)
 
+
 ## 3 Methodology
 
 ### 3.1 Phenomena of Interest
-
-Describe the physical phenomena of interest, e.g. physical principles, static and dynamic behavior, and signal characteristics
 
 The general monitoring metrics intended to measure bridge condition and performance including:
 
@@ -49,7 +48,7 @@ The general monitoring metrics intended to measure bridge condition and performa
 ### 3.2 Sensor(s) Used
 ![](/Images/Sensors.png)
 
-Camera sensor: The Raspberry Pi Camera Module v2
+• Camera sensor: The Raspberry Pi Camera Module v2
 
 ```markdown
 Features and Specifications:
@@ -62,7 +61,7 @@ Features and Specifications:
 - Minimum Operating Temperature: -20 °C
 ```
 
-Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
+• Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
 
 DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
 
@@ -76,7 +75,7 @@ Features and Specifications:
 - Sampling rate: ≤ 1Hz
 ```
 
-Vibration: SW-420 Vibration Sensor
+• Vibration sensor: SW-420 Vibration Sensor
 
 ```markdown
 Features and Specifications:
@@ -88,7 +87,7 @@ Features and Specifications:
 - Easy to use with Microcontrollers or even with normal Digital/Analog IC
 ```
 
-The team also use buzzer to warn drivers when identifying alarming signals.
+• The team also use buzzer to warn drivers when identifying alarming signals.
 
 ```markdown
 Features and Specifications：
