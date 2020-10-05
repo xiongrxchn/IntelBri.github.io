@@ -12,7 +12,7 @@ We learned how to connect the temperature-humidity sensor, camera, vibration and
 
 - Temperature-humidity sensor
 
-<div align=center>![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20snesor%20connection.png)
+<div align=center/>![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20snesor%20connection.png)
 
 <img src="http:..." width = "200" height = "200" />![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png)
 
