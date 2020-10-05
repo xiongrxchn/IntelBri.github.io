@@ -1,77 +1,71 @@
-# IoT based Bridge Health Monitoring Evaluating System
+# IoT based Bridge Health Monitoring and Evaluating System
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
 ### video link:
 
 
-## Introduction
+## 1 Introduction
 
 
 ![](/Images/background.png)
 
-Increases in traffic have puts more and more strain on the bridge networks than was originally intended. According to the 2020 bridge reports from the Federal Highway Administration, more than one third (37 percent) of U.S. bridges—nearly 231,000 spans—need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” A total of 81,000 bridges should be replaced. Our project is to use an Internet of Things (IoT) based structural health monitoring system for bridge health evaluation and maintenance. These systems can detect changes in the bridge superstructure and, in some cases, predict impending failures.
+The deteriorating and aging infrastructures continue to challenge transportation authorities as they align maintenance and replacement priorities with decreasing funds. According to the 2020 bridge reports from the Federal Highway Administration, more than one third (37 percent) of U.S. bridges—nearly 231,000 spans—need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” A total of 81,000 bridges should be replaced [1]. Our project uses an Internet of Things (IoT) based structural health monitoring system for bridge health evaluation and maintenance. These systems can detect changes in the bridge superstructure and, in some cases, predict impending failures.
 
-### Motivation
+### 1.1 Motivation
 
-Bridge engineers need a reliable way to assess structural integrity of bridges to maintain the continuous operation of the road network while ensuring the safety of the public. Traditional visual inspection techniques are both time consuming and expensive. They are also qualitative and can only assess outward appearance. Any internal damage may go unnoticed for a long period of time. How does a bridge engineer keep track of these problems? A possible solution to these issues is the use of an Internet of Things (IoT) based structural health monitoring system. These systems can detect changes in the bridge superstructure and, in some cases, predict impending failures.
+Bridge engineers need a reliable way to assess structural integrity of bridges to maintain the continuous operation of the road network while ensuring the safety of the public. Traditional visual inspection techniques are both time consuming and expensive. They are also qualitative and can only assess outward appearance [2]. Any internal damage may go unnoticed for a long period of time. How does a bridge engineer keep track of these problems? A possible solution to these issues is the use of an Internet of Things (IoT) based structural health monitoring system. IoT technologies offer the ability to combine several sensors to obtain a more complete assessment. Currently, these methods will provide a better picture of the overall bridge condition.
 
-The challenges of a deteriorating and aged infrastructure continue to challenge transportation authorities as they align maintenance and replacement priorities with decreasing funds.
+### 1.2 Goals
 
-No single structural health monitoring (SHM) method exists that is capable of completely determining the condition of a bridge. Current assessment methods provide critical information about the condition of a bridge, but the data obtained must be interpreted by a skilled professional and are typically limited to local metrics.
+The main goal of this project is to establish and calibrate an IoT based bridge health monitoring and evaluation system. This system enable the integration of distributed sensors for continuous, portable, and real-time monitoring for bridges.
 
-IoT technologies offer the ability to combine several methods to obtain a more complete assessment. Currently, these methods will provide a better picture of the overall bridge condition.
+- integrate multiple sensors to monitor the vibration, climatic conditions, and traffic flow signals;
 
-### Goals
+- apply de-noise algorithm to detect and remove anomorly signals from the sensors;
 
-The goal of IoT based structural monitoring is to enable the integration of distributed sensors for continuous, portable, and real-time monitoring for bridges. 
+- establish and predict the time series of physical signals;
+
+- identify the alarming signals from sensors and issue an alarm with the buzzer.
 
 
-## For Progress Reports
+## 2 For Progress Reports
 
 #### [Progress Report_Oct 5th](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/progress_report_1.md)
 
-## Methodology
+## 3 Methodology
 
-### Phenomena of Interest
-
-Describe the physical phenomena of interest, e.g. physical principles, static and dynamic behavior, and signal characteristics
+### 3.1 Phenomena of Interest
 
 The general monitoring metrics intended to measure bridge condition and performance including:
 
-1. Acceleration - the instantaneous rate at which the velocity of a point in a vibrating bridge is changing with time. Acceleration is the most common measure taken to characterize vibrations. It is possible to define the frequencies and shapes of the different modes of vibration from a single acceleration trace. The frequencies and modes can be compared to values obtained from previous acceleration measurements to determine if the bridge has deteriorated or has been damaged.
+1. Vibration - the instantaneous rate at which the velocity of a point in a vibrating bridge is changing with time. Acceleration is the most common measure taken to characterize vibrations. It is possible to define the frequencies and shapes of the different modes of vibration from a single acceleration trace. The frequencies and modes can be compared to values obtained from previous acceleration measurements to determine if the bridge has deteriorated or has been damaged.
 
 2. Climatic Conditions - pertains to the environmental conditions in the area of the bridge that may relate to bridge performance. Parameters that can be measured include: air temperature and relative humidity.
 
 3. Traffic flow - the total load of objects passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
 
-### Sensor(s) Used
-![](/Images/Sensors.png)
 
-Camera:
+### 3.2 Sensor(s) Used
 
+Camera sensor: The Raspberry Pi Camera Module v2
 
 ```markdown
-Type: Camera Module
-Number of Channels: 1
-Supported Bus Interfaces: CSI-2
-Maximum Supported Resolution: 3280 x 2464
-Maximum Frame Rate Capture: 30fps
-Dimensions: 3.86 x 25 x 9mm
-Height: 9mm
-Length: 23.86mm
-Maximum Operating Temperature: +60 °C
-Minimum Operating Temperature: -20 °C
-Width: 25mm
+The Raspberry Pi Camera Module v2 Features and Specifications:
+- Number of Channels: 1
+- Maximum Supported Resolution: 3280 x 2464
+- Maximum Frame Rate Capture: 30fps
+- Dimensions: 3.86 x 25 x 9mm
+- Maximum Operating Temperature: +60 °C
+- Minimum Operating Temperature: -20 °C
 ```
 
-Temperature and humidity sensor:
+Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor
 
-DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
+The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
 
-
-Parameters:
 ```markdown
+DHT11 Temperature-Humidity Sensor Features and Specifications:
 - Power supply: 3.3 - 5 V
 - Current: 2.5 mA max use of current during conversion (when data request)
 - Humidity: 20 - 90 % ± 5 %
@@ -79,47 +73,42 @@ Parameters:
 - Sampling rate: ≤ 1 Hz
 ```
 
-Vibration: vibration sensor
-Vibration Sensor Module Features & Specifications
+Vibration: SW-420 Vibration Sensor
+
+The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
+
 ```markdown
+Vibration sensor Features and Specifications:
 - Operating Voltage: 3.3V to 5V DC
 - Operating Current: 15mA
-- Using SW-420 normally closed type vibration sensor
 - LEDs indicating output and power
-- LM393 based design
 - Easy to use with Microcontrollers or even with normal Digital/Analog IC
-- With bolt holes for easy installation
-- Small, cheap and easily available
 ```
 
-Buzzer
+The team also use a buzzer to warn drivers when identifying alarming signals. 
 
-The team use buzzer to warn drivers when the window is fogging. A buzzer can be sorted as a passive or active buzzer. An active buzzer has a built-in oscillating source. Thus, it will make sounds when electrified. But a passive buzzer does not have such a source, so it will not tweet if DC signals are used; instead, you need to use square waves whose frequency is between 2K and 5K to drive it. The active buzzer is often more expensive than the passive one because of multiple built-in oscillating circuits. Its detailed characteristics and connection information are shown below:
+As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
 
-Buzzer Features and Specifications
 ```markdown
+Buzzer Features and Specifications:
 - Rated Voltage: 6V DC
 - Operating Voltage: 4-8V DC
 - Rated current: <30mA
 - Sound Type: Continuous Beep
 - Resonant Frequency: ~2300 Hz 
-- Small and neat sealed package
-- Breadboard and Perf board friendly
 ```
 
-### Signal Conditioning and Processing
+### 3.3 Signal Conditioning and Processing
 
-Describe the signal conditioning and processing procedures
-According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (fh): fs>2fh. If the sampling frequency was chosen to be too small, not only the raw signal could not be described clearly and correctly, but also aliasing would occur, which block the way to attain the useful data information.
+According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (fh): fs > 2fh. If the sampling frequency was chosen to be too small, not only the raw signal could not be described clearly and correctly, but also aliasing would occur, which block the way to attain the useful data information.
 
-Accelerometer:
-The accelerator sensor is installed under the middle of the bridge to test its vibration on the z-axis. It is hard for us to calculate the frequency response of the deck. To find the appropriate sampling rate, a 1 kHz frequency was used at first and a host of pre-experiments were conducted. 
+Accelerometer: The accelerator sensor is installed under the middle of the bridge to test its vibration on the z-axis. It is hard for us to calculate the frequency response of the deck. To find the appropriate sampling rate, a 1 kHz frequency was used at first and a host of pre-experiments were conducted. 
 
-## Experiments and Results
+## 4 Experiments and Results
 
 Describe the experiments you did and present the results; Use tables and plots if possible
 
-## Discussion
+## 5 Discussion
 
 Discuss the insights from the project
 
