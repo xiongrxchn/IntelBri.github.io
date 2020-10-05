@@ -16,9 +16,20 @@ No single structural health monitoring (SHM) method exists that is capable of co
 
 IoT technologies offer the ability to combine several methods to obtain a more complete assessment. Currently, these methods will provide a better picture of the overall bridge condition.
 
-## Progress Reports
+## Goals
 
-##### [Progress Report1](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/progress_report_1.md)
+The goal of IoT based structural monitoring is to enable the integration of distributed sensors for continuous, portable, and real-time monitoring for bridges. 
+The general monitoring metrics intended to measure bridge condition and performance including:
+
+Acceleration - the instantaneous rate at which the velocity of a point in a vibrating bridge is changing with time. Acceleration is the most common measure taken to characterize vibrations. It is possible to define the frequencies and shapes of the different modes of vibration from a single acceleration trace. The frequencies and modes can be compared to values obtained from previous acceleration measurements to determine if the bridge has deteriorated or has been damaged.
+
+Climatic Conditions - pertains to the environmental conditions in the area of the bridge that may relate to bridge performance. Parameters that can be measured include: air temperature and relative humidity.
+
+Traffic flow - the total load of objects passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
+
+## For Progress Reports
+
+##### [Progress Report_Oct 5th](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/progress_report_1.md)
 
 ## Methodology
 
