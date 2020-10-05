@@ -22,6 +22,8 @@ Only three pins are available for use: VCC, GND, and DATA. The communication pro
 
 - Camera sensor test resluts
 
+We have learned how to connect the Raspberry Pi Camera Module to the Raspberry Pi and take pictures, record video, and apply image effects.
+
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera_test.png"/></div>
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Motion_detector.png"/></div>
