@@ -5,7 +5,9 @@
 
 ## Introduction
 
+```markdown
 The transportation infrastructure is quickly aging. Increases in traffic, in both urban and rural areas, puts more strain on the bridge networks than was originally intended. Bridge engineers need a reliable way to assess structural integrity of bridges to maintain the continuous operation of the road network while ensuring the safety of the public [1]. Traditional visual inspection techniques are both time consuming and expensive. They are also qualitative and can only assess outward appearance. Any internal damage may go unnoticed for a long period of time. According to the 2020 bridge reports from the Federal Highway Administration [2], more than one third (37 percent) of U.S. bridges—nearly 231,000 spans—need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” A total of 81,000 bridges should be replaced. How does a bridge engineer keep track of these problems? A possible solution to these issues is the use of an Internet of Things (IoT) based structural health monitoring system. These systems can detect changes in the bridge superstructure and, in some cases, predict impending failures. These systems can monitor bridges in real time and warn state engineers of possible problems to avoid tragedies like the I-35W collapse in August 2007.
+```
 
 ## Motivation
 
