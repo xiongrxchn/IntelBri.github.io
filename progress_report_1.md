@@ -57,7 +57,7 @@ The data in the bridge monitoring system is collected by various sensors such as
 We have designed a preliminary sensor placement plan. However, it remains to be answered if this plan can achieve the optimal collection of reliable and comprehensive health information for structural state change information.
 
 ### (6) Incorrect sensors for vibration measurements.
-At first, we tried to use vibration sensor in the KOOKYE Smart Home Sensor Kit to measure the vibration of bridges. However, we didn't realize the vibration sensor only output binary signals until we conduct experiments on the sensor. The vibration sensor will output high level voltage when it detect vibration and output low level voltage when no vibration. So we will purchase a accelerator to measure the virbration signals of bridges in the future.
+At first, we tried to use vibration sensor in the KOOKYE Smart Home Sensor Kit to measure the vibration of bridges. However, we didn't realize the vibration sensor only output binary signals until we conduct experiments on the sensor. The vibration sensor will output high level voltage when it detect vibration and output low level voltage when no vibration. So we have purchased MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS to measure the virbration signals of bridges this week.
 
 ## Future Plan
 - Build the simulated physicla models of the bridge and install the sensors on the suitable locations of the bridge.
