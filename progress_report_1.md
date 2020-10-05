@@ -8,9 +8,9 @@ We have purchased Raspberry Pi and sensors (DHT11 temperature & humidity sensor,
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Sensors.png)
 
 ### (2) Set up the development environment
-We learned how to connect the temperature-humidity sensor, camera, vibration and buzzer to the Raspberry pi and test it to get some data.
+We have built the sensors (including DHT11 temperature & humidity sensor, Camera, SW-420 vibration sensor, Buzzer module) and written Python codes to monitor the parameters based on the tutorials.
 
-- DHT11 sensor
+- DHT11 temperature & humidity sensor test results 
 
 <div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/DHT11.png?raw=true"/></div>
 
@@ -18,13 +18,13 @@ We learned how to connect the temperature-humidity sensor, camera, vibration and
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png"/></div>
 
 
-- Camera
+- Camera sensor test resluts
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera_test.png"/></div>
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Motion_detector.png"/></div>
 
-- SW-420 vibration sensor and Buzzer
+- SW-420 vibration sensor and Buzzer test resluts
 
 
 ### (3) Sensor Placement Plan
@@ -54,6 +54,7 @@ We have designed a preliminary sensor placement plan. However, it remains to be 
 At first, we tried to use vibration sensor in the KOOKYE Smart Home Sensor Kit to measure the vibration of bridges. However, we didn't realize the vibration sensor only output binary signals until we conduct experiments on the sensor. The vibration sensor will output high level voltage when it detect vibration and output low level voltage when no vibration. So we will purchase a accelerator to measure the virbration signals of bridges in the future.
 
 ## Future Plan
-- Build the model of the bridge and install the sensor on the suitable locations of the bridge.
-- Keep improving our code.
-- Connect the lines correctly and completely and test them.
+- Build the simulated physicla models of the bridge and install the sensors on the suitable locations of the bridge.
+- determine the appropriate sampling frequencies for both sensors and finish the control part of the codes.
+- Connect all sensors to OpenChirp and remove the anomaly signals.
+- Analyze the collected signals and identify the alrmaing cases.
