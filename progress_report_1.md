@@ -12,9 +12,9 @@ We learned how to connect the temperature-humidity sensor, camera, vibration and
 
 - Temperature-humidity sensor
 
-![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20snesor%20connection.png)
+<div align=center>![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20snesor%20connection.png)
 
-![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png)
+<img src="http:..." width = "200" height = "200" />![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png)
 
 ### (3) Sensor Placement Plan
 We designed a preliminary plan for sensor placement. The camera is placed at the entrance of the bridge to monitor and detect the traffic flow. The vibration sensor, temperature and humidity sensor are both set in the middle of the bridge to reflect the typical measurements of the bridges. Meanwhile, the buzzer is also placed in the middle of the bridge to issue the safety alarms if the measurements exceed the predefined thresholds.
