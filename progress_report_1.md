@@ -4,13 +4,13 @@
 ## Current progress
 
 ### (1) Getting hardware
-We have purchased Raspberry Pi and sensors (DHT11 temperature humidity sensor, Camera, Vibration sensor module, Buzzer sensor module) from [Taobao](https://www.taobao.com/).
+We have purchased Raspberry Pi and sensors (DHT11 temperature & humidity sensor, Camera, SW-420 vibration sensor, Buzzer module) from [Taobao](https://www.taobao.com/).
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Sensors.png)
 
 ### (2) Set up the development environment
 We learned how to connect the temperature-humidity sensor, camera, vibration and buzzer to the Raspberry pi and test it to get some data.
 
-- Temperature-humidity sensor
+- DHT11 sensor
 
 <div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/DHT11.png?raw=true"/></div>
 
@@ -20,14 +20,11 @@ We learned how to connect the temperature-humidity sensor, camera, vibration and
 
 - Camera
 
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera_test.png"/></div>
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera_connection.png"/></div>
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Motion_detector.png"/></div>
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera_test.png"/></div>
-
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Motion_detector.png"/></div>
-
-- Vibration and Buzzer sensor
+- SW-420 vibration sensor and Buzzer
 
 
 ### (3) Sensor Placement Plan
