@@ -5,9 +5,8 @@
 
 ## Introduction
 
-```markdown
 The transportation infrastructure is quickly aging. Increases in traffic, in both urban and rural areas, puts more strain on the bridge networks than was originally intended. Bridge engineers need a reliable way to assess structural integrity of bridges to maintain the continuous operation of the road network while ensuring the safety of the public [1]. Traditional visual inspection techniques are both time consuming and expensive. They are also qualitative and can only assess outward appearance. Any internal damage may go unnoticed for a long period of time. According to the 2020 bridge reports from the Federal Highway Administration [2], more than one third (37 percent) of U.S. bridges—nearly 231,000 spans—need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” A total of 81,000 bridges should be replaced. How does a bridge engineer keep track of these problems? A possible solution to these issues is the use of an Internet of Things (IoT) based structural health monitoring system. These systems can detect changes in the bridge superstructure and, in some cases, predict impending failures. These systems can monitor bridges in real time and warn state engineers of possible problems to avoid tragedies like the I-35W collapse in August 2007.
-```
+
 
 ## Motivation
 
@@ -20,6 +19,63 @@ IoT technologies offer the ability to combine several methods to obtain a more c
 ## Progress Reports
 
 ##### [Progress Report1](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/progress_report_1.md)
+
+## Methodology
+
+### Phenomena of Interest
+
+Describe the physical phenomena of interest, e.g. physical principles, static and dynamic behavior, and signal characteristics
+
+### Sensor(s) Used
+Temperature and humidity sensor:
+DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
+Parameters:
+- Power supply: 3.3 - 5 V
+- Current: 2.5 mA max use of current during conversion (when data request)
+- Humidity: 20 - 90 % ± 5 %
+- Temperature: 0 - 50º ± 2 %
+- Sampling rate: ≤ 1 Hz
+
+Vibration: vibration sensor
+Vibration Sensor Module Features & Specifications
+- Operating Voltage: 3.3V to 5V DC
+- Operating Current: 15mA
+- Using SW-420 normally closed type vibration sensor
+- LEDs indicating output and power
+- LM393 based design
+- Easy to use with Microcontrollers or even with normal Digital/Analog IC
+- With bolt holes for easy installation
+- Small, cheap and easily available
+
+Buzzer
+The team use buzzer to warn drivers when the window is fogging. A buzzer can be sorted as a passive or active buzzer. An active buzzer has a built-in oscillating source. Thus, it will make sounds when electrified. But a passive buzzer does not have such a source, so it will not tweet if DC signals are used; instead, you need to use square waves whose frequency is between 2K and 5K to drive it. The active buzzer is often more expensive than the passive one because of multiple built-in oscillating circuits. Its detailed characteristics and connection information are shown below:
+
+Buzzer Features and Specifications
+- Rated Voltage: 6V DC
+- Operating Voltage: 4-8V DC
+- Rated current: <30mA
+- Sound Type: Continuous Beep
+- Resonant Frequency: ~2300 Hz 
+- Small and neat sealed package
+- Breadboard and Perf board friendly
+
+### Signal Conditioning and Processing
+
+Describe the signal conditioning and processing procedures
+According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (fh): fs>2fh. If the sampling frequency was chosen to be too small, not only the raw signal could not be described clearly and correctly, but also aliasing would occur, which block the way to attain the useful data information.
+
+Accelerometer:
+The accelerator sensor is installed under the middle of the bridge to test its vibration on the z-axis. It is hard for us to calculate the frequency response of the deck. To find the appropriate sampling rate, a 1 kHz frequency was used at first and a host of pre-experiments were conducted. 
+
+## Experiments and Results
+
+Describe the experiments you did and present the results; Use tables and plots if possible
+
+## Discussion
+
+Discuss the insights from the project
+
+
 
 
 
