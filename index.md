@@ -46,6 +46,7 @@ The general monitoring metrics intended to measure bridge condition and performa
 3. Traffic flow - the total load of objects passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
 
 ### Sensor(s) Used
+![](/Images/Sensors.png)
 
 Camera:
 
@@ -95,6 +96,9 @@ Vibration Sensor Module Features & Specifications
 ```
 
 Buzzer
+
+![](/Images/buzzer.png)
+
 The team use buzzer to warn drivers when the window is fogging. A buzzer can be sorted as a passive or active buzzer. An active buzzer has a built-in oscillating source. Thus, it will make sounds when electrified. But a passive buzzer does not have such a source, so it will not tweet if DC signals are used; instead, you need to use square waves whose frequency is between 2K and 5K to drive it. The active buzzer is often more expensive than the passive one because of multiple built-in oscillating circuits. Its detailed characteristics and connection information are shown below:
 
 Buzzer Features and Specifications
