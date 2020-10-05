@@ -10,7 +10,9 @@ We have purchased Raspberry Pi and sensors (DHT11 temperature & humidity sensor,
 ### (2) Set up the development environment
 We have built the sensors (including DHT11 temperature & humidity sensor, Camera, SW-420 vibration sensor, Buzzer module) and written Python codes to monitor the parameters based on the tutorials.
 
-- DHT11 temperature & humidity sensor test results 
+- DHT11 temperature & humidity sensor test results
+
+Only three pins are available for use: VCC, GND, and DATA. The communication process begins with the DATA line sending start signals to DHT11, and DHT11 receives the signals and returns an answer signal. Then the host receives the answer signal and begins to receive 40-bit humiture data (8-bit humidity integer + 8-bit humidity decimal + 8-bit temperature integer + 8-bit temperature decimal + 8-bit checksum).
 
 <div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/DHT11.png?raw=true"/></div>
 
@@ -33,7 +35,7 @@ The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3
 ### (3) Sensor Placement Plan
 We designed a preliminary plan for sensor placement. The camera is placed at the entrance of the bridge to monitor and detect the traffic flow. The vibration sensor, temperature and humidity sensor are both set in the middle of the bridge to reflect the typical measurements of the bridges. Meanwhile, the buzzer is also placed in the middle of the bridge to issue the safety alarms if the measurements exceed the predefined thresholds.
 
-![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Sensors.png)
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Sensor_pla.png)
 
 ## Problems Encountered
 
