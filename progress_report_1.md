@@ -5,6 +5,7 @@
 
 ### （1）Getting hardware
 We have purchased Raspberry Pi and sensors (DHT11 temperature humidity sensor, Camera, Vibration sensor module, Buzzer sensor module) from [Taobao](https://www.taobao.com/).
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Sensors.png)
 
 ### （2）Set up the development environment
 We learned how to connect the temperature-humidity sensor, camera, vibration and buzzer to the Raspberry pi and test it to get some data.
