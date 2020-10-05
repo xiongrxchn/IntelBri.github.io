@@ -52,6 +52,20 @@ Camera:
 ![](/Images/camera.png)
 
 
+```markdown
+Type: Camera Module
+Number of Channels: 1
+Supported Bus Interfaces: CSI-2
+Maximum Supported Resolution: 3280 x 2464
+Maximum Frame Rate Capture: 30fps
+Dimensions: 3.86 x 25 x 9mm
+Height: 9mm
+Length: 23.86mm
+Maximum Operating Temperature: +60 °C
+Minimum Operating Temperature: -20 °C
+Width: 25mm
+```
+
 Temperature and humidity sensor:
 DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
 Parameters:
