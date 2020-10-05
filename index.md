@@ -49,7 +49,7 @@ The general monitoring metrics intended to measure bridge condition and performa
 
 Camera:
 
-![image](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/daaa041609e59f61893be36888d21d5888bcc3fb/en/images/pi-camera-attached.jpg)
+![](/Images/camera.png)
 
 
 Temperature and humidity sensor:
