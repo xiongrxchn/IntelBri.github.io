@@ -30,7 +30,7 @@ We have learned how to connect the Raspberry Pi Camera Module to the Raspberry P
 
 #### SW-420 vibration sensor test results
 
-The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3V as power supply.When there is no vibration,it output low level voltage and the light signal turns on;When there is any vibration, it output high level voltage and the light signal turns off.
+The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3V as power supply.When there is no vibration,it output low level voltage and the light signal turns on;When there is any vibration, it output high-level voltage and the light signal turns off.
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/sw40.png)
 
@@ -62,7 +62,7 @@ We have designed a preliminary sensor placement plan. However, it remains to be 
 At first, we tried to use vibration sensor in the KOOKYE Smart Home Sensor Kit to measure the vibration of bridges. However, we didn't realize the vibration sensor only output binary signals until we conduct experiments on the sensor. The vibration sensor will output high level voltage when it detect vibration and output low level voltage when no vibration. So we have purchased MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS to measure the virbration signals of bridges this week.
 
 ## Future Plan
-- Build the simulated physicla models of the bridge and install the sensors on the suitable locations of the bridge.
+- Build the simulated physical models of the bridge and install the sensors on the suitable locations of the bridge.
 - determine the appropriate sampling frequencies for both sensors and finish the control part of the codes.
 - Connect all sensors to OpenChirp and remove the anomaly signals.
 - Analyze the collected signals and identify the alrmaing cases.
