@@ -51,7 +51,6 @@ Camera:
 
 ![](/Images/camera.png)
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera.png"/></div>
 
 ```markdown
 Type: Camera Module
@@ -68,7 +67,11 @@ Width: 25mm
 ```
 
 Temperature and humidity sensor:
-DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
+
+DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
+
+![](/Images/temperature%20and%20humidity%20sensor%201.png)
+
 Parameters:
 ```markdown
 - Power supply: 3.3 - 5 V
