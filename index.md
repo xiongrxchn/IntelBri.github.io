@@ -51,6 +51,7 @@ Camera:
 
 ![](/Images/camera.png)
 
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera.png"/></div>
 
 ```markdown
 Type: Camera Module
