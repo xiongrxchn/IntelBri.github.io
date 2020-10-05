@@ -10,7 +10,7 @@ We have purchased Raspberry Pi and sensors (DHT11 temperature & humidity sensor,
 ### (2) Set up the development environment
 We have built the sensors (including DHT11 temperature & humidity sensor, Camera, SW-420 vibration sensor, Buzzer module) and written Python codes to monitor the parameters based on the tutorials.
 
-- DHT11 temperature & humidity sensor test results
+#### DHT11 temperature & humidity sensor test results
 
 Only three pins are available for use: VCC, GND, and DATA. The communication process begins with the DATA line sending start signals to DHT11, and DHT11 receives the signals and returns an answer signal. Then the host receives the answer signal and begins to receive 40-bit humiture data (8-bit humidity integer + 8-bit humidity decimal + 8-bit temperature integer + 8-bit temperature decimal + 8-bit checksum).
 
@@ -20,7 +20,7 @@ Only three pins are available for use: VCC, GND, and DATA. The communication pro
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png"/></div>
 
 
-- Camera sensor test resluts
+#### Camera sensor test resluts
 
 We have learned how to connect the Raspberry Pi Camera Module to the Raspberry Pi and take pictures, record video, and apply image effects.
 
@@ -28,7 +28,7 @@ We have learned how to connect the Raspberry Pi Camera Module to the Raspberry P
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Motion_detector.png"/></div>
 
-- SW-420 vibration sensor test resluts
+#### SW-420 vibration sensor test resluts
 
 The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3V as power supply.When there is no vibration,it output low level voltage and the light signal turns on;When there is any vibration, it output high level voltage and the light signal turns off.
 
