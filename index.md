@@ -49,7 +49,8 @@ The general monitoring metrics intended to measure bridge condition and performa
 
 Camera:
 
-![](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/daaa041609e59f61893be36888d21d5888bcc3fb/en/images/pi-camera-attached.jpg)
+![image](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/daaa041609e59f61893be36888d21d5888bcc3fb/en/images/pi-camera-attached.jpg)
+
 
 Temperature and humidity sensor:
 DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
