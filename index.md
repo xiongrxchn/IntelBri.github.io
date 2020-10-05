@@ -30,14 +30,17 @@ Describe the physical phenomena of interest, e.g. physical principles, static an
 Temperature and humidity sensor:
 DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
 Parameters:
+```markdown
 - Power supply: 3.3 - 5 V
 - Current: 2.5 mA max use of current during conversion (when data request)
 - Humidity: 20 - 90 % ± 5 %
 - Temperature: 0 - 50º ± 2 %
 - Sampling rate: ≤ 1 Hz
+```
 
 Vibration: vibration sensor
 Vibration Sensor Module Features & Specifications
+```markdown
 - Operating Voltage: 3.3V to 5V DC
 - Operating Current: 15mA
 - Using SW-420 normally closed type vibration sensor
@@ -46,11 +49,13 @@ Vibration Sensor Module Features & Specifications
 - Easy to use with Microcontrollers or even with normal Digital/Analog IC
 - With bolt holes for easy installation
 - Small, cheap and easily available
+```
 
 Buzzer
 The team use buzzer to warn drivers when the window is fogging. A buzzer can be sorted as a passive or active buzzer. An active buzzer has a built-in oscillating source. Thus, it will make sounds when electrified. But a passive buzzer does not have such a source, so it will not tweet if DC signals are used; instead, you need to use square waves whose frequency is between 2K and 5K to drive it. The active buzzer is often more expensive than the passive one because of multiple built-in oscillating circuits. Its detailed characteristics and connection information are shown below:
 
 Buzzer Features and Specifications
+```markdown
 - Rated Voltage: 6V DC
 - Operating Voltage: 4-8V DC
 - Rated current: <30mA
@@ -58,6 +63,7 @@ Buzzer Features and Specifications
 - Resonant Frequency: ~2300 Hz 
 - Small and neat sealed package
 - Breadboard and Perf board friendly
+```
 
 ### Signal Conditioning and Processing
 
