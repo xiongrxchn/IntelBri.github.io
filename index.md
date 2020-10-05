@@ -63,7 +63,7 @@ Features and Specifications:
 
 • Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
 
-DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
+The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
 
 ```markdown
 Features and Specifications:
@@ -77,6 +77,8 @@ Features and Specifications:
 
 • Vibration sensor: SW-420 Vibration Sensor
 
+The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
+
 ```markdown
 Features and Specifications:
 
@@ -88,6 +90,8 @@ Features and Specifications:
 ```
 
 • The team also use buzzer to warn drivers when identifying alarming signals.
+
+As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
 
 ```markdown
 Features and Specifications：
