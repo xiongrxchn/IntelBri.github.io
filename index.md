@@ -89,7 +89,7 @@ Features and Specifications:
 - Easy to use with Microcontrollers or even with normal Digital/Analog IC
 ```
 
-(4)Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
+(4) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
 The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
 
