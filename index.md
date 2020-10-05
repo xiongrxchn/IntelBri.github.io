@@ -7,9 +7,7 @@
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/background.png)
 
-Increases in traffic have puts more and more strain on the bridge networks than was originally intended. According to the 2020 bridge reports from the Federal Highway Administration, more than one third (37 percent) of U.S. bridges—nearly 231,000 spans—need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” A total of 81,000 bridges should be replaced.
-
-
+Increases in traffic have puts more and more strain on the bridge networks than was originally intended. According to the 2020 bridge reports from the Federal Highway Administration, more than one third (37 percent) of U.S. bridges—nearly 231,000 spans—need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” A total of 81,000 bridges should be replaced. Our project is to use an Internet of Things (IoT) based structural health monitoring system for bridge health evaluation and maintenance. These systems can detect changes in the bridge superstructure and, in some cases, predict impending failures.
 
 ### Motivation
 
