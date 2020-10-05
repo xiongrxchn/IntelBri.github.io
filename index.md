@@ -50,8 +50,6 @@ The general monitoring metrics intended to measure bridge condition and performa
 
 Camera:
 
-![](/Images/camera.png)
-
 
 ```markdown
 Type: Camera Module
@@ -71,7 +69,6 @@ Temperature and humidity sensor:
 
 DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
 
-![](/Images/temperature%20and%20humidity%20sensor%201.png)
 
 Parameters:
 ```markdown
@@ -96,8 +93,6 @@ Vibration Sensor Module Features & Specifications
 ```
 
 Buzzer
-
-![](/Images/buzzer.png)
 
 The team use buzzer to warn drivers when the window is fogging. A buzzer can be sorted as a passive or active buzzer. An active buzzer has a built-in oscillating source. Thus, it will make sounds when electrified. But a passive buzzer does not have such a source, so it will not tweet if DC signals are used; instead, you need to use square waves whose frequency is between 2K and 5K to drive it. The active buzzer is often more expensive than the passive one because of multiple built-in oscillating circuits. Its detailed characteristics and connection information are shown below:
 
