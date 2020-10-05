@@ -43,7 +43,6 @@ We designed a preliminary plan for sensor placement. The camera is placed at the
 
 ### (1) How to set up the experiment environments?
 We can set up our experiments on real scenarios or simulated bridges. Collecting real bridge data may require some restricted safety permissions from the bridge management institutes. So we may establish simulated experimental environments to collect sensor data. We have chosen some bridge models online, as shown in the Figure. We then must figure out how to add different vehicle loads on the bridge to simulate the vibration features of bridges?
-
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/bridge%20model.png)
 
 ### (2) How to choose the proper thresholds for safety alarms?
