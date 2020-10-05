@@ -20,6 +20,9 @@ We learned how to connect the temperature-humidity sensor, camera, vibration and
 
 - Camera
 
+
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera_connection.png"/></div>
+
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/camera_test.png"/></div>
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Motion_detector.png"/></div>
