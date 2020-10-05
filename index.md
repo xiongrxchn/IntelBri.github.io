@@ -17,7 +17,7 @@ IoT technologies offer the ability to combine several methods to obtain a more c
 
 ## Progress Reports
 
-##### [Progress Report1](progress_report_1.md)
+##### [Progress Report1](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/progress_report_1.md)
 
 
 
