@@ -2,6 +2,8 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
+### video link:
+
 
 ## Introduction
 
@@ -44,8 +46,32 @@ The general monitoring metrics intended to measure bridge condition and performa
 3. Traffic flow - the total load of objects passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
 
 ### Sensor(s) Used
+
+Camera:
+
+![](/Images/camera.png)
+
+
+```markdown
+Type: Camera Module
+Number of Channels: 1
+Supported Bus Interfaces: CSI-2
+Maximum Supported Resolution: 3280 x 2464
+Maximum Frame Rate Capture: 30fps
+Dimensions: 3.86 x 25 x 9mm
+Height: 9mm
+Length: 23.86mm
+Maximum Operating Temperature: +60 °C
+Minimum Operating Temperature: -20 °C
+Width: 25mm
+```
+
 Temperature and humidity sensor:
-DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.[2]
+
+DHT11 Temperature-Humidity Sensor Module is a cheap and reliable sensor using an ADC to convert analog values of humidity and temperature. It comes with an 8-bit microcontroller and provides reliable output results.
+
+![](/Images/temperature%20and%20humidity%20sensor%201.png)
+
 Parameters:
 ```markdown
 - Power supply: 3.3 - 5 V
@@ -97,3 +123,12 @@ Describe the experiments you did and present the results; Use tables and plots i
 ## Discussion
 
 Discuss the insights from the project
+
+## References
+
+[1] Andrew Gastineau, Tyler Johnson, Arturo Schultz, Bridge Health Monitoring and Inspections – A Survey of Methods, September 2009. [http://www.lrrb.org/pdf/200929.pdf](http://www.lrrb.org/pdf/200929.pdf).
+
+[2] 2020 Bridge Reports, American Road and Transportation Builders Association, 
+[https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf](https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf).
+
+[3] Ahlborn, Tess & Shuchman, Robert & Sutter, Larry & Harris, Devin & Brooks, Colin & Burns, Joseph. (2013). Bridge Condition Assessment Using Remote Sensors. [https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf](https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf).
