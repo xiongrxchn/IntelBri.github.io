@@ -2,6 +2,8 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
+### video link:
+
 
 ## Introduction
 
@@ -97,3 +99,10 @@ Describe the experiments you did and present the results; Use tables and plots i
 ## Discussion
 
 Discuss the insights from the project
+
+## References
+
+[1] Andrew Gastineau, Tyler Johnson, Arturo Schultz, Bridge Health Monitoring and Inspections – A Survey of Methods, September 2009. http://www.lrrb.org/pdf/200929.pdf.
+[2] 2020 Bridge Reports, American Road and Transportation Builders Association, 
+https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf.
+[3] Ahlborn, Tess & Shuchman, Robert & Sutter, Larry & Harris, Devin & Brooks, Colin & Burns, Joseph. (2013). Bridge Condition Assessment Using Remote Sensors. https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf
