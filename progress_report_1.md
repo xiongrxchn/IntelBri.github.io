@@ -1,6 +1,5 @@
-# Progress Report 1
+# Progress Report 1 (Oct 5th)
 
-Oct 5th
 
 ## Current progress
 
