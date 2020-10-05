@@ -22,7 +22,7 @@ The main goal of this project is to establish and calibrate an IoT based bridge 
 
 - integrate multiple sensors to monitor the vibration, climatic conditions, and traffic flow signals;
 
-- apply de-noise algorithm to detect and remove anomorly signals from the sensors;
+- apply de-noise algorithms to detect and remove anomorly signals from the sensors;
 
 - establish and predict the time series of physical signals;
 
@@ -48,7 +48,7 @@ The general monitoring metrics intended to measure bridge condition and performa
 ### 3.2 Sensor(s) Used
 ![](/Images/Sensors.png)
 
-• Camera sensor: The Raspberry Pi Camera Module v2
+(1) Camera sensor: The Raspberry Pi Camera Module v2
 
 ```markdown
 Features and Specifications:
@@ -61,7 +61,7 @@ Features and Specifications:
 - Minimum Operating Temperature: -20 °C
 ```
 
-• Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
+(2) Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
 
 The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
 
@@ -75,7 +75,7 @@ Features and Specifications:
 - Sampling rate: ≤ 1Hz
 ```
 
-• Vibration sensor: SW-420 Vibration Sensor
+(3) Vibration sensor: SW-420 Vibration Sensor
 
 The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
 
@@ -89,7 +89,7 @@ Features and Specifications:
 - Easy to use with Microcontrollers or even with normal Digital/Analog IC
 ```
 
-• The team also use buzzer to warn drivers when identifying alarming signals.
+(4) The team also use buzzer to warn drivers when identifying alarming signals.
 
 As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
 
