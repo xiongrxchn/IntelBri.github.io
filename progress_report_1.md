@@ -33,7 +33,7 @@ The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3
 ### (3) Sensor Placement Plan
 We designed a preliminary plan for sensor placement. The camera is placed at the entrance of the bridge to monitor and detect the traffic flow. The vibration sensor, temperature and humidity sensor are both set in the middle of the bridge to reflect the typical measurements of the bridges. Meanwhile, the buzzer is also placed in the middle of the bridge to issue the safety alarms if the measurements exceed the predefined thresholds.
 
-![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Sensor_pla.png)
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/sw40.png)
 
 ## Problems Encountered
 
