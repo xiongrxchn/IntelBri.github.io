@@ -1,5 +1,7 @@
 # Progress Report 1
 
+Oct 5th
+
 ## Current progress
 
 ### （1）Getting hardware
