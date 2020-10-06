@@ -39,11 +39,11 @@ The main goal of this project is to establish and calibrate an IoT based bridge 
 
 The general monitoring metrics intended to measure bridge condition and performance including:
 
-1. Vibration - the instantaneous rate at which the velocity of a point in a vibrating bridge is changing with time. Acceleration is the most common measure taken to characterize vibrations. It is possible to define the frequencies and shapes of the different modes of vibration from a single acceleration trace. The frequencies and modes can be compared to values obtained from previous acceleration measurements to determine if the bridge has deteriorated or has been damaged.
+1. Vibration - the instantaneous rate at which the velocity of a point in a vibrating bridge is changing with time. Acceleration is the most common measure taken to characterize vibrations. The frequencies and modes can be compared to values obtained from previous acceleration measurements to determine if the bridge has deteriorated or has been damaged.
 
 2. Climatic Conditions - pertains to the environmental conditions in the area of the bridge that may relate to bridge performance. Parameters that can be measured include: air temperature and relative humidity.
 
-3. Traffic flow - the total load of objects passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
+3. Traffic flow - the total vehicles passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
 
 ### 3.2 Sensor(s) Used
 ![](/Images/sensor_all.png)
