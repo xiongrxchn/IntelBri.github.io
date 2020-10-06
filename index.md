@@ -24,8 +24,6 @@ The main goal of this project is to establish and calibrate an IoT based bridge 
 
 - apply de-noise algorithms to detect and remove anomoly signals from the sensors;
 
-- establish and predict the time series of physical signals;
-
 - identify the alarming signals from sensors and issue an alarm with the buzzer.
 
 ## 2 For Progress Reports
