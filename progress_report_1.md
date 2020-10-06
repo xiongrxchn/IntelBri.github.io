@@ -1,6 +1,5 @@
 # Progress Report 1 (Oct 5th)
 
-
 ## Current progress
 
 ### (1) Getting hardware
@@ -28,7 +27,7 @@ We have learned how to connect the Raspberry Pi Camera Module to the Raspberry P
 
 #### SW-420 vibration sensor test results
 
-The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3V as power supply.When there is no vibration,it output low level voltage and the light signal turns on;When there is any vibration, it output high-level voltage and the light signal turns off.
+The working volatage of vibration sensor is 3.3V-5V and this project use the 3.3V as power supply. When there is no vibration, it output low level voltage and the light signal turns on; When there is any vibration, it output high-level voltage and the light signal turns off.
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/sw40.png)
 
