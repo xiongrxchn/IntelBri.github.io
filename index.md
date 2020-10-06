@@ -22,7 +22,7 @@ The main goal of this project is to establish and calibrate an IoT based bridge 
 
 - integrate multiple sensors to monitor the vibration, climatic conditions, and traffic flow signals;
 
-- apply de-noise algorithms to detect and remove anomoly signals from the sensors;
+- apply de-noise algorithms to detect and remove anomaly signals from the sensors;
 
 - identify the alarming signals from sensors and issue an alarm with the buzzer.
 
