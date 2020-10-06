@@ -49,13 +49,7 @@ One of the goals of this project is to issue safety alarms to the drivers and pe
 ### (3) How to detect and remove the anomaly signals from sensors?
 During the continuous data collection process, there may be abnormal values, including zero values, null values, or no changes in the data within a certain time range, or abnormal values. These abnormal data will have a great impact on future data mining work. Therefore, in order to improve data quality, simple judgment and processing of these abnormal signals are required.
 
-### (4) How to unify the time scale of the multi-data for each channel?
-The data in the bridge monitoring system is collected by various sensors such as temperature and humidity, acceleration sensor. Because the working principle of the sensor and the working performance of the instrument are different, the sampling frequency of each sensor cannot be completely consistent. However, for bridge monitoring, it is necessary to understand the structural response of each part of the same period in order to clearly understand the mechanical properties of the overall structure.
-
-### (5) How to achieve optimal sensor placement of bridges?
-We have designed a preliminary sensor placement plan. However, it remains to be answered if this plan can achieve the optimal collection of reliable and comprehensive health information for structural state change information.
-
-### (6) Incorrect sensors for vibration measurements.
+### (4) Incorrect sensors for vibration measurements.
 At first, we tried to use vibration sensor in the KOOKYE Smart Home Sensor Kit to measure the vibration of bridges. However, we didn't realize the vibration sensor only output binary signals until we conduct experiments on the sensor. The vibration sensor will output high level voltage when it detect vibration and output low level voltage when no vibration. So we have purchased MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS to measure the virbration signals of bridges this week.
 
 ## Future Plan
