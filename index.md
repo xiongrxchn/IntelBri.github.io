@@ -104,7 +104,7 @@ Features and Specifications:
 - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 ```
 
-(5) The team also use buzzer to warn drivers when identifying alarming signals.
+(5) The team also use the buzzer to warn bridge management team when identifying alarming signals.
 
 As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
 
