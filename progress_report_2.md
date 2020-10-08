@@ -28,7 +28,8 @@ The monitoring of bridge vibration requires high-frequency acquisition systems.
 
 #### Sensors
 
-- Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS (380-Hz)
+- Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS 
+MPU allows a sample rate of 8kHz only for the gyrometer, the accelerometer allows only 1kHz.
 
 - GPS module (1 Hz)
 
