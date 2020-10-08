@@ -28,7 +28,9 @@ The monitoring of bridge vibration requires high-frequency acquisition systems.
 
 #### Sensors
 
-- Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
+- Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS (380-Hz)
 
-- GPS module
+- GPS module (1 Hz)
 
+Resulting in the following information:
+<time,location,speed,heading,3-axis acceleration>
