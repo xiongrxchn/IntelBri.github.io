@@ -13,8 +13,6 @@ and associated algorithms to monitor this important bridge using a collection of
 
 ### New developed theme with same sensors: Automatic detection of road pothole
 
-The monitoring of bridge vibration requires high-frequency acquisition systems.
-
 #### Goals:
 
 - Identify the road potholes and records its locations;
