@@ -37,6 +37,11 @@ MPU allows a sample rate of 8kHz only for the gyrometer, the accelerometer allow
 Resulting in the following information:
 <time,location,speed,heading,3-axis acceleration>
 
+https://www.electronicwings.com/public/images/user_images/images/Raspberry%20Pi/RaspberryPi_Interface/RaspberryPi_GPS/GPS%20Receiver%20module.png
 
 #### Reference:
+
+https://www.electronicwings.com/raspberry-pi/mpu6050-accelerometergyroscope-interfacing-with-raspberry-pi
+
+https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
 https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
