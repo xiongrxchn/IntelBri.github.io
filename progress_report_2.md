@@ -11,16 +11,24 @@ We would focus on part of the bridge health monitoring, for example, the bridge 
 We investigates an application of mobile sensing: detecting and reporting the surface conditions of roads. We describe a system
 and associated algorithms to monitor this important bridge using a collection of sensor-equipped vehicles. In specific, uses the inherent mobility of the participating vehicles, opportunistically gathering data from vibration and GPS sensors, and processing the data to assess road surface conditions.
 
+### New developed theme with same sensors: Automatic detection of road pothole
 
+The monitoring of bridge vibration requires high-frequency acquisition systems.
 
-## Problems Encountered
+#### Goals:
 
-### (1) How to set up the experiment environments?
-We can set up our experiments on real scenarios or simulated bridges. Collecting real bridge data may require some restricted safety permissions from the bridge management institutes. So we may establish simulated experimental environments to collect sensor data. We have chosen some bridge models online, as shown in the Figure. We then must figure out how to add different vehicle loads on the bridge to simulate the vibration features of bridges?
+- Identify the road potholes and records its locations;
+- Classify the relative scale of potholes.
 
+#### Phenomena of Interest
 
+- Acceleration - the moving objects will show different features acceleration when entering the road potholes;
 
+- GPS - record the locations of road potholes.
 
-## Future Plan
-- Build the simulated physical models of the bridge and install the sensors on the suitable locations of the bridge.
+#### Sensors
+
+- Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
+
+- GPS module
 
