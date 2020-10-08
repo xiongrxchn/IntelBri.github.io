@@ -13,6 +13,8 @@ and associated algorithms to monitor this important bridge using a collection of
 
 ### New developed theme with same sensors: Automatic detection of road pothole
 
+The monitoring of bridge vibration requires high-frequency acquisition systems.
+
 #### Goals:
 
 - Identify the road potholes and records its locations;
@@ -27,6 +29,10 @@ and associated algorithms to monitor this important bridge using a collection of
 #### Sensors
 
 - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS 
+
+MPU allows a sample rate of 8kHz only for the gyrometer, the accelerometer allows only 1kHz.
+
+![image](https://www.makerfabs.com/image/cache/makerfabs/MPU6050%203-Axis%20Acceleration%20Gyroscope%206DOF%20Module/MPU6050%203-Axis%20Acceleration%20Gyroscope%206DOF%20Module_1-1000x750.JPG)
 
 - GPS module (1 Hz)
 
