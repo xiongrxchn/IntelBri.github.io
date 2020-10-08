@@ -32,14 +32,11 @@ The monitoring of bridge vibration requires high-frequency acquisition systems.
 
 MPU allows a sample rate of 8kHz only for the gyrometer, the accelerometer allows only 1kHz.
 
-![image](https://www.makerfabs.com/image/cache/makerfabs/MPU6050%203-Axis%20Acceleration%20Gyroscope%206DOF%20Module/MPU6050%203-Axis%20Acceleration%20Gyroscope%206DOF%20Module_1-1000x750.JPG)
-
 - GPS module (1 Hz)
 
 Resulting in the following information:
 <time,location,speed,heading,3-axis acceleration>
 
-![image](https://www.electronicwings.com/public/images/user_images/images/Raspberry%20Pi/RaspberryPi_Interface/RaspberryPi_GPS/GPS%20Receiver%20module.png)
 
 #### Reference:
 
