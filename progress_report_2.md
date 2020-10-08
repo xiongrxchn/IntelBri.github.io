@@ -8,13 +8,9 @@
 Due to monitoring the bridge vibration requiring high sampling frequencies, the sampling frequencies of Raspberry Pi is not sufficient.
 We would focus on part of the bridge health monitoring, for example, the bridge road surface monitoring.
 
-The main goal of this project is to establish and calibrate an IoT based bridge health monitoring and evaluation system. This system enable the integration of distributed sensors for continuous, portable, and real-time monitoring for bridges.
+We investigates an application of mobile sensing: detecting and reporting the surface conditions of roads. We describe a system
+and associated algorithms to monitor this important bridge using a collection of sensor-equipped vehicles. In specific, uses the inherent mobility of the participating vehicles, opportunistically gathering data from vibration and GPS sensors, and processing the data to assess road surface conditions.
 
-- integrate multiple sensors to monitor the vibration, climatic conditions, and traffic flow signals;
-
-- apply de-noise algorithms to detect and remove anomaly signals from the sensors;
-
-- identify the alarming signals from sensors and issue an alarm with the buzzer.
 
 
 ## Problems Encountered
@@ -27,6 +23,4 @@ We can set up our experiments on real scenarios or simulated bridges. Collecting
 
 ## Future Plan
 - Build the simulated physical models of the bridge and install the sensors on the suitable locations of the bridge.
-- determine the appropriate sampling frequencies for both sensors and finish the control part of the codes.
-- Connect all sensors to OpenChirp and remove the anomaly signals.
-- Analyze the collected signals and identify the alrmaing cases.
+
