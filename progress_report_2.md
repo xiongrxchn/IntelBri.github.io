@@ -28,8 +28,6 @@ and associated algorithms to monitor this important bridge using a collection of
 
 - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS 
 
-MPU allows a sample rate of 8kHz only for the gyrometer, the accelerometer allows only 1kHz.
-
 - GPS module (1 Hz)
 
 Resulting in the following information:
