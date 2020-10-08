@@ -5,7 +5,16 @@
 
 ### Narrow down the goal of project
 
+Due to monitoring the bridge vibration requiring high sampling frequencies, the sampling frequencies of Raspberry Pi is not sufficient.
+We would focus on part of the bridge health monitoring, for example, the bridge road surface monitoring.
 
+The main goal of this project is to establish and calibrate an IoT based bridge health monitoring and evaluation system. This system enable the integration of distributed sensors for continuous, portable, and real-time monitoring for bridges.
+
+- integrate multiple sensors to monitor the vibration, climatic conditions, and traffic flow signals;
+
+- apply de-noise algorithms to detect and remove anomaly signals from the sensors;
+
+- identify the alarming signals from sensors and issue an alarm with the buzzer.
 
 
 ## Problems Encountered
