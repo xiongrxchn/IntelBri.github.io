@@ -15,7 +15,7 @@ Road potholes are a common nuisance experienced by the vehicle drivers or commut
 
 ### 1.1 Motivation
 
-Bridge engineers need a reliable way to assess structural integrity of bridges to maintain the continuous operation of the road network while ensuring the safety of the public. Traditional visual inspection techniques are both time consuming, subjective and costly. They can only assess visual appearance [2]. The internal damages may be unnoticed for a long period of time. To address these issues, our project applies an Internet of Things (IoT) based structural health monitoring system. IoT technologies offer the ability to combine several sensors to obtain a more complete assessment. Currently, these methods will provide a better picture of the overall bridge condition.
+Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the presence of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in terms of labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design and implement a mobile Raspberry Pi system, which is called Patrolman, for Road Pothole Inspection. Patrolman uses the three-axis accelerometer and GPS sensor deployed on Raspberry Pi system, relying on the mobility of cars (we use a toy car) to sense the vibration response of the roads being monitored.
 
 ### 1.2 Goals
 
