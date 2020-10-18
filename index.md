@@ -41,11 +41,7 @@ Road conditions are naturally sensed from a moving entity that can measure vibra
 
 The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collect driving data of vehicles (we use a toy car instead), and leverages sensors mounted on a testing vehicle.
 
-![](/Images/sensor_all.png)
-
 (1) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
-
-![](/Images/MPU_6050_1.png)
 
 MPU6050 sensor module is complete 6-axis Motion Tracking Device. It combines 3-axis Gyroscope, 3-axis Accelerometer and Digital Motion Processor all in small package. Also, it has additional feature of on-chip Temperature sensor. It has I2C bus interface to communicate with the microcontrollers.
 
@@ -59,7 +55,6 @@ MPU6050 sensor module is complete 6-axis Motion Tracking Device. It combines 3-a
   - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces
   - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
 ```
-![](/Images/Acceleromete_interfacer.png)
 
 (2) GPS sensor: L76X GPS Module
 
@@ -120,11 +115,6 @@ L76X GPS Module is a general Global Navigation Satellite System （GNSS）module
 ```
 #### Development Resources
 Wiki : www.waveshare.com/wiki/L76X_GPS_Module
-
-![](/Images/GPS.png)
-
-![](/Images/GPS_interface.png)
-
 
 ### 3.3 Signal Conditioning and Processing
 
