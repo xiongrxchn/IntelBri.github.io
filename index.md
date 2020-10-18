@@ -1,4 +1,4 @@
-# IoT based Bridge Health Monitoring and Evaluating System
+# Patrolman: Using Raspberry Pi for Road Pothole Inspection
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
@@ -10,7 +10,9 @@
 
 ![](/Images/background.png)
 
-The deteriorating and aging infrastructures continue to challenge transportation authorities as they align maintenance and replacement priorities with decreasing funds. According to the 2020 bridge reports from the Federal Highway Administration, more than one third (37 percent) of U.S. bridges—nearly 231,000 spans, need repair work. More than 46,000 bridges are rated in poor condition and classified as “structurally deficient.” [1]. Our project uses an Internet of Things (IoT) based monitoring system for bridge health evaluation and maintenance. We expect this system can detect changes in the bridge superstructure and, in some cases, predict impending failures.
+Road potholes are a common nuisance experienced by the vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% on the 2015 figure [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur as a direct result from surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implement a mobile Raspberry Pi system, which is called Patrolman, for Road Pothole Inspection.
+
+
 
 ### 1.1 Motivation
 
@@ -52,11 +54,7 @@ The general monitoring metrics intended to measure bridge condition and performa
 
 (1) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
-
-
 The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
-
-![](/Images/Acceleromete_interfacer.png)
 
 ```markdown
 Features and Specifications:
@@ -68,10 +66,6 @@ Features and Specifications:
 - Gyro operating current: 3.6mA (full power, gyro at all rates)
 - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 ```
-
-![](/Images/GPS.png)
-
-![](/Images/GPS_interface.png)
 
 
 
@@ -157,7 +151,3 @@ Discuss the insights from the project
 [https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf](https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf).
 
 [3] Ahlborn, Tess & Shuchman, Robert & Sutter, Larry & Harris, Devin & Brooks, Colin & Burns, Joseph. (2013). Bridge Condition Assessment Using Remote Sensors. [https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf](https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf).
-
-https://www.electronicwings.com/raspberry-pi/mpu6050-accelerometergyroscope-interfacing-with-raspberry-pi 
-
-https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
