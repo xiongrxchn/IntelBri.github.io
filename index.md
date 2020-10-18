@@ -15,19 +15,11 @@ Road potholes are a common nuisance experienced by the vehicle drivers or commut
 
 ### 1.1 Motivation
 
-Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the presence of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in terms of labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design and implement a mobile Raspberry Pi system, which is called Patrolman, for Road Pothole Inspection. Patrolman uses the three-axis accelerometer and GPS sensor deployed on Raspberry Pi system, relying on the mobility of cars (we use a toy car) to sense the vibration response of the roads being monitored.
+Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the presence of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in terms of labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. Patrolman uses the three-axis accelerometer and GPS sensor deployed on Raspberry Pi system, relying on the mobility of cars (we use a toy car) to sense the vibration response of the roads being monitored.
 
 ### 1.2 Goals
 
-The main goal of this project is to establish and calibrate an IoT based bridge health monitoring and evaluation system. This system enable the integration of distributed sensors for continuous, portable, and real-time monitoring for bridges.
-
-- integrate multiple sensors to monitor the vibration, climatic conditions, and traffic flow signals;
-
-- apply de-noise algorithms to detect and remove anomorly signals from the sensors;
-
-- establish and predict the time series of physical signals;
-
-- identify the alarming signals from sensors and issue an alarm with the buzzer.
+This project presents an alternative system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the mobility of the participating vehicles, gathering data from the six-axis accelerometer and GPS sensors, and processing the data to assess road surface conditions. This project will provide an affordable sensing method to conduct pavement condition assessments.
 
 ## 2 For Progress Reports
 
@@ -39,17 +31,17 @@ The main goal of this project is to establish and calibrate an IoT based bridge 
 
 ### 3.1 Phenomena of Interest
 
-The general monitoring metrics intended to measure bridge condition and performance including:
+Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. The general monitoring metrics intended to measure road condition and performance including:
 
-1. Vibration - the instantaneous rate at which the velocity of a point in a vibrating bridge is changing with time. Acceleration is the most common measure taken to characterize vibrations. It is possible to define the frequencies and shapes of the different modes of vibration from a single acceleration trace. The frequencies and modes can be compared to values obtained from previous acceleration measurements to determine if the bridge has deteriorated or has been damaged.
+1. Vibration - Acceleration is the most common measure taken to characterize vibrations. When the vehicle drive on flat road conditions, the three x, y, and z gravity of acceleration values (g) were steady while the three x, y, and z gravity of acceleration values (g) reflect pulse signals on road with potholes.
 
-2. Climatic Conditions - pertains to the environmental conditions in the area of the bridge that may relate to bridge performance. Parameters that can be measured include: air temperature and relative humidity.
-
-3. Traffic flow - the total load of objects passing over a particular area of a bridge. This measure can be useful to enforce weight restrictions, as well as to define the range (i.e., spectrum) of typical traffic loads.
+2. Georeferenced locations - GPS is linked to each accelerometer for data to be georeferenced. Therefore, we record the locations of detected road potholes.
 
 ### 3.2 Sensor(s) Used
-![](/Images/sensor_all.png)
 
+The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collect driving data of vehicles (we use a toy car instead), and leverages sensors including GPS, accelerometer mounted on a testing vehicle.
+
+![](/Images/sensor_all.png)
 
 (1) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
@@ -77,64 +69,6 @@ Features and Specifications:
 ![](/Images/GPS_interface.png)
 
 
-
-
-(1) Camera sensor: The Raspberry Pi Camera Module v2
-
-```markdown
-Features and Specifications:
-
-- Number of Channels: 1
-- Maximum Supported Resolution: 3280 x 2464
-- Maximum Frame Rate Capture: 30fps
-- Dimensions: 3.86 x 25 x 9mm
-- Maximum Operating Temperature: +60 °C
-- Minimum Operating Temperature: -20 °C
-```
-
-(2) Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
-
-The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
-
-```markdown
-Features and Specifications:
-
-- Power supply: 3.3-5V
-- Current: 2.5mA max use of current during conversion (when data request)
-- Humidity: 20-90% ± 5%
-- Temperature: 0-50°C ± 2%
-- Sampling rate: ≤ 1Hz
-```
-
-(3) Vibration sensor: SW-420 Vibration Sensor
-
-The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
-
-```markdown
-Features and Specifications:
-
-- Operating Voltage: 3.3V to 5V DC
-- Operating Current: 15mA
-- Using SW-420 normally closed type vibration sensor
-- LEDs indicating output and power
-- Easy to use with Microcontrollers or even with normal Digital/Analog IC
-```
-
-
-(5) The team also use buzzer to warn drivers when identifying alarming signals.
-
-As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
-
-```markdown
-Features and Specifications:
-
-- Rated Voltage: 6V DC
-- Operating Voltage: 4 - 8V DC
-- Rated current: < 30mA
-- Sound Type: Continuous Beep
-- Resonant Frequency: ~2300Hz 
-```
-
 ### 3.3 Signal Conditioning and Processing
 
 According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (fh): fs > 2fh. If the sampling frequency was chosen to be too small, not only the raw signal could not be described clearly and correctly, but also aliasing would occur, which block the way to attain the useful data information.
@@ -155,9 +89,11 @@ Discuss the insights from the project
 
 ## References
 
-[1] Andrew Gastineau, Tyler Johnson, Arturo Schultz, Bridge Health Monitoring and Inspections – A Survey of Methods, September 2009. [http://www.lrrb.org/pdf/200929.pdf](http://www.lrrb.org/pdf/200929.pdf).
+[1] Editor, Swindonian (30 December 2018). "More than half a million potholes were reported last year throughout the UK". The Swindonian. Retrieved 2 January 2019.
 
-[2] 2020 Bridge Reports, American Road and Transportation Builders Association, 
-[https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf](https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf).
+[2] Hingston, Michael (April 2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus. Retrieved 20 March 2015.
 
-[3] Ahlborn, Tess & Shuchman, Robert & Sutter, Larry & Harris, Devin & Brooks, Colin & Burns, Joseph. (2013). Bridge Condition Assessment Using Remote Sensors. [https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf](https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf).
+[3] S, Kamaljit Kaur; DelhiJuly 24, hu; July 24, 2018UPDATED; Ist, 2018 00:37. "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. Retrieved 4 August 2019.
+
+[4]Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
+
