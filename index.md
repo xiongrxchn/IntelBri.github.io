@@ -53,6 +53,8 @@ The general monitoring metrics intended to measure bridge condition and performa
 
 (1) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
+![](/Images/MPU_6050.png)
+
 The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
 
 ```markdown
@@ -65,6 +67,15 @@ Features and Specifications:
 - Gyro operating current: 3.6mA (full power, gyro at all rates)
 - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 ```
+![](/Images/Acceleromete_interfacer.png)
+
+
+(2) GPS
+
+![](/Images/GPS.png)
+
+![](/Images/GPS_interface.png)
+
 
 
 
