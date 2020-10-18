@@ -60,8 +60,7 @@ Features and Specifications:
 - VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
 - Gyro operating current: 3.6mA (full power, gyro at all rates)
 - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
-
-
+```
 
 
 (1) Camera sensor: The Raspberry Pi Camera Module v2
