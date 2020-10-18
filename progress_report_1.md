@@ -12,13 +12,15 @@ We have built the sensors (including GPS module and MPU-6050 six-axis accelerome
 
 #### GPS module test results
 
-Only three pins are available for use: VCC, GND, and DATA. The communication process begins with the DATA line sending start signals to DHT11, and DHT11 receives the signals and returns an answer signal. Then the host receives the answer signal and begins to receive 40-bit humiture data (8-bit humidity integer + 8-bit humidity decimal + 8-bit temperature integer + 8-bit temperature decimal + 8-bit checksum).
+(a)Hardware connection
+Connect L76X GPS module to the board. Four pins are available for use: VCC, GND, TX, and RX.
 
-<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/DHT11.png?raw=true"/></div>
-
-
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/humidity%20and%20temperature%20measuring%20result%20visualization.png"/></div>
-
+| L76X GPS Module  | Raspberry Pi (Board)  | Raspberry Pi (BCM) |
+| :----: | :----: | :----:|
+| VCC | 5v | 5 |
+| GND | GND | GND |
+| TX | 10 | P15 |
+| RX | 8 | P14 |
 
 #### Camera sensor test results
 
