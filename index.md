@@ -65,6 +65,8 @@ Features and Specifications:
 - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 ```
 
+
+
 (1) Camera sensor: The Raspberry Pi Camera Module v2
 
 ```markdown
@@ -130,6 +132,10 @@ Accelerometer: The accelerator sensor is installed under the middle of the bridg
 ## 4 Experiments and Results
 
 Describe the experiments you did and present the results; Use tables and plots if possible
+
+
+
+
 
 ## 5 Discussion
 
