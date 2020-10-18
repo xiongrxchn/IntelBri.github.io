@@ -61,7 +61,9 @@ Features and Specifications:
 - Gyro operating current: 3.6mA (full power, gyro at all rates)
 - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 
-```
+
+
+
 (1) Camera sensor: The Raspberry Pi Camera Module v2
 
 ```markdown
@@ -75,7 +77,6 @@ Features and Specifications:
 - Minimum Operating Temperature: -20 °C
 ```
 
-```
 (2) Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
 
 The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
@@ -88,36 +89,6 @@ Features and Specifications:
 - Humidity: 20-90% ± 5%
 - Temperature: 0-50°C ± 2%
 - Sampling rate: ≤ 1Hz
-```
-```
-(3) Vibration sensor: SW-420 Vibration Sensor
-
-The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
-
-```markdown
-Features and Specifications:
-
-- Operating Voltage: 3.3V to 5V DC
-- Operating Current: 15mA
-- Using SW-420 normally closed type vibration sensor
-- LEDs indicating output and power
-- Easy to use with Microcontrollers or even with normal Digital/Analog IC
-```
-
-```
-
-(5) The team also use the buzzer to warn the bridge management team when identifying alarming signals.
-
-As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
-
-```markdown
-Features and Specifications:
-
-- Rated Voltage: 6V DC
-- Operating Voltage: 4 - 8V DC
-- Rated current: < 30mA
-- Sound Type: Continuous Beep
-- Resonant Frequency: ~2300Hz 
 ```
 
 ### 3.3 Signal Conditioning and Processing
