@@ -14,14 +14,14 @@ We have built the sensors (including GPS module and MPU-6050 six-axis accelerome
   - Hardware connection
 Connect L76X GPS module to the board. Four pins are available for use: VCC, GND, TX, and RX.
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png"/></div>
-
 | L76X GPS Module  | Raspberry Pi (Board)  | Raspberry Pi (BCM) |
 | :----: | :----: | :----:|
 | VCC | 5v | 5 |
 | GND | GND | GND |
 | TX | 10 | P15 |
 | RX | 8 | P14 |
+
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png"/></div>
 
 - Running code
 
@@ -36,14 +36,14 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
   
 Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
-
 | MPU 6050  | Raspberry Pi (Board)  |
 | :----: | :----: |
 | VCC | 3.3v |
 | GND | GND |
 | SDA | P3 |
 | SCL | P5 |
+
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
 
 - Running code
 
