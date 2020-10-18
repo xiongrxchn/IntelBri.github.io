@@ -61,35 +61,64 @@ Features and Specifications:
 ```
 ![](/Images/Acceleromete_interfacer.png)
 
-
 (2) GPS sensor: L76X GPS Module
 
-L76X GPS Module is a module with Global Navigation Satellite System （GNSS）function, supports GPS, BD2 and QZSS positioning systems, and has the advantages of small size, low power consumption, and fast positioning.
+L76X GPS Module is a general Global Navigation Satellite System （GNSS）module which supports Multi-GNSS systems: GPS, BDS, and QZSS, with advantages such as small size, fast positioning, high accuracy, and low power consumption.
 
 ```markdown
-Features and Specifications:
+Features:
 
-- Receiving channels: 22 tracking channels, 66 acquisition channels and 210 PRN channels
-- Receiving signal: GPS, BD2 and QZSS
-- Support SBAS: WAAS, EGNOS, MSAS, GAGAN
-- Signal frequency band: GPS L1 (1575.42Mhz) BD2 B1 (1561.098MHz) C/A Code
-- Capture time: Cold start: 10S (fastest); Hot start: 1S
-- Capture sensitivity: -148dBm
-- Tracking sensitivity: -163dBm
-- Recapture capture sensitivity: -160dBm
-- Positioning accuracy: <2.5mCEP
-- The highest altitude: 18000(M)
-- Maximum speed: 515m/s
-- Logic voltage: 3.3/5V
-- Communication interface: UART
-- Serial communication baud rate: 4800bps~115200bps (default 9600)
-- Update rate: Maximum 10Hz (default 1HZ)
-- Communication protocol: NMEA 0183 /PMTK
-- Working voltage: 3.3V/5V
-- Working current: 11mA (5V)
-- Working temperature -40℃ ~ 85℃
-- Product size: 32.5X25.5(mm)
+Supports Multi-GNSS systems: GPS, BDS, and QZSS
+EASY™, self track prediction technology, help quick positioning
+AlwaysLocate™, intelligent controller of periodic mode for power saving
+Supports DGPS, SBAS (WAAS/EGNOS/MSAS/GAGAN)
+UART communication baudrate: 4800~115200bps (9600bps by default)
+Onboard rechargeable Li battery MS621FE, for preserving ephemeris information and hot starts
+2x LEDs for indicating the module working status
+Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32)
 ```
+
+```markdown
+GNSS Specifications:
+Band: GPS L1(1575.42Mhz), BD2 B1 (1561.098MHz)
+Channels: 33 tracking ch, 99 acquisition ch, 210 PRN ch
+C/A code
+SBA: WAAS, EGNOS, MSAS, GAGAN
+Horizontal position accuracy:
+Autonomous: <2.5mCEP
+Time-To-First-Fix @-130dBm (EASY™ enabled):
+Cold starts: <15s
+Warm starts: <5s
+Hot starts: <1s
+Sensitivity:
+Acquisition: -148dBm
+Tracking: -163dBm
+Re-acquisition: -160dBm
+Dynamic performance:
+Altitude (max): 18000m
+Velocity (max): 515m/s
+Acceleration (max): 4G
+```
+```markdown
+General Specifications:
+Communication interface: UART
+Baudrate: 4800~115200bps (9600bps by default)
+Update rate: 1Hz (default), 10Hz (max)
+Protocols: NMEA 0183, PMTK
+Power supply voltage: 5V / 3.3V
+Operating current: 11mA
+Operating temperature: -40℃ ~ 85℃
+Dimensions: 32.5mm x 25.5mm
+```
+```markdown
+Applications:
+Vehicle tracking
+Asset tracking
+Security system
+Industrial PDA
+GIS application
+```
+
 ![](/Images/GPS.png)
 
 ![](/Images/GPS_interface.png)
