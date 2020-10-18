@@ -4,13 +4,13 @@
 ## Current progress
 
 ### (1) Getting hardware
-We have purchased Raspberry Pi and sensors (DHT11 temperature & humidity sensor, Camera, SW-420 vibration sensor, Buzzer module) from [Taobao](https://www.taobao.com/).
+We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis accelerometers) from [Taobao](https://www.taobao.com/).
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh-pages/Images/Sensors.png)
 
-### (2) Set up the development environment
-We have built the sensors (including DHT11 temperature & humidity sensor, Camera, SW-420 vibration sensor, Buzzer module) and written Python codes to monitor the parameters based on the tutorials.
+### (2) Set up the test environment
+We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials.
 
-#### DHT11 temperature & humidity sensor test results
+#### GPS module test results
 
 Only three pins are available for use: VCC, GND, and DATA. The communication process begins with the DATA line sending start signals to DHT11, and DHT11 receives the signals and returns an answer signal. Then the host receives the answer signal and begins to receive 40-bit humiture data (8-bit humidity integer + 8-bit humidity decimal + 8-bit temperature integer + 8-bit temperature decimal + 8-bit checksum).
 
