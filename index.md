@@ -157,3 +157,7 @@ Discuss the insights from the project
 [https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf](https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf).
 
 [3] Ahlborn, Tess & Shuchman, Robert & Sutter, Larry & Harris, Devin & Brooks, Colin & Burns, Joseph. (2013). Bridge Condition Assessment Using Remote Sensors. [https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf](https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf).
+
+https://www.electronicwings.com/raspberry-pi/mpu6050-accelerometergyroscope-interfacing-with-raspberry-pi 
+
+https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
