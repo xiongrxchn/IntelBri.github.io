@@ -65,6 +65,15 @@ Features and Specifications:
 - Gyro operating current: 3.6mA (full power, gyro at all rates)
 - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 ```
+![](/Images/Acceleromete_interfacer.png)
+
+
+(2) GPS
+
+![](/Images/GPS.png)
+
+![](/Images/GPS_interface.png)
+
 
 
 
