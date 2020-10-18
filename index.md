@@ -47,17 +47,17 @@ The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers,
 
 ![](/Images/MPU_6050_1.png)
 
-The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
+MPU6050 sensor module is complete 6-axis Motion Tracking Device. It combines 3-axis Gyroscope, 3-axis Accelerometer and Digital Motion Processor all in small package. Also, it has additional feature of on-chip Temperature sensor. It has I2C bus interface to communicate with the microcontrollers.
 
-```markdown
 #### Features and Specifications
-
-- Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
-- Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
-- VDD Supply voltage range of 2.375V – 3.46V 
-- VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
-- Gyro operating current: 3.6mA (full power, gyro at all rates)
-- 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
+```markdown
+  - Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
+  - Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
+  - VDD Supply voltage range of 2.375V – 3.46V 
+  - VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
+  - Gyro operating current: 3.6mA (full power, gyro at all rates)
+  - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces
+  - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
 ```
 ![](/Images/Acceleromete_interfacer.png)
 
