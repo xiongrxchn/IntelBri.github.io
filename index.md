@@ -46,6 +46,22 @@ The general monitoring metrics intended to measure bridge condition and performa
 ### 3.2 Sensor(s) Used
 ![](/Images/sensor_all.png)
 
+
+(1) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
+
+The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
+
+```markdown
+Features and Specifications:
+
+- Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
+- Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
+- VDD Supply voltage range of 2.375V – 3.46V 
+- VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
+- Gyro operating current: 3.6mA (full power, gyro at all rates)
+- 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
+
+```
 (1) Camera sensor: The Raspberry Pi Camera Module v2
 
 ```markdown
@@ -59,6 +75,7 @@ Features and Specifications:
 - Minimum Operating Temperature: -20 °C
 ```
 
+```
 (2) Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
 
 The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
@@ -72,7 +89,7 @@ Features and Specifications:
 - Temperature: 0-50°C ± 2%
 - Sampling rate: ≤ 1Hz
 ```
-
+```
 (3) Vibration sensor: SW-420 Vibration Sensor
 
 The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
@@ -87,19 +104,6 @@ Features and Specifications:
 - Easy to use with Microcontrollers or even with normal Digital/Analog IC
 ```
 
-(4) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
-
-The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
-
-```markdown
-Features and Specifications:
-
-- Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
-- Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
-- VDD Supply voltage range of 2.375V – 3.46V 
-- VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
-- Gyro operating current: 3.6mA (full power, gyro at all rates)
-- 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces 
 ```
 
 (5) The team also use the buzzer to warn the bridge management team when identifying alarming signals.
