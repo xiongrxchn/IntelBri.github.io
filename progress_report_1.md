@@ -26,7 +26,7 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 
 - Running code
 
-Run the test code GPS.py [https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py]. The test results are shown as follows:
+Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png)
 
