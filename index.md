@@ -119,7 +119,7 @@ L76X GPS Module is a general Global Navigation Satellite System （GNSS）module
   - GIS application
 ```
 #### Development Resources
-Wiki : www.waveshare.com/wiki/L76X_GPS_Module (www.waveshare.com/wiki/L76X_GPS_Module)
+Wiki : www.waveshare.com/wiki/L76X_GPS_Module
 
 ![](/Images/GPS.png)
 
