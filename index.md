@@ -126,9 +126,7 @@ Accelerometer: The accelerator sensor is installed under the middle of the bridg
 
 Describe the experiments you did and present the results; Use tables and plots if possible
 
-![](/Images/sensor_all.png)
-
-
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all.png"/></div>
 
 ## 5 Discussion
 
