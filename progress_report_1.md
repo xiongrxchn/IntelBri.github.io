@@ -15,7 +15,7 @@ We have built the sensors (including GPS module and MPU-6050 six-axis accelerome
   - Hardware connection
 Connect L76X GPS module to the board. Four pins are available for use: VCC, GND, TX, and RX.
 
-![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.jpeg)
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png)
 
 | L76X GPS Module  | Raspberry Pi (Board)  | Raspberry Pi (BCM) |
 | :----: | :----: | :----:|
