@@ -39,7 +39,7 @@ Road conditions are naturally sensed from a moving entity that can measure vibra
 
 ### 3.2 Sensor(s) Used
 
-The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collect driving data of vehicles (we use a toy car instead), and leverages sensors including GPS, accelerometer mounted on a testing vehicle.
+The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collect driving data of vehicles (we use a toy car instead), and leverages sensors mounted on a testing vehicle.
 
 ![](/Images/sensor_all.png)
 
@@ -62,8 +62,34 @@ Features and Specifications:
 ![](/Images/Acceleromete_interfacer.png)
 
 
-(2) GPS
+(2) GPS sensor: L76X GPS Module
 
+L76X GPS Module is a module with Global Navigation Satellite System （GNSS）function, supports GPS, BD2 and QZSS positioning systems, and has the advantages of small size, low power consumption, and fast positioning.
+
+```markdown
+Features and Specifications:
+
+- Receiving channels: 22 tracking channels, 66 acquisition channels and 210 PRN channels
+- Receiving signal: GPS, BD2 and QZSS
+- Support SBAS: WAAS, EGNOS, MSAS, GAGAN
+- Signal frequency band: GPS L1 (1575.42Mhz) BD2 B1 (1561.098MHz) C/A Code
+- Capture time: Cold start: 10S (fastest); Hot start: 1S
+- Capture sensitivity: -148dBm
+- Tracking sensitivity: -163dBm
+- Recapture capture sensitivity: -160dBm
+- Positioning accuracy: <2.5mCEP
+- The highest altitude: 18000(M)
+- Maximum speed: 515m/s
+- Logic voltage: 3.3/5V
+- Communication interface: UART
+- Serial communication baud rate: 4800bps~115200bps (default 9600)
+- Update rate: Maximum 10Hz (default 1HZ)
+- Communication protocol: NMEA 0183 /PMTK
+- Working voltage: 3.3V/5V
+- Working current: 11mA (5V)
+- Working temperature -40℃ ~ 85℃
+- Product size: 32.5X25.5(mm)
+```
 ![](/Images/GPS.png)
 
 ![](/Images/GPS_interface.png)
@@ -79,7 +105,7 @@ Accelerometer: The accelerator sensor is installed under the middle of the bridg
 
 Describe the experiments you did and present the results; Use tables and plots if possible
 
-
+![](/Images/sensor_all.png)
 
 
 
