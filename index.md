@@ -50,7 +50,7 @@ The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers,
 The MPU-6050 parts are the world’s first MotionTracking devices designed for the low power, low cost, and high-performance requirements of smartphones, tablets and wearable sensors. It combines a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die.
 
 ```markdown
-Features and Specifications:
+#### Features and Specifications
 
 - Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
 - Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
@@ -65,59 +65,61 @@ Features and Specifications:
 
 L76X GPS Module is a general Global Navigation Satellite System （GNSS）module which supports Multi-GNSS systems: GPS, BDS, and QZSS, with advantages such as small size, fast positioning, high accuracy, and low power consumption.
 
+#### Features
 ```markdown
-Features:
-
-Supports Multi-GNSS systems: GPS, BDS, and QZSS
-EASY™, self track prediction technology, help quick positioning
-AlwaysLocate™, intelligent controller of periodic mode for power saving
-Supports DGPS, SBAS (WAAS/EGNOS/MSAS/GAGAN)
-UART communication baudrate: 4800~115200bps (9600bps by default)
-Onboard rechargeable Li battery MS621FE, for preserving ephemeris information and hot starts
-2x LEDs for indicating the module working status
-Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32)
+  - Supports Multi-GNSS systems: GPS, BDS, and QZSS
+  - EASY™, self track prediction technology, help quick positioning
+  - AlwaysLocate™, intelligent controller of periodic mode for power saving
+  - Supports DGPS, SBAS (WAAS/EGNOS/MSAS/GAGAN)
+  - UART communication baudrate: 4800~115200bps (9600bps by default)
+  - Onboard rechargeable Li battery MS621FE, for preserving ephemeris information and hot starts
+  - 2x LEDs for indicating the module working status
+  - Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32)
+```
+#### GNSS Specifications
+```markdown
+  - Band: GPS L1(1575.42Mhz), BD2 B1 (1561.098MHz)
+    - Channels: 33 tracking ch, 99 acquisition ch, 210 PRN ch
+    - C/A code
+    - SBA: WAAS, EGNOS, MSAS, GAGAN
+  - Horizontal position accuracy:
+    - Autonomous: <2.5mCEP
+  - Time-To-First-Fix @-130dBm (EASY™ enabled):
+    - Cold starts: <15s
+    - Warm starts: <5s
+    - Hot starts: <1s
+  - Sensitivity:
+    - Acquisition: -148dBm
+    - Tracking: -163dBm
+    - Re-acquisition: -160dBm
+  - Dynamic performance:
+    - Altitude (max): 18000m
+    - Velocity (max): 515m/s
+    - Acceleration (max): 4G
 ```
 
+#### General Specifications
 ```markdown
-GNSS Specifications:
-Band: GPS L1(1575.42Mhz), BD2 B1 (1561.098MHz)
-Channels: 33 tracking ch, 99 acquisition ch, 210 PRN ch
-C/A code
-SBA: WAAS, EGNOS, MSAS, GAGAN
-Horizontal position accuracy:
-Autonomous: <2.5mCEP
-Time-To-First-Fix @-130dBm (EASY™ enabled):
-Cold starts: <15s
-Warm starts: <5s
-Hot starts: <1s
-Sensitivity:
-Acquisition: -148dBm
-Tracking: -163dBm
-Re-acquisition: -160dBm
-Dynamic performance:
-Altitude (max): 18000m
-Velocity (max): 515m/s
-Acceleration (max): 4G
+  - Communication interface: UART
+  - Baudrate: 4800~115200bps (9600bps by default)
+  - Update rate: 1Hz (default), 10Hz (max)
+  - Protocols: NMEA 0183, PMTK
+  - Power supply voltage: 5V / 3.3V
+  - Operating current: 11mA
+  - Operating temperature: -40℃ ~ 85℃
+  - Dimensions: 32.5mm x 25.5mm
 ```
+
+#### Applications
 ```markdown
-General Specifications:
-Communication interface: UART
-Baudrate: 4800~115200bps (9600bps by default)
-Update rate: 1Hz (default), 10Hz (max)
-Protocols: NMEA 0183, PMTK
-Power supply voltage: 5V / 3.3V
-Operating current: 11mA
-Operating temperature: -40℃ ~ 85℃
-Dimensions: 32.5mm x 25.5mm
+  - Vehicle tracking
+  - Asset tracking
+  - Security system
+  - Industrial PDA
+  - GIS application
 ```
-```markdown
-Applications:
-Vehicle tracking
-Asset tracking
-Security system
-Industrial PDA
-GIS application
-```
+#### Development Resources
+Wiki : www.waveshare.com/wiki/L76X_GPS_Module (www.waveshare.com/wiki/L76X_GPS_Module)
 
 ![](/Images/GPS.png)
 
