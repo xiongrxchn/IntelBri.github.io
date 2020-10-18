@@ -69,64 +69,6 @@ Features and Specifications:
 ![](/Images/GPS_interface.png)
 
 
-
-
-(1) Camera sensor: The Raspberry Pi Camera Module v2
-
-```markdown
-Features and Specifications:
-
-- Number of Channels: 1
-- Maximum Supported Resolution: 3280 x 2464
-- Maximum Frame Rate Capture: 30fps
-- Dimensions: 3.86 x 25 x 9mm
-- Maximum Operating Temperature: +60 °C
-- Minimum Operating Temperature: -20 °C
-```
-
-(2) Temperature and humidity sensor: DHT11 Temperature-Humidity Sensor Module
-
-The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
-
-```markdown
-Features and Specifications:
-
-- Power supply: 3.3-5V
-- Current: 2.5mA max use of current during conversion (when data request)
-- Humidity: 20-90% ± 5%
-- Temperature: 0-50°C ± 2%
-- Sampling rate: ≤ 1Hz
-```
-
-(3) Vibration sensor: SW-420 Vibration Sensor
-
-The SW-420 Vibration sensor can be used to detect vibration from any angle. There is an on-board potentiometer to adjust the threshold of vibration. It outputs logic HIGH when this module not triggered while logic Low when triggered.
-
-```markdown
-Features and Specifications:
-
-- Operating Voltage: 3.3V to 5V DC
-- Operating Current: 15mA
-- Using SW-420 normally closed type vibration sensor
-- LEDs indicating output and power
-- Easy to use with Microcontrollers or even with normal Digital/Analog IC
-```
-
-
-(5) The team also use buzzer to warn drivers when identifying alarming signals.
-
-As a type of electronic buzzer with integrated structure, buzzers, which are supplied by DC power, are widely used in computers, printers, photocopiers, alarms, electronic toys, automotive electronic devices, telephones, timers and other electronic products for voice devices.
-
-```markdown
-Features and Specifications:
-
-- Rated Voltage: 6V DC
-- Operating Voltage: 4 - 8V DC
-- Rated current: < 30mA
-- Sound Type: Continuous Beep
-- Resonant Frequency: ~2300Hz 
-```
-
 ### 3.3 Signal Conditioning and Processing
 
 According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (fh): fs > 2fh. If the sampling frequency was chosen to be too small, not only the raw signal could not be described clearly and correctly, but also aliasing would occur, which block the way to attain the useful data information.
@@ -147,9 +89,9 @@ Discuss the insights from the project
 
 ## References
 
-[1] Andrew Gastineau, Tyler Johnson, Arturo Schultz, Bridge Health Monitoring and Inspections – A Survey of Methods, September 2009. [http://www.lrrb.org/pdf/200929.pdf](http://www.lrrb.org/pdf/200929.pdf).
+[1] Editor, Swindonian (30 December 2018). "More than half a million potholes were reported last year throughout the UK". The Swindonian. Retrieved 2 January 2019.
 
-[2] 2020 Bridge Reports, American Road and Transportation Builders Association, 
-[https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf](https://artbabridgereport.org/reports/2020%20ARTBA%20Bridge%20Report.pdf).
+[2] Hingston, Michael (April 2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus. Retrieved 20 March 2015.
 
-[3] Ahlborn, Tess & Shuchman, Robert & Sutter, Larry & Harris, Devin & Brooks, Colin & Burns, Joseph. (2013). Bridge Condition Assessment Using Remote Sensors. [https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf](https://www.mtu.edu/mtri/research/project-areas/transportation/infrastructure/bridge-condition/final-report-main-body.pdf).
+[3] S, Kamaljit Kaur; DelhiJuly 24, hu; July 24, 2018UPDATED; Ist, 2018 00:37. "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. Retrieved 4 August 2019.
+
