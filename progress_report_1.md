@@ -36,7 +36,7 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
   
 Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
 
-![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu.jpeg)
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg)
 
 | MPU 6050  | Raspberry Pi (Board)  |
 | :----: | :----: |
