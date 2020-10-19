@@ -48,7 +48,7 @@ Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND,
 | SDA | P3 |
 | SCL | P5 |
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
+<div align="left"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
 
 - Running code
 
