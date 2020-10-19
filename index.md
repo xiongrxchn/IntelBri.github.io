@@ -58,7 +58,7 @@ MPU6050 sensor module is complete 6-axis Motion Tracking Device. It combines 3-a
 
 (2) GPS sensor: L76X GPS Module
 
-L76X GPS Module is a general Global Navigation Satellite System （GNSS）module which supports Multi-GNSS systems: GPS, BDS, and QZSS, with advantages such as small size, fast positioning, high accuracy, and low power consumption.
+L76X GPS Module is a general Global Navigation Satellite System (GNSS) module which supports Multi-GNSS systems: GPS, BDS, and QZSS, with advantages such as small size, fast positioning, high accuracy, and low power consumption.
 
 #### Features
 ```markdown
