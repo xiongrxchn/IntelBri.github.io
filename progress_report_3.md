@@ -23,7 +23,7 @@ We have purchased the toy car from [Taobao](https://www.taobao.com/).
 
 <div align="left"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_3.png"/></div>
 
-<div align="left"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_situation.png"/></div>
+<div align="left"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor_situation.png"/></div>
 
 
 #### MPU module test results
