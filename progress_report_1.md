@@ -57,5 +57,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test2.png)
 
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test2.png"/></div>
+
 ## Future Plan
 - Complie all sensors together and test the system under indoor environments.
