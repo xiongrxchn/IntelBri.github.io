@@ -30,6 +30,7 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png)
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test2.png)
+
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test3.png)
 
 
