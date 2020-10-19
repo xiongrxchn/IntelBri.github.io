@@ -15,22 +15,15 @@ We have purchased the toy car from [Taobao](https://www.taobao.com/).
 
 ### (3) Test results
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
+<div align="left"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_2.png"/></div>
+<div align="left"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_2.png"/></div>
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_3.png"/></div>
+<div align="left"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_3.png"/></div>
 
 
 #### MPU module test results
 
-
-
-- Running code
-
-Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
-
-![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png)
 
 
 
