@@ -9,6 +9,8 @@ We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis acc
 ### (2) Set up the test environment
 We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials.
 
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all_1.png"/></div>
+
 #### GPS module test results
 
   - Hardware connection
