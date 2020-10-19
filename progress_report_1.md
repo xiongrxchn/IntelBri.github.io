@@ -21,18 +21,18 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 | TX | 10 | P15 |
 | RX | 8 | P14 |
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png"/></div>
+<div align="left"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png"/></div>
 
 - Running code
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png"/></div>
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png"/></div>
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test2.png"/></div>
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test2.png"/></div>
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test3.png"/></div>
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test3.png"/></div>
 
 
 #### MPU 6050 sensor test results
