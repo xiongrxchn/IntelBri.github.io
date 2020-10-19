@@ -29,6 +29,9 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png)
 
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test2.png)
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test3.png)
+
 
 #### MPU 6050 sensor test results
 
@@ -50,6 +53,8 @@ Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND,
 Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/Acceleration.py). The test results are shown as follows:
 
 ![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test1.png)
+
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test2.png)
 
 ## Future Plan
 - Complie all sensors together and test the system under indoor environments.
