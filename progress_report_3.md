@@ -24,7 +24,7 @@ We have installed the raspberry pi，the sensor MPU-6050 Six-Axis (Gyro + Accele
 Test results of Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
 
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
+<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_2.png"/></div>
 
