@@ -8,7 +8,7 @@ We
 
 ### (1) Outdoor Testing Preparation
 
-<div align="center"><img width="100" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/screenshot.jpg"/></div>
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/screenshot.jpg"/></div>
 
 
 
