@@ -1,44 +1,64 @@
-# Progress Report 2 (Oct 8th)
+# Progress Report 1 (Oct 5th)
 
 
 ## Current progress
 
-### Narrow down the goal of project
+### (1) Getting hardware
+We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis accelerometers) from [Taobao](https://www.taobao.com/).
 
-Due to monitoring the bridge vibration requiring high sampling frequencies, the sampling frequencies of Raspberry Pi is not sufficient.
-We would focus on part of the bridge health monitoring, for example, the bridge road surface monitoring.
+### (2) Set up the test environment
+We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials.
 
-We investigates an application of mobile sensing: detecting and reporting the surface conditions of roads. We describe a system
-and associated algorithms to monitor this important bridge using a collection of sensor-equipped vehicles. In specific, uses the inherent mobility of the participating vehicles, opportunistically gathering data from vibration and GPS sensors, and processing the data to assess road surface conditions.
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all_1.jpg"/></div>
 
-### New developed theme with same sensors: Automatic detection of road pothole
+#### GPS module test results
 
-The monitoring of bridge vibration requires high-frequency acquisition systems.
+  - Hardware connection
+Connect L76X GPS module to the board. Four pins are available for use: VCC, GND, TX, and RX.
 
-#### Goals:
+| L76X GPS Module  | Raspberry Pi (Board)  | Raspberry Pi (BCM) |
+| :----: | :----: | :----:|
+| VCC | 5v | 5 |
+| GND | GND | GND |
+| TX | 10 | P15 |
+| RX | 8 | P14 |
 
-- Identify the road potholes and records its locations;
-- Classify the relative scale of potholes.
+<div align="left"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png"/></div>
 
-#### Phenomena of Interest
+- Running code
 
-- Acceleration - the moving objects will show different features acceleration when entering the road potholes;
-
-- GPS - record the locations of road potholes.
-
-#### Sensors
-
-- Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS 
-
-MPU allows a sample rate of 8kHz only for the gyrometer, the accelerometer allows only 1kHz.
-
-- GPS module (1 Hz)
-
-Resulting in the following information:
-<time,location,speed,heading,3-axis acceleration>
+Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
 
-#### Reference:
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png"/></div>
 
-https://www.electronicwings.com/raspberry-pi/mpu6050-accelerometergyroscope-interfacing-with-raspberry-pi
-https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test2.png"/></div>
+
+<div align="left"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test3.png"/></div>
+
+
+#### MPU 6050 sensor test results
+
+  - Hardware connection
+  
+Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
+
+| MPU 6050  | Raspberry Pi (Board)  |
+| :----: | :----: |
+| VCC | 3.3v |
+| GND | GND |
+| SDA | P3 |
+| SCL | P5 |
+
+<div align="left"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
+
+- Running code
+
+Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/Acceleration.py). The test results are shown as follows:
+
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test1.png)
+
+![image](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test2.png)
+
+## Future Plan
+- Complie all sensors together and test the system under indoor environments.
