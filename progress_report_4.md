@@ -14,16 +14,16 @@ We
 
 ### (2) Outdoor Testing Results
 
-<div align="center"><img width="300" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_1.jpg"/></div>
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_1.jpg"/></div>
 
 
-<div align="center"><img width="300" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_2.jpg"/></div>
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_2.jpg"/></div>
 
 
-<div align="center"><img width="300" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_3.jpg"/></div>
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_3.jpg"/></div>
 
 
-<div align="center"><img width="300" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_4.jpg"/></div>
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_4.jpg"/></div>
 
 
 ## Future Plan
