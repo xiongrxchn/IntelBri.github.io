@@ -1,4 +1,4 @@
-# Progress Report 2 (Oct 8th)
+# Progress Report 1 (Oct 5th)
 
 
 ## Current progress
