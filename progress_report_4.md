@@ -23,5 +23,12 @@ We
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/cracking.png"/></div>
 
 
+### (3) Interfacing the GPS Unit 
+
+
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/interfacing_GPS.png"/></div>
+
+
+
 ## Future Plan
 - Complie all sensors together and test the system under outdoor environments.
