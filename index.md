@@ -140,9 +140,30 @@ To discover important patterns in our data while leaving out things that are uni
 
 ## 4 Experiments and Results
 
-Describe the experiments you did and present the results; Use tables and plots if possible
+### Pavement defect types
 
+The team focused on collecting a diverse set of samples, including the following event classes:
+
+  - Smooth road (SM): Segments of road surface that are considered smooth.
+  
+  - Potholes (PH): Missing chunks of pavement, severely sunk in or protruding manhole covers, other signiﬁcant road surface anomalies.
+  
+  - Upheaval (UH): Upheaval is a localized upward movement in a pavement due to swelling of the subgrade.
+
+(Figure!!!)
+
+### Data collection
+
+The team collectes the hand-labeled data by repeatedly driving down several known stretches of roads, and continuously recording raw accelerometer traces. Traces were post-processed to select out only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
+
+(Figure!!!)
 <div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all.png"/></div>
+
+### Pothole detection
+
+The intuition behind our algorithm is that anomalous road conditions are reﬂected in features of the acceleration data. The problem of identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, manholes, curbs, railroad crossings, and expansion joints). While most anomalies can be characterized as high-energy events in the acceleration signal, signal energy content alone is not sufﬁcient as a detection criterion, because many high-energy events should not be considered road anomalies.
+
+
 
 ## 5 Discussion
 
