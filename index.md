@@ -57,6 +57,9 @@ MPU6050 sensor module is complete 6-axis Motion Tracking Device. It combines 3-a
   - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces
   - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
 ```
+#### Accelerometer Placement
+
+图和方向
 
 (2) GPS sensor: L76X GPS Module
 
@@ -73,6 +76,7 @@ L76X GPS Module is a general Global Navigation Satellite System (GNSS) module wh
   - 2x LEDs for indicating the module working status
   - Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32)
 ```
+
 #### GNSS Specifications
 ```markdown
   - Band: GPS L1(1575.42Mhz), BD2 B1 (1561.098MHz)
@@ -130,17 +134,15 @@ According to the sampling principle, the sampling frequency (fs) needs to be at 
 
 #### Absent value of sensors
 
-GPS receivers often encounter missing signals, especially when the GPS receiver is moving and encounter various obstructions such as bridges, buildings, tunnels, etc. The receiver cannot receive GPS signals with sufficient signal-to-noise ratio, and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we can use the previous GPS signals as the georeferenced locations due to the low speed of the testing cars. However, we may use Kalman filter to solve user positioning equation for the real environments.
+GPS receivers often encounter missing signals, especially when the GPS receiver is moving and encounter various obstructions such as bridges, buildings, tunnels, etc. The receiver cannot receive GPS signals with sufficient signal-to-noise ratio, and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we can use the linear interpolation between GPS readings as the georeferenced locations due to the low speed of the testing cars.
 
-For the zero readings of the accelerometer, the team ﬁlls the missing values with linear interpolation.
+For the zero readings of the accelerometer, the team also ﬁlls the missing values with linear interpolation.
 
 #### Signal smoothing
 
 To discover important patterns in our data while leaving out things that are unimportant (i.e. noise), the teams apply moving average to smooth the accelerometer signals. The goal of smoothing is to produce slow changes in value so that it's easier to see trends in our data.
 
-## 4 Experiments and Results
-
-### Pavement defect types
+### 3.4 Pavement defect patterns
 
 The team focused on collecting a diverse set of samples, including the following event classes:
 
@@ -150,7 +152,9 @@ The team focused on collecting a diverse set of samples, including the following
   
   - Upheaval (UH): Upheaval is a localized upward movement in a pavement due to swelling of the subgrade.
 
-(Figure!!!)
+(Figure!!! 实地和信号图)
+
+## 4 Experiments and Results
 
 ### Data collection
 
@@ -158,6 +162,13 @@ The team collectes the hand-labeled data by repeatedly driving down several know
 
 (Figure!!!)
 <div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all.png"/></div>
+
+### Indoor experiments
+
+
+### Outdoor experiments
+
+
 
 ### Pothole detection
 
@@ -180,4 +191,6 @@ Discuss the insights from the project
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
 [5] L76X GPS Module User Manual. https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf.
+
+[6] 13 PAVEMENT DEFECTS AND FAILURES YOU SHOULD KNOW. https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/.
 
