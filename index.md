@@ -120,9 +120,23 @@ Wiki : www.waveshare.com/wiki/L76X_GPS_Module
 
 ### 3.3 Signal Conditioning and Processing
 
+#### Sampling frequency
+
 According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (fh): fs > 2fh. If the sampling frequency was chosen to be too small, not only the raw signal could not be described clearly and correctly, but also aliasing would occur, which block the way to attain the useful data information.
 
-Accelerometer: The accelerator sensor is installed under the middle of the bridge to test its vibration on the z-axis. It is hard for us to calculate the frequency response of the deck. To find the appropriate sampling rate, a 1 kHz frequency was used at first and a host of pre-experiments were conducted. 
+  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. Due to the limitation of Raspberry Pi, the team uses  10 Hz frequency at first and a host of pre-experiments were conducted.
+  
+  - GPS sensor: The max frequency of GPS module is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency.
+
+#### Absent value of sensors
+
+GPS receivers often encounter missing signals, especially when the GPS receiver is moving and encounter various obstructions such as bridges, buildings, tunnels, etc. The receiver cannot receive GPS signals with sufficient signal-to-noise ratio, and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we can use the previous GPS signals as the georeference locations due to the low speed of the testing cars. However, we may use Kalman filter to solve user positioning equation.
+
+
+
+#### 
+
+
 
 ## 4 Experiments and Results
 
