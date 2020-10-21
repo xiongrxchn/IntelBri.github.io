@@ -9,7 +9,7 @@
 
 Road potholes are a common nuisance experienced by the vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% on the 2015 [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur as a direct result from surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implement a mobile Raspberry Pi system, which is called Patrolman, for road pothole inspection.
 
-![](/Images/background.png)
+<div align="center"><src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/background.png"/></div>
 
 (Image source: Pothole - Wikipedia https://en.wikipedia.org/wiki/Pothole#cite_note-13)
 
@@ -166,9 +166,10 @@ We have built the sensors (including GPS module and MPU-6050 six-axis accelerome
 
 <div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all_1.jpg"/></div>
 
-#### GPS module test results
+  - GPS module test results
 
-  - Hardware connection
+    - Hardware connection
+    
 Connect L76X GPS module to the board. Four pins are available for use: VCC, GND, TX, and RX.
 
 | L76X GPS Module  | Raspberry Pi (Board)  | Raspberry Pi (BCM) |
@@ -180,23 +181,22 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 
 <div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png"/></div>
 
-- Running code
+  - Running code
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
+<center class="half">
+    <img src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png" width="300"/>
+    <img src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test3.png" width="300"/>
+</center>
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test1.png"/></div>
-
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test2.png"/></div>
-
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test3.png"/></div>
-
-
-#### MPU 6050 sensor test results
+- MPU 6050 sensor test results
 
   - Hardware connection
   
 Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
+
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
 
 | MPU 6050  | Raspberry Pi (Board)  |
 | :----: | :----: |
@@ -205,9 +205,7 @@ Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND,
 | SDA | P3 |
 | SCL | P5 |
 
-<div align="left"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
-
-- Running code
+  - Running code
 
 Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/Acceleration.py). The test results are shown as follows:
 
