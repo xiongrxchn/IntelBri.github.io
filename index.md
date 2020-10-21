@@ -15,7 +15,7 @@ Road potholes are a common nuisance experienced by the vehicle drivers or commut
 
 ### 1.1 Motivation
 
-Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the presence of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in terms of labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. Patrolman uses the three-axis accelerometer and GPS sensor deployed on Raspberry Pi system, relying on the mobility of cars (we use a toy car) to sense the vibration response of the roads being monitored.
+Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the presence of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in terms of labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. Patrolman uses the six-axis accelerometer and GPS sensor deployed on Raspberry Pi system, relying on the mobility of cars (we use a toy car) to sense the vibration response of the roads being monitored.
 
 ### 1.2 Goals
 
@@ -43,7 +43,7 @@ Road conditions are naturally sensed from a moving entity that can measure vibra
 
 The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collect driving data of vehicles (we use a toy car instead), and leverages sensors mounted on a testing vehicle.
 
-(1) Gyro + Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
+(1) Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
 MPU6050 sensor module is complete 6-axis Motion Tracking Device. It combines 3-axis Gyroscope, 3-axis Accelerometer and Digital Motion Processor all in small package. Also, it has additional feature of on-chip Temperature sensor. It has I2C bus interface to communicate with the microcontrollers.
 
@@ -130,13 +130,13 @@ According to the sampling principle, the sampling frequency (fs) needs to be at 
 
 #### Absent value of sensors
 
-GPS receivers often encounter missing signals, especially when the GPS receiver is moving and encounter various obstructions such as bridges, buildings, tunnels, etc. The receiver cannot receive GPS signals with sufficient signal-to-noise ratio, and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we can use the previous GPS signals as the georeference locations due to the low speed of the testing cars. However, we may use Kalman filter to solve user positioning equation.
+GPS receivers often encounter missing signals, especially when the GPS receiver is moving and encounter various obstructions such as bridges, buildings, tunnels, etc. The receiver cannot receive GPS signals with sufficient signal-to-noise ratio, and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we can use the previous GPS signals as the georeferenced locations due to the low speed of the testing cars. However, we may use Kalman filter to solve user positioning equation for the real environments.
 
+For the zero readings of the accelerometer, the team ﬁlls the missing values with linear interpolation.
 
+#### Signal smoothing
 
-#### 
-
-
+To discover important patterns in our data while leaving out things that are unimportant (i.e. noise), the teams apply moving average to smooth the accelerometer signals. The goal of smoothing is to produce slow changes in value so that it's easier to see trends in our data.
 
 ## 4 Experiments and Results
 
