@@ -17,19 +17,19 @@ Install the remote control application Anydeck on the mobile phone to control th
 
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_5.png"/></div>
 
-There are three kinds of defeats: Cracking, Pot Holes and Upheaval.
+There are three kinds of defeats: Cracking, Pot Holes, and Upheaval.
 
 #### Cracking
-Refering to a variety of types of pavement distresses that occur on the surface of pavements. Different types of pavements develop different cracks. Type of cracking is also correlated with the type of climate and traffic.
+Referring to a variety of types of pavement distresses that occur on the surface of pavements. Different types of pavements develop different cracks. Type of cracking is also correlated with the type of climate and traffic.
 
 #### Upheaval
-Localized upward movement in a pavement due to swelling of the subgrade. This can be due to expansive soils that swell due to moisture or frost heave (ice under the pavement).
+A localized upward movement in the pavement due to swelling of the subgrade. This can be due to expansive soils that swell due to moisture or frost heave (ice under the pavement).
 
 #### Potholes
 Missing chunks of pavement, severely sunk in or protruding manhole covers, other significant road surface anomalies.
 
 #### Smooth road
-Segments of road surface that are considered smooth.
+Segments of road surfaces that are considered smooth.
 
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
 
@@ -38,12 +38,12 @@ Segments of road surface that are considered smooth.
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/cracking.png"/></div>
 
 
+After collecting and cleaning all the sets of data, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95 % confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+
+
 ### (3) Interfacing the GPS Unit 
 
 
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/interfacing_GPS.png"/></div>
 
 
-
-## Future Plan
-- Complie all sensors together and test the system under outdoor environments.
