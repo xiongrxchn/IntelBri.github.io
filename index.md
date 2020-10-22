@@ -214,10 +214,9 @@ We have installed the raspberry pi, the sensor MPU-6050 Six-Axis (Gyro + Acceler
 
 ### Indoor Testing results
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor_situation.png"/></div>
+<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/equip.png"/></div>
 
 Test results of Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
-
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
 
@@ -248,7 +247,7 @@ We pubilis sensor readings onto OpenChirp, which can visualize data in the Visua
 
 ### Outdoor experiments
 
-The team collectes the hand-labeled data by repeatedly driving down several known stretches of roads, and continuously recording raw accelerometer traces. Traces were post-processed to select out only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
+The team collects the hand-labeled data by repeatedly driving down several known stretches of roads, and continuously recording raw accelerometer traces. Traces were post-processed to select out only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
 
