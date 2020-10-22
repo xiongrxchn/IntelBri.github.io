@@ -121,7 +121,7 @@ L76X GPS Module is a general Global Navigation Satellite System (GNSS) module wh
   - GIS application
 ```
 #### Development Resources
-Wiki : www.waveshare.com/wiki/L76X_GPS_Module
+Wiki: www.waveshare.com/wiki/L76X_GPS_Module
 
 ### 3.3 Signal Conditioning and Processing
 
@@ -164,7 +164,7 @@ We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis acc
   - Set up the test environment
 We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials.
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.png"/></div>
+<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.png"/></div>
 
   - GPS module test results
 
@@ -179,8 +179,6 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 | TX | 10 | P15 |
 | RX | 8 | P14 |
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/GPS.png"/></div>
-
   - Running code
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
@@ -192,8 +190,6 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
   - Hardware connection
   
 Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
-
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu6050.jpeg"/></div>
 
 | MPU 6050  | Raspberry Pi (Board)  |
 | :----: | :----: |
