@@ -240,7 +240,7 @@ Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.ht
 | lat | degree | false |
 | lon | degree | false |
 
-We pubilis sensor readings onto OpenChirp, which can visualize data in the Visualization tab. See acc_openchirp.py and gps_openchirp.py for the complete code. Note: You should use the Device ID and Token of the device you just created.
+We publish sensor readings onto OpenChirp, which can visualize data in the Visualization tab. See acc_openchirp.py (https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py) and gps_openchirp.py (https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the complete code. Note: You should use the Device ID and Token of the device you just created.
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_openchirp.png"/></div>
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/acc_openchirp.png"/></div>
