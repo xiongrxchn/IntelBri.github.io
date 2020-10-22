@@ -214,7 +214,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 ### Install the raspberry pi and sensors on the toy car
 
-We have installed the raspberry pi，the sensor MPU-6050 Six-Axis (Gyro + Accelerometer) and GPS module on the toy car.
+We have installed the raspberry pi, the sensor MPU-6050 Six-Axis (Gyro + Accelerometer) and GPS module on the toy car.
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
 
@@ -226,7 +226,7 @@ We have installed the raspberry pi，the sensor MPU-6050 Six-Axis (Gyro + Accele
 Test results of Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
 
 
-<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_2.png"/></div>
 
@@ -237,7 +237,7 @@ Test results of Z-axis acceleration show significant patterns when the car cross
 
 The team collectes the hand-labeled data by repeatedly driving down several known stretches of roads, and continuously recording raw accelerometer traces. Traces were post-processed to select out only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
 
-<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
 
 ### Pothole detection
 
