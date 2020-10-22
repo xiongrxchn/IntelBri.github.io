@@ -2,7 +2,7 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
-[![](http://img.youtube.com/vi/hqrEPRd0-cE/0.jpg)](http://www.youtube.com/watch?v=hqrEPRd0-cE "")
+[![Patrolman](http://img.youtube.com/vi/hqrEPRd0-cE/0.jpg)](http://www.youtube.com/watch?v=hqrEPRd0-cE "Patrolman")
 
 ## 1 Introduction
 
