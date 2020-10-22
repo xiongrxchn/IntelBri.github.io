@@ -260,7 +260,9 @@ The team collectes the hand-labeled data by repeatedly driving down several know
 
 ### Pothole detection
 
-The intuition behind our algorithm is that anomalous road conditions are reﬂected in features of the acceleration data. The problem of identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, manholes, curbs, railroad crossings, and expansion joints). While most anomalies can be characterized as high-energy events in the acceleration signal, signal energy content alone is not sufﬁcient as a detection criterion, because many high-energy events should not be considered road anomalies.
+The movitation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data. The problem of identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, cracks, and upheaval).
+
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/road_type.png"/></div>
 
 After collecting and cleaning all the sets of data, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95 % confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
