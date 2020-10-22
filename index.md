@@ -185,7 +185,7 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
-<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test4.jpg"/></div>
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test4.jpg"/></div>
 
 - MPU 6050 sensor test results
 
@@ -273,7 +273,11 @@ After collecting and cleaning all the sets of data, we make the figures of three
 
 ## 5 Discussion
 
-Discuss the insights from the project
+- This project designed and implemented the patrolman system, using Raspberry Pi for road pothole inspection. It uses the mobility of the participating vehicles, gathering data from the accelerometer and GPS sensors.
+
+- We focus on analyzing three typical types of road conditions, including: Crack (CR), Potholes (PH), and Upheaval (UH). Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
+
+- In the future, we will apply machine-learning based approach for automatic detection of diverse road conditions.
 
 ## References
 
