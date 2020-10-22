@@ -2,8 +2,8 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
-### video link:
-
+<iframe src="https://youtu.be/hqrEPRd0-cE" width="600" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/367126470">
 
 ## 1 Introduction
 
