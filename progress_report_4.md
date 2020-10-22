@@ -8,7 +8,14 @@ We
 
 ### (1) Outdoor Testing Preparation
 
+Install the remote control application Anydeck on the mobile phone to control the Raspberry Pi outdoor.
+
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/screenshot.jpg"/></div>
+
+
+### (2) Outdoor Testing Results
+
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_5.png"/></div>
 
 There are three kinds of defeats: Cracking, Pot Holes and Upheaval.
 
@@ -27,11 +34,6 @@ Localized upward movement in a pavement due to swelling of the subgrade. This ca
 
 -Smooth road:
 Segments of road surface that are considered smooth.
-
-
-### (2) Outdoor Testing Results
-
-<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_5.png"/></div>
 
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
 
