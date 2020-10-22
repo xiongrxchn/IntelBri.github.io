@@ -3,8 +3,6 @@
 
 ## Current progress
 
-We 
-
 
 ### (1) Outdoor Testing Preparation
 
