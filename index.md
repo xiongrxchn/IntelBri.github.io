@@ -216,7 +216,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 We have installed the raspberry pi, the sensor MPU-6050 Six-Axis (Gyro + Accelerometer) and GPS module on the toy car.
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
+<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.png"/></div>
 
 ### Indoor Testing results
 
