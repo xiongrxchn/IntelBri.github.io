@@ -179,7 +179,7 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 | TX | 10 | P15 |
 | RX | 8 | P14 |
 
-  - Running code
+   - Running code
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
@@ -198,7 +198,7 @@ Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND,
 | SDA | P3 |
 | SCL | P5 |
 
-  - Running code
+   - Running code
 
 Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/Acceleration.py). The test results are shown as follows:
 
