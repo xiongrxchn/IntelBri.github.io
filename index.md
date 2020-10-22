@@ -2,6 +2,8 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
+## Video:
+
 [![Patrolman](http://img.youtube.com/vi/hqrEPRd0-cE/0.jpg)](http://www.youtube.com/watch?v=hqrEPRd0-cE "Patrolman")
 
 ## 1 Introduction
@@ -185,7 +187,7 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test4.jpg"/></div>
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test4.jpg"/></div>
 
 - MPU 6050 sensor test results
 
