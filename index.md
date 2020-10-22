@@ -2,8 +2,7 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
-<iframe src="https://youtu.be/hqrEPRd0-cE" width="600" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/367126470">
+[![IMAGE ALT TEXT](http://img.youtu.be/hqrEPRd0-cE/0.jpg)](https://youtu.be/hqrEPRd0-cE "CameraMaster")
 
 ## 1 Introduction
 
