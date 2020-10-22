@@ -276,11 +276,11 @@ After collecting and cleaning all the sets of data, we make the figures of three
 
 ## References
 
-[1] Editor, Swindonian (30 December 2018). "More than half a million potholes were reported last year throughout the UK". The Swindonian. Retrieved 2 January 2019.
+[1] Editor, Swindonian (30 December 2018). "More than half a million potholes were reported last year throughout the UK". The Swindonian.
 
-[2] Hingston, Michael (April 2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus. Retrieved 20 March 2015.
+[2] Hingston, Michael (April 2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus.
 
-[3] S, Kamaljit Kaur; DelhiJuly 24, hu; July 24, 2018UPDATED; Ist, 2018 00:37. "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. Retrieved 4 August 2019.
+[3] S, Kamaljit Kaur; DelhiJuly 24, hu; July 24, 2018UPDATED; Ist, 2018 00:37. "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. 
 
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
@@ -288,3 +288,4 @@ After collecting and cleaning all the sets of data, we make the figures of three
 
 [6] 13 PAVEMENT DEFECTS AND FAILURES YOU SHOULD KNOW. https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/.
 
+[7] Simple Device Tutorial, https://github.com/OpenChirp/docs/wiki/simple-device-tutorial.
