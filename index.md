@@ -164,7 +164,7 @@ We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis acc
   - Set up the test environment
 We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials.
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all_1.jpg"/></div>
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.jpg"/></div>
 
   - GPS module test results
 
@@ -216,7 +216,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 We have installed the raspberry pi, the sensor MPU-6050 Six-Axis (Gyro + Accelerometer) and GPS module on the toy car.
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.png"/></div>
+<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
 
 ### Indoor Testing results
 
