@@ -218,7 +218,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 ### (1) Getting the toy car
 We have purchased the toy car from [Taobao](https://www.taobao.com/).
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car.png"/></div>
+<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
 
 ### (2) Install the raspberry pi and sensors on the toy car
 
