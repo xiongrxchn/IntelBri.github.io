@@ -154,6 +154,7 @@ The team focused on collecting a diverse set of samples, including the following
 
 (Figure!!! 实地和信号图)
 
+
 ## 4 Experiments and Results
 
 ### Data collection
@@ -245,7 +246,16 @@ Test results of Z-axis acceleration show significant patterns when the car cross
 
 The team collectes the hand-labeled data by repeatedly driving down several known stretches of roads, and continuously recording raw accelerometer traces. Traces were post-processed to select out only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
 
-<div align="center"><img width="400" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all.png"/></div>
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
+
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/pot_holes_upheaval.png"/></div>
+
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/cracking.png"/></div>
+
+<div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/interfacing_GPS.png"/></div>
+
+After collecting and cleaning all the sets of data, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95 % confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+
 
 ### Pothole detection
 
