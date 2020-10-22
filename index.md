@@ -149,6 +149,8 @@ The team focused on collecting a diverse set of samples, including the following
   - Potholes (PH): Missing chunks of pavement, severely sunk in or protruding manhole covers, other signiﬁcant road surface anomalies.
   
   - Upheaval (UH): Upheaval is a localized upward movement in a pavement due to swelling of the subgrade.
+  
+  - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base which may leads to more serious problems such as potholes.
 
 <div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/defect_type.png"/></div>
 
