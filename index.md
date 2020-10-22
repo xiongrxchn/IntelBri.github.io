@@ -153,6 +153,9 @@ The team focused on collecting a diverse set of samples, including the following
   
   - Upheaval (UH): Upheaval is a localized upward movement in a pavement due to swelling of the subgrade.
 
+<div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/defect_type.png"/></div>
+
+(Image source: https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
 
 ## 4 Experiments and Results
 
