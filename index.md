@@ -189,7 +189,9 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
 
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test4.jpg"/></div>
 <div align="center"><img width="1500" src="/Images/gps_test4.jpg"/></div>
+
 ![](/Images/gps_test4.jpg)
+
 
 - MPU 6050 sensor test results
 
