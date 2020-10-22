@@ -2,7 +2,7 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
-[![IMAGE ALT TEXT](http://img.youtu.be/hqrEPRd0-cE/0.jpg)](https://youtu.be/hqrEPRd0-cE "CameraMaster")
+[![](http://img.youtube.com/vi/hqrEPRd0-cE/0.jpg)](http://www.youtube.com/watch?v=hqrEPRd0-cE "")
 
 ## 1 Introduction
 
