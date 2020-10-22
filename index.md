@@ -235,6 +235,8 @@ Test results of Z-axis acceleration show significant patterns when the car cross
 
 Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.html), we create a device named "Patrolman" on [OpenChirp](https://openchirp.io/).
 
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_3.png"/></div>
+
 #### Transducers
 
 | Name  | Unit | Actuable |
@@ -244,6 +246,10 @@ Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.ht
 | accel_z | g | false |
 | lat | degree | false |
 | lon | degree | false |
+
+We pubilis sensor readings onto OpenChirp, which can visualize data in the Visualization tab. See acc_openchirp.py and gps_openchirp.py for the complete code. Note: You should use the Device ID and Token of the device you just created.
+
+
 
 ### Outdoor experiments
 
