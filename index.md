@@ -218,7 +218,6 @@ We have installed the raspberry pi, the sensor MPU-6050 Six-Axis (Gyro + Acceler
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
 
-
 ### Indoor Testing results
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor_situation.png"/></div>
@@ -232,6 +231,19 @@ Test results of Z-axis acceleration show significant patterns when the car cross
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_3.png"/></div>
 
+### Set up IoT device
+
+Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.html), we create a device named "Patrolman" on [OpenChirp](https://openchirp.io/).
+
+#### Transducers
+
+| Name  | Unit | Actuable |
+| :----: | :----: | :----:|
+| accel_x | g | false |
+| accel_y | g | false |
+| accel_z | g | false |
+| lat | degree | false |
+| lon | degree | false |
 
 ### Outdoor experiments
 
