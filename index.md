@@ -220,9 +220,7 @@ Test results of Z-axis acceleration show significant patterns when the car cross
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_2.png"/></div>
-
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test_3.png"/></div>
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/acc_indoor.png"/></div>
 
 ### Set up IoT device
 
