@@ -105,7 +105,6 @@ L76X GPS Module is a general Global Navigation Satellite System (GNSS) module wh
   - Protocols: NMEA 0183, PMTK
   - Power supply voltage: 5V / 3.3V
   - Operating current: 11mA
-  - Operating temperature: -40℃ ~ 85℃
   - Dimensions: 32.5mm x 25.5mm
 ```
 
