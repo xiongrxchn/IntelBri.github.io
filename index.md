@@ -215,7 +215,7 @@ We designed the Patrolman system, using Raspberry Pi to detect and report road p
 
 #### Indoor testing results
 
-In the indoor experiments, the adopted sensors communicate the collected vibration data to the PC via a Wi-Fi router.
+For the indoor experiments, the adopted sensors communicate the collected vibration data to the PC via a Wi-Fi router.
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/equip.png"/></div>
 
