@@ -161,7 +161,7 @@ The team focused on collecting a diverse set of samples, including the following
   
   - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base, leading to more serious problems such as potholes.
 
-![](Images/defect_type.png.png)
+![](Images/defect_type.png)
 
 (Image source: https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
 
