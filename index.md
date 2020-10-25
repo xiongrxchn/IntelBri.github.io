@@ -2,7 +2,7 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
-## Video:
+## Video link: [http://www.youtube.com/watch?v=wE4p8kOEM_Y](http://www.youtube.com/watch?v=wE4p8kOEM_Y)
 
 [![](http://img.youtube.com/vi/wE4p8kOEM_Y/0.jpg)](http://www.youtube.com/watch?v=wE4p8kOEM_Y)
 
