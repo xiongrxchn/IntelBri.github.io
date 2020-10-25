@@ -12,7 +12,7 @@ Road potholes are a common nuisance experienced by vehicle drivers or commuters.
 
 ![](Images/background.png)
 
-(Image source: Pothole - Wikipedia https://en.wikipedia.org/wiki/Pothole#cite_note-13)
+Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_note-13)
 
 ### 1.1 Motivation
 
@@ -117,7 +117,7 @@ L76X GPS Module is a general Global Navigation Satellite System (GNSS) module wh
   - GIS application
 ```
 #### Development Resources
-Wiki: www.waveshare.com/wiki/L76X_GPS_Module
+Wiki: [www.waveshare.com/wiki/L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module)
 
 ### 3.3 Signal Conditioning and Processing
 
@@ -163,7 +163,7 @@ The team focused on collecting a diverse set of samples, including the following
 
 ![](Images/defect_type.png)
 
-(Image source: https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
+Image source: [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
 
 ## 4 Experiments and Results
 
@@ -302,8 +302,8 @@ After collecting and cleaning all the data sets, we make the figures of three ki
 
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
-[5] L76X GPS Module User Manual. https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf.
+[5] L76X GPS Module User Manual. [https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf).
 
-[6] Brett Neal, 13 Pavement Defects and Failures You Shhould Know. https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/.
+[6] Brett Neal, 13 Pavement Defects and Failures You Shhould Know. [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/).
 
-[7] Simple Device Tutorial, https://github.com/OpenChirp/docs/wiki/simple-device-tutorial.
+[7] Simple Device Tutorial, [https://github.com/OpenChirp/docs/wiki/simple-device-tutorial](https://github.com/OpenChirp/docs/wiki/simple-device-tutorial).
