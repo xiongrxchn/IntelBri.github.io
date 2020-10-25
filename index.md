@@ -4,7 +4,7 @@
 
 ## Video link: [http://www.youtube.com/watch?v=wE4p8kOEM_Y](http://www.youtube.com/watch?v=wE4p8kOEM_Y)
 
-![](Images/video.png)
+![](Images/video.tiff)
 
 ## 1 Introduction
 
