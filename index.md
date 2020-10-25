@@ -286,6 +286,9 @@ After collecting and cleaning all the data sets, we make the figures of three ki
 
 ![](Images/cracking.png)
 
+![](Images/stft.png)
+
+
 ![](Images/interfacing_GPS.png)
 
 ## 5 Discussion
