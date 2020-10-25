@@ -10,8 +10,6 @@
 
 Road potholes are a common nuisance experienced by vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% in 2015 [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada, reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur due to surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
-<img src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/background.png" width="800"/>
-
 ![](Images/background.png)
 
 (Image source: Pothole - Wikipedia https://en.wikipedia.org/wiki/Pothole#cite_note-13)
@@ -163,7 +161,7 @@ The team focused on collecting a diverse set of samples, including the following
   
   - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base, leading to more serious problems such as potholes.
 
-<div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/defect_type.png"/></div>
+![](Images/defect_type.png.png)
 
 (Image source: https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
 
@@ -179,7 +177,7 @@ We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis acc
   
 We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials. The sampling frequencies of the MPU-6050 accelerometer and GPS module are XXXHz and 1 Hz, respectively.
 
-<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.png"/></div>
+![](Images/indoor.png)
 
   - GPS module test results
 
@@ -198,7 +196,7 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
-<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test4.jpg"/></div>
+![](Images/gps_test4.jpg)
 
 - MPU 6050 sensor test results
 
@@ -217,7 +215,7 @@ Connect the MPU 6050 sensor to the board. Four pins are available for use: VCC, 
 
 Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/Acceleration.py). The test results are shown as follows:
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test1.png"/></div>
+![](Images/mpu_test1.png)
 
 ### Indoor experiments
 
@@ -225,25 +223,25 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the participating vehicles (we use the toy car in the experiments), gathering data from the MPU-6050 accelerometer and GPS sensors. Also, we use the power bank to supply power of the system.
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
+![](Images/car0.png)
 
 #### Indoor testing results
 
 For the indoor experiments, the adopted sensors communicate the collected vibration data to the PC via a Wi-Fi router.
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/equip.png"/></div>
+![](Images/equip.png)
 
 Test results of Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
+![](Images/mpu_indoor_test.png)
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/acc_indoor.png"/></div>
+![](Images/acc_indoor.png)
 
 #### Set up IoT device
 
 Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.html), we create a device named "Patrolman" on [OpenChirp](https://openchirp.io/).
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/Transducers.png"/></div>
+![](Images/Transducers.png)
 
 ##### Transducers
 
@@ -259,8 +257,8 @@ We publish sensor readings onto OpenChirp, which can visualize data in the Visua
 
 See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py)and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the complete code. Note: You should use the Device ID and Token of the device you just created.
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_openchirp.png"/></div>
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/acc_openchirp.png"/></div>
+![](Images/gps_openchirp.png)
+![](Images/acc_openchirp.png)
 
 ### Outdoor experiments
 
@@ -268,23 +266,23 @@ Our experimental works were conducted separately in Zhangzhou and Nanjing, China
 
 Using mobile phone's network hotspots, we control the Raspberry Pi with remote-control app Anydeck and communicate the collected vibration data and GPS signals to the OpenChirp.
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoors.png"/></div>
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
+![](Images/outdoors.png)
+![](Images/outdoor_7.png)
 
 ### Pothole detection
 
 The motivation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data. Identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, cracks, and upheaval).
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/road_type.png"/></div>
+![](Images/road_type.png)
 
 After collecting and cleaning all the data sets, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/pot_holes_upheaval.png"/></div>
+![](Images/pot_holes_upheaval.png)
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/cracking.png"/></div>
+![](Images/cracking.png)
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/interfacing_GPS.png"/></div>
+![](Images/interfacing_GPS.png)
 
 ## 5 Discussion
 
