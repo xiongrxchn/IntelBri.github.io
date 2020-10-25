@@ -125,18 +125,16 @@ Wiki: [www.waveshare.com/wiki/L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_M
 
 According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (FH): fs > 2fh. If the sampling frequency was chosen to be too small, the raw signal could not be described clearly and correctly, but aliasing would occur, which block the way to attain the useful data information.
 
-  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses several sampling frequencies and conducts a host of pre-experiments.
+  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses several sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
+
+| Sampling frequency | 1Hz | 2Hz | 5Hz | 10Hz | 20Hz | 50Hz | 100Hz |
+| :----: | :----: | :----:| :----: | :----:|:----: | :----:| :----:|
+| Signal received | 300 | 300 | 300 | 300 | 300 | 300 | 300 |
+| Theoretical sampling time (s) | 300 | 150 | 60 | 30 | 15 | 6 | 3 |
+| Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 |
   
-  (1) Sampling frequency = 10Hz
-  
-  The team sets the 10Hz as the frequency of the accelerometer at first and counts the actual signals received in one minute.
-  
-  In the experiments, the Raspberry Pi actually received XXX signals in one minute.
-  
-  (2) 
-  
-  
-  
+  In the experiments, we set the sampling of the Accelerometer to 10Hz.
+ 
   GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency due to the low speed of our system.
   
 #### Absent value of sensors
