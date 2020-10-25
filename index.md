@@ -2,17 +2,17 @@
 
 • [Pengkun Liu](pengkunl@andrew.cmu.edu); [Ruoxin Xiong](ruoxinx@andrew.cmu.edu)
 
-## Video:
+## Video link: [http://www.youtube.com/watch?v=wE4p8kOEM_Y](http://www.youtube.com/watch?v=wE4p8kOEM_Y)
 
-[![](http://img.youtube.com/vi/wE4p8kOEM_Y/0.jpg)](http://www.youtube.com/watch?v=wE4p8kOEM_Y "")
+![](Images/video0.png)
 
 ## 1 Introduction
 
 Road potholes are a common nuisance experienced by vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% in 2015 [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada, reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur due to surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
-<div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/background.png"/></div>
+![](Images/background.png)
 
-(Image source: Pothole - Wikipedia https://en.wikipedia.org/wiki/Pothole#cite_note-13)
+Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_note-13)
 
 ### 1.1 Motivation
 
@@ -117,7 +117,7 @@ L76X GPS Module is a general Global Navigation Satellite System (GNSS) module wh
   - GIS application
 ```
 #### Development Resources
-Wiki: www.waveshare.com/wiki/L76X_GPS_Module
+Wiki: [www.waveshare.com/wiki/L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module)
 
 ### 3.3 Signal Conditioning and Processing
 
@@ -125,19 +125,18 @@ Wiki: www.waveshare.com/wiki/L76X_GPS_Module
 
 According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (FH): fs > 2fh. If the sampling frequency was chosen to be too small, the raw signal could not be described clearly and correctly, but aliasing would occur, which block the way to attain the useful data information.
 
-  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses several sampling frequencies and conducts a host of pre-experiments.
-  
-  (1) Sampling frequency = 10Hz
-  
-  The team sets the 10Hz as the frequency of the accelerometer at first and counts the actual signals received in one minute.
-  
-  In the experiments, the Raspberry Pi actually received XXX signals in one minute.
-  
-  (2) 
-  
-  
-  
-  GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency due to the low speed of our system.
+  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses several sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
+
+| Sampling frequency | 1Hz | 2Hz | 5Hz | 10Hz | 20Hz | 50Hz | 100Hz |
+| :----: | :----: | :----:| :----: | :----:|:----: | :----:| :----:|
+| Signal received | 300 | 300 | 300 | 300 | 300 | 300 | 300 |
+| Theoretical sampling time (s) | 300 | 150 | 60 | 30 | 15 | 6 | 3 |
+| Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 |
+| Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 
+ 
+ In the experiments, the sampling frequencies of the Accelerometer are tested for 5Hz and 10Hz.
+ 
+  - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency due to the low speed of our system.
   
 #### Absent value of sensors
 
@@ -161,9 +160,9 @@ The team focused on collecting a diverse set of samples, including the following
   
   - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base, leading to more serious problems such as potholes.
 
-<div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/defect_type.png"/></div>
+![](Images/defect_type.png)
 
-(Image source: https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
+Image source: [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
 
 ## 4 Experiments and Results
 
@@ -177,7 +176,7 @@ We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis acc
   
 We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials. The sampling frequencies of the MPU-6050 accelerometer and GPS module are XXXHz and 1 Hz, respectively.
 
-<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.png"/></div>
+![](Images/indoor.png)
 
   - GPS module test results
 
@@ -196,7 +195,7 @@ Connect L76X GPS module to the board. Four pins are available for use: VCC, GND,
 
 Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/GPS.py). The test results are shown as follows:
 
-<div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_test4.jpg"/></div>
+![](Images/gps_test4.jpg)
 
 - MPU 6050 sensor test results
 
@@ -215,7 +214,7 @@ Connect the MPU 6050 sensor to the board. Four pins are available for use: VCC, 
 
 Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/Acceleration.py). The test results are shown as follows:
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_test1.png"/></div>
+![](Images/mpu_test1.png)
 
 ### Indoor experiments
 
@@ -223,25 +222,25 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the participating vehicles (we use the toy car in the experiments), gathering data from the MPU-6050 accelerometer and GPS sensors. Also, we use the power bank to supply power of the system.
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
+![](Images/car0.png)
 
 #### Indoor testing results
 
 For the indoor experiments, the adopted sensors communicate the collected vibration data to the PC via a Wi-Fi router.
 
-<div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/equip.png"/></div>
+![](Images/equip.png)
 
 Test results of Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/mpu_indoor_test.png"/></div>
+![](Images/mpu_indoor_test.png)
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/acc_indoor.png"/></div>
+![](Images/acc_indoor.png)
 
 #### Set up IoT device
 
 Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.html), we create a device named "Patrolman" on [OpenChirp](https://openchirp.io/).
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/Transducers.png"/></div>
+![](Images/Transducers.png)
 
 ##### Transducers
 
@@ -257,8 +256,8 @@ We publish sensor readings onto OpenChirp, which can visualize data in the Visua
 
 See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py)and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the complete code. Note: You should use the Device ID and Token of the device you just created.
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/gps_openchirp.png"/></div>
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/acc_openchirp.png"/></div>
+![](Images/gps_openchirp.png)
+![](Images/acc_openchirp.png)
 
 ### Outdoor experiments
 
@@ -266,22 +265,23 @@ Our experimental works were conducted separately in Zhangzhou and Nanjing, China
 
 Using mobile phone's network hotspots, we control the Raspberry Pi with remote-control app Anydeck and communicate the collected vibration data and GPS signals to the OpenChirp.
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
+![](Images/outdoors.png)
+![](Images/outdoor_7.png)
 
 ### Pothole detection
 
 The motivation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data. Identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, cracks, and upheaval).
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/road_type.png"/></div>
+![](Images/road_type.png)
 
 After collecting and cleaning all the data sets, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/pot_holes_upheaval.png"/></div>
+![](Images/pot_holes_upheaval.png)
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/cracking.png"/></div>
+![](Images/cracking.png)
 
-<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/interfacing_GPS.png"/></div>
+![](Images/interfacing_GPS.png)
 
 ## 5 Discussion
 
@@ -301,8 +301,8 @@ After collecting and cleaning all the data sets, we make the figures of three ki
 
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
-[5] L76X GPS Module User Manual. https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf.
+[5] L76X GPS Module User Manual. [https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf).
 
-[6] Brett Neal, 13 Pavement Defects and Failures You Shhould Know. https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/.
+[6] Brett Neal, 13 Pavement Defects and Failures You Shhould Know. [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/).
 
-[7] Simple Device Tutorial, https://github.com/OpenChirp/docs/wiki/simple-device-tutorial.
+[7] Simple Device Tutorial, [https://github.com/OpenChirp/docs/wiki/simple-device-tutorial](https://github.com/OpenChirp/docs/wiki/simple-device-tutorial).
