@@ -170,10 +170,12 @@ The team focused on collecting a diverse set of samples, including the following
 ### Data collection
 
   - Getting hardware
-We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis accelerometers) from [Taobao](https://www.taobao.com/).
+  
+We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis accelerometer) from [Taobao](https://www.taobao.com/).
 
   - Set up the test environment
-We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials.
+  
+We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials. The sampling frequencies of the MPU-6050 accelerometer and GPS module are XXXHz and 1 Hz, respectively.
 
 <div align="center"><img width="1000" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/indoor.png"/></div>
 
@@ -291,11 +293,11 @@ After collecting and cleaning all the data sets, we make the figures of three ki
 
 ## References
 
-[1] Editor, Swindonian (30 December 2018). "More than half a million potholes were reported last year throughout the UK". The Swindonian.
+[1] Editor, Swindonian (2018). "More than half a million potholes were reported last year throughout the UK". The Swindonian.
 
-[2] Hingston, Michael (April 2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus.
+[2] Hingston, Michael (2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus.
 
-[3] Kamaljit Kaur S., (24 July 2018). "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. 
+[3] Kamaljit Kaur S., (2018). "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. 
 
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
