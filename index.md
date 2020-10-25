@@ -133,7 +133,8 @@ According to the sampling principle, the sampling frequency (fs) needs to be at 
 | Theoretical sampling time (s) | 300 | 150 | 60 | 30 | 15 | 6 | 3 |
 | Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 |
 | Error rate (%) |  | 0.3 | 0.6 | 3.3 | 6.7 | 13.3 | 33.3 | 66.7 | 
-  In the experiments, we set the sampling of the Accelerometer to 10Hz.
+ 
+ In the experiments, the sampling frequencies of the Accelerometer are tested for 5Hz and 10Hz.
  
   GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency due to the low speed of our system.
   
