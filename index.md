@@ -12,6 +12,8 @@ Road potholes are a common nuisance experienced by vehicle drivers or commuters.
 
 <img src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/background.png" width="800"/>
 
+![](Images/background.png)
+
 (Image source: Pothole - Wikipedia https://en.wikipedia.org/wiki/Pothole#cite_note-13)
 
 ### 1.1 Motivation
