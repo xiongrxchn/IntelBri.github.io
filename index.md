@@ -127,14 +127,19 @@ According to the sampling principle, the sampling frequency (fs) needs to be at 
 
   - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses several sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
 
-| Sampling frequency | 1Hz | 2Hz | 5Hz | 10Hz | 20Hz | 50Hz | 100Hz |
-| :----: | :----: | :----:| :----: | :----:|:----: | :----:| :----:|
-| Signal received | 300 | 300 | 300 | 300 | 300 | 300 | 300 |
-| Theoretical sampling time (s) | 300 | 150 | 60 | 30 | 15 | 6 | 3 |
-| Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 |
-| Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 
+ In the experiments, the sampling frequencies of the Accelerometer are tested for 1Hz, 2Hz, 5Hz, 10Hz, 20Hz, 50Hz, 100Hz and 200Hz. 
  
- In the experiments, the sampling frequencies of the Accelerometer are tested for 5Hz and 10Hz.
+| Sampling frequency | 1Hz | 2Hz | 5Hz | 10Hz | 20Hz | 50Hz | 100Hz | 200Hz |
+| :----: | :----: | :----:| :----: | :----:|:----: | :----:| :----:| :----:|
+| Signal received | 300 | 300 | 300 | 300 | 300 | 300 | 300 | 300 |
+| Theoretical sampling time (s) | 300 | 150 | 60 | 30 | 15 | 6 | 3 | | 1.5 |
+| Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 | 3 |
+| Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 100 | 
+
+Especially when the sampling frequencies of the Accelerometer are tested for 200Hz, some data points are colleted with zero values with error rate 100%.
+
+ ![](Images/frequency_test.png)
+
  
   - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency due to the low speed of our system.
   
