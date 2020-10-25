@@ -132,7 +132,7 @@ According to the sampling principle, the sampling frequency (fs) needs to be at 
 | Signal received | 300 | 300 | 300 | 300 | 300 | 300 | 300 |
 | Theoretical sampling time (s) | 300 | 150 | 60 | 30 | 15 | 6 | 3 |
 | Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 |
-| Error rate (%) |  | 0.3 | 0.6 | 3.3 | 6.7 | 13.3 | 33.3 | 66.7 | 
+| Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 
  
  In the experiments, the sampling frequencies of the Accelerometer are tested for 5Hz and 10Hz.
  
