@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are a common nuisance experienced by vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% on 2015 [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur as a direct result from surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implement a mobile Raspberry Pi system, which is called Patrolman, for road pothole inspection.
+Road potholes are a common nuisance experienced by vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% in 2015 [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada, reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur due to surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 <div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/background.png"/></div>
 
@@ -16,11 +16,11 @@ Road potholes are a common nuisance experienced by vehicle drivers or commuters.
 
 ### 1.1 Motivation
 
-Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the presence of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in terms of labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. Patrolman uses the six-axis accelerometer and GPS sensor deployed on Raspberry Pi system, relying on the mobility of cars (we use a toy car) to sense the vibration response of the roads being monitored.
+Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. Patrolman uses the six-axis accelerometer and GPS sensor deployed on the Raspberry Pi system, relying on cars' mobility (we use a toy car) to sense the vibration response of the roads being monitored.
 
 ### 1.2 Goals
 
-This project presents an alternative system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the mobility of the participating vehicles, gathering data from the six-axis accelerometer and GPS sensors, and processing the data to assess road surface conditions. This project will provide an affordable sensing method to conduct pavement condition assessments.
+This project presents an mobile system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the participating vehicles' mobility, gathering data from the six-axis accelerometer and GPS sensors, and processing the data to assess road surface conditions. This project will provide an affordable sensing method to conduct pavement condition assessments.
 
 ## 2 For Progress Reports
 
@@ -36,17 +36,17 @@ This project presents an alternative system – Patrolman, using Raspberry Pi to
 
 Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. The general monitoring metrics intended to measure road condition and performance including:
 
-1. Vibration - Acceleration is the most common measure taken to characterize vibrations. When the vehicle drive on flat road conditions, the three x, y, and z gravity of acceleration values (g) were steady while the three x, y, and z gravity of acceleration values (g) reflect pulse signals on road with potholes.
+1. Vibration - Acceleration is the most common measure taken to characterize vibrations. When the vehicle drive on flat road conditions, the three x, y, and z gravity of acceleration values (g) were steady while the three x, y, and z gravity of acceleration values (g) reflect pulse signals on thhe road with potholes.
 
 2. Georeferenced locations - GPS is linked to each accelerometer for data to be georeferenced. Therefore, we record the locations of detected road potholes.
 
 ### 3.2 Sensor(s) Used
 
-The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collect driving data of vehicles (we use a toy car instead), and leverages sensors mounted on a testing vehicle.
+The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collects vehicles' driving data (we use a toy car instead) and leverages sensors mounted on a testing vehicle.
 
   - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
-MPU6050 sensor module is a complete 6-axis Motion Tracking Device. It combines 3-axis Gyroscope, 3-axis Accelerometer and Digital Motion Processor all in small package. Also, it has an additional feature of on-chip Temperature sensor. It has I2C bus interface to communicate with the microcontrollers.
+The MPU6050 sensor module is a complete 6-axis Motion Tracking Device. It combines 3-axis Gyroscope, 3-axis Accelerometer, and Digital Motion Processor all in a small package. Also, it has an additional feature of the on-chip Temperature sensor. It has an I2C bus interface to communicate with the microcontrollers.
 
 #### Features and Specifications
 ```markdown
@@ -123,21 +123,21 @@ Wiki: www.waveshare.com/wiki/L76X_GPS_Module
 
 #### Sampling frequency
 
-According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (fh): fs > 2fh. If the sampling frequency was chosen to be too small, not only the raw signal could not be described clearly and correctly, but also aliasing would occur, which block the way to attain the useful data information.
+According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (FH): fs > 2fh. If the sampling frequency was chosen to be too small, the raw signal could not be described clearly and correctly, but aliasing would occur, which block the way to attain the useful data information.
 
   - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. Due to the limitation of Raspberry Pi, the team uses  10 Hz frequency at first and a host of pre-experiments were conducted.
   
-  - GPS sensor: The max frequency of GPS module is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency.
-
+  GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency.
+  
 #### Absent value of sensors
 
-GPS receivers often encounter missing signals, especially when the GPS receiver is moving and encounter various obstructions such as bridges, buildings, tunnels, etc. The receiver cannot receive GPS signals with sufficient signal-to-noise ratio, and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we can use the linear interpolation between GPS readings as the georeferenced locations due to the low speed of the testing cars.
+GPS receivers often miss some signals, especially when moving various obstructions such as bridges, tunnels, etc. The module loses GPS signals and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we use the linear interpolation between GPS readings as the georeferenced locations due to the testing cars' low speed.
 
 For the zero readings of the accelerometer, the team also ﬁlls the missing values with linear interpolation.
 
 #### Signal smoothing
 
-To discover important patterns in our data while leaving out things that are unimportant (i.e. noise), the teams apply moving average to smooth the accelerometer signals. The goal of smoothing is to produce slow changes in value so that it's easier to see trends in our data.
+To discover important patterns in our data while leaving out unimportant things (i.e., noise), the teams apply moving average to smooth the accelerometer signals. The smoothing goal is to produce slow changes in value to reflect data trends.
 
 ### 3.4 Pavement defect patterns
 
@@ -145,11 +145,11 @@ The team focused on collecting a diverse set of samples, including the following
 
   - Smooth road (SM): Segments of road surface that are considered smooth.
   
-  - Potholes (PH): Missing chunks of pavement, severely sunk in or protruding manhole covers, other signiﬁcant road surface anomalies.
+  - Potholes (PH): Missing chunks of pavement, severely sunk in or protruding maintenance hole covers, other signiﬁcant road surface anomalies.
   
-  - Upheaval (UH): Upheaval is a localized upward movement in a pavement due to swelling of the subgrade.
+  Upheaval (UH): Upheaval is a localized upward movement in the pavement due to the subgrade's swelling.
   
-  - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base which may leads to more serious problems such as potholes.
+  - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base, leading to more serious problems such as potholes.
 
 <div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/defect_type.png"/></div>
 
@@ -190,7 +190,7 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
 
   - Hardware connection
   
-Connect MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
+Connect the MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
 
 | MPU 6050  | Raspberry Pi (Board)  |
 | :----: | :----: |
@@ -209,7 +209,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 #### Patrolman system desgin
 
-We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the mobility of the participating vehicles (we use the toy car in the experiments), gathering data from the MPU-6050 accelerometer and GPS sensors.
+We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the participating vehicles (we use the toy car in the experiments), gathering data from the MPU-6050 accelerometer and GPS sensors.
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
 
@@ -250,17 +250,17 @@ See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1
 
 ### Outdoor experiments
 
-Our experimental works were conducted separately in Zhangzhou and Nanjing, China. The team collects the hand-labeled data by repeatedly driving down several known stretches of roads, and continuously recording raw accelerometer traces. Traces were post-processed to select out only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
+Our experimental works were conducted separately in Zhangzhou and Nanjing, China. The team collects the hand-labeled data by repeatedly driving down several known roads and continuously recording raw accelerometer traces. Traces were post-processed to select only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
 
 ### Pothole detection
 
-The movitation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data. The problem of identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, cracks, and upheaval).
+The motivation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data. Identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, cracks, and upheaval).
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/road_type.png"/></div>
 
-After collecting and cleaning all the sets of data, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95 % confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+After collecting and cleaning all the data sets, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/pot_holes_upheaval.png"/></div>
@@ -273,9 +273,9 @@ After collecting and cleaning all the sets of data, we make the figures of three
 
 - This project designed and implemented the patrolman system, using Raspberry Pi for road pothole inspection. It uses the mobility of the participating vehicles, gathering data from the accelerometer and GPS sensors.
 
-- We focus on analyzing three typical types of road conditions, including: Crack (CR), Potholes (PH), and Upheaval (UH). Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
+- We focus on analyzing three typical types of road conditions, including Crack (CR), Potholes (PH), and Upheaval (UH). Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
 
-- In the future, we will apply machine-learning based approach for automatic detection of diverse road conditions.
+- In the future, we will apply a machine-learning based approach for automatic detection of diverse road conditions.
 
 ## References
 
@@ -283,12 +283,12 @@ After collecting and cleaning all the sets of data, we make the figures of three
 
 [2] Hingston, Michael (April 2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus.
 
-[3] S, Kamaljit Kaur; DelhiJuly 24, hu; July 24, 2018UPDATED; Ist, 2018 00:37. "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. 
+[3] Kamaljit Kaur S., (24 July 2018). "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. 
 
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
 [5] L76X GPS Module User Manual. https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf.
 
-[6] 13 PAVEMENT DEFECTS AND FAILURES YOU SHOULD KNOW. https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/.
+[6] Brett Neal, 13 Pavement Defects and Failures You Shhould Know. https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/.
 
 [7] Simple Device Tutorial, https://github.com/OpenChirp/docs/wiki/simple-device-tutorial.
