@@ -267,6 +267,7 @@ Our experimental works were conducted separately in Zhangzhou and Nanjing, China
 Using mobile phone's network hotspots, we control the Raspberry Pi with remote-control app Anydeck and communicate the collected vibration data and GPS signals to the OpenChirp.
 
 <div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoors.png"/></div>
+<div align="center"><img width="800" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
 
 ### Pothole detection
 
