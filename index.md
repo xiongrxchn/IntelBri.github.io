@@ -207,13 +207,15 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 ### Indoor experiments
 
-#### Install the raspberry pi and sensors on the toy car
+#### Patrolman system desgin
 
-We have installed the raspberry pi, the sensor MPU-6050 Six-Axis (Gyro + Accelerometer) and GPS module on the toy car.
+We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the mobility of the participating vehicles (we use the toy car in the experiments), gathering data from the MPU-6050 accelerometer and GPS sensors.
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/car0.png"/></div>
 
-#### Indoor Testing results
+#### Indoor testing results
+
+In the indoor experiments, the adopted sensors communicate the collected vibration data to the PC via a Wi-Fi router.
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/equip.png"/></div>
 
