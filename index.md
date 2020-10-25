@@ -131,8 +131,7 @@ According to the sampling principle, the sampling frequency (fs) needs to be at 
  
 | Sampling frequency | 1Hz | 2Hz | 5Hz | 10Hz | 20Hz | 50Hz | 100Hz | 200Hz |
 | :----: | :----: | :----:| :----: | :----:|:----: | :----:| :----:| :----:|
-|Theoretical Signal received | 300 | 300 | 300 | 300 | 300 | 300 | 300 | 300 |
-|Actual  Signal received | 296 | 296 | 296 | 296 | 296 | 241 | 241 | 241 |
+| Theoretical Signal received | 300 | 300 | 300 | 300 | 300 | 300 | 300 | 300 |
 | Theoretical sampling time (s) | 300 | 150 | 60 | 30 | 15 | 6 | 3 | 1.5 |
 | Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 | 3 |
 | Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 100 | 
