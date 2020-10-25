@@ -10,7 +10,7 @@
 
 Road potholes are a common nuisance experienced by vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% in 2015 [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada, reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur due to surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
-<div align="center"><img width="800"src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/background.png"/></div>
+<img src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/background.png" width="800"/>
 
 (Image source: Pothole - Wikipedia https://en.wikipedia.org/wiki/Pothole#cite_note-13)
 
