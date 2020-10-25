@@ -4,7 +4,7 @@
 
 ## Video:
 
-[![](http://img.youtube.com/vi/wE4p8kOEM_Y/0.jpg)](http://www.youtube.com/watch?v=wE4p8kOEM_Y "")
+[![](http://img.youtube.com/vi/wE4p8kOEM_Y/0.jpg)](http://www.youtube.com/watch?v=wE4p8kOEM_Y)
 
 ## 1 Introduction
 
