@@ -123,7 +123,7 @@ Wiki: [www.waveshare.com/wiki/L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_M
 
 #### Sampling frequency
 
-According to the sampling principle, the sampling frequency (fs) needs to be at least twice the measured signal frequency (FH): fs > 2fh. If the sampling frequency was chosen to be too small, the raw signal could not be described clearly and correctly, but aliasing would occur, which block the way to attain the useful data information.
+Current Linux / BSD kernels for the Raspberry Pi do not support real-time. Raspberry Pi has no No Real-Time Clock. It cannot generate deterministic timing pulses to control high-frequency sensors.
 
   - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses several sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
 
