@@ -151,7 +151,7 @@ For the zero readings of the accelerometer, the team also ﬁlls the missing val
 
 #### Signal smoothing
 
-To discover important patterns in our data while leaving out unimportant things (i.e., noise), the teams apply moving average to smooth the accelerometer signals. The smoothing goal is to produce slow changes in value to reflect data trends.
+To discover important patterns in our data while leaving out the noise, the team applies moving average to smooth the accelerometer signals. The smoothing goal is to produce slow changes in value to reflect data trends.
 
 ### 3.4 Pavement defect patterns
 
@@ -159,9 +159,9 @@ The team focused on collecting a diverse set of samples, including the following
 
   - Smooth road (SM): Segments of road surface that are considered smooth.
   
-  - Potholes (PH): Missing chunks of pavement, severely sunk in or protruding maintenance hole covers, other signiﬁcant road surface anomalies.
+  - Potholes (PH): Missing chunks of pavement, severely sunk in the base of road pavements.
   
-  Upheaval (UH): Upheaval is a localized upward movement in the pavement due to the subgrade's swelling.
+  - Upheaval (UH): Upheaval is a localized upward movement in the pavement due to the subgrade's swelling.
   
   - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base, leading to more serious problems such as potholes.
 
@@ -295,7 +295,7 @@ After collecting and cleaning all the data sets, we make the figures of three ki
 
 - This project designed and implemented the patrolman system, using Raspberry Pi for road pothole inspection. It uses the mobility of the participating vehicles, gathering data from the accelerometer and GPS sensors.
 
-- We focus on analyzing three typical types of road conditions, including Crack (CR), Potholes (PH), and Upheaval (UH). Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
+- We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
 
 - In the future, we will apply a machine-learning based approach for automatic detection of diverse road conditions.
 
