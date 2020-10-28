@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are a common defects for ageing civil infrastrutures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose uncomfort and even hazards to vehicle drivers or commuters,  especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to the serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are common defects for aging civil infrastrutures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
@@ -16,7 +16,7 @@ Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_no
 
 ### 1.1 Motivation
 
-Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the road potholes. Due to the significant scale of the roadway networks, this method is typically unavailable in terms of labor and cost. Consdiering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
+Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the road potholes. Due to the significant scale of the roadway networks, this method is typically unavailable in terms of labor and cost. Considering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
 
 ### 1.2 Goals
 
@@ -42,7 +42,7 @@ The vibration patterns sensed by the driving cars actually reflect the road cond
 
 ### 3.2 Sensor(s) Used
 
-In this project, the team leverage and collect signals from sensor mounted on a testing vehicle (we use a toy car instead).The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a power bank for power supply. 
+In this project, the team leverage and collect signals from sensors mounted on a testing vehicle (we use a toy car instead). The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a power bank for power supply. 
 
   - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
@@ -64,7 +64,7 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
 #### Features
 ```markdown
   - Supports Multi-GNSS systems: GPS, BDS, and QZSS
-  - EASY™, self track prediction technology, help quick positioning
+  - EASY™, self-track prediction technology, help quick positioning
   - AlwaysLocate™, intelligent controller of periodic mode for power saving
   - Onboard rechargeable Li battery MS621FE, for preserving ephemeris information and hot starts
   - 2x LEDs for indicating the module working status
