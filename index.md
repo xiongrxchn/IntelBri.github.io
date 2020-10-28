@@ -263,7 +263,11 @@ After collecting and cleaning all the data sets, we draw the figures of three ki
 
 ![](Images/cracking.png)
 
+
+In order to analyze the patterns of different defects, Short-time Fourier transform (STFT) is used to divide the long time Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the sinusoidal frequency and phase content of Z-axis acceleration signal developing with time.
+
 ![](Images/stft.png)
+
 
 ![](Images/interfacing_GPS.png)
 
