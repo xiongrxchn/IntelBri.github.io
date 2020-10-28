@@ -220,7 +220,7 @@ Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.ht
 
 We then release sensor values onto OpenChirp, which can timely report and visualize data on the website. 
 
-See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py)and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the code.
+See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py) and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the code.
 
 ![](Images/gps_openchirp.png)
 ![](Images/acc_openchirp.png)
