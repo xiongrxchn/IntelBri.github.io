@@ -75,7 +75,7 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
   - Dimensions: 32.5mm x 25.5mm
 ```
 
-The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module).
+The detailed reference materials are from [L76X GPS Module User Manual](www.waveshare.com/wiki/L76X_GPS_Module).
 
 ### 3.3 Signal Conditioning and Processing
 
