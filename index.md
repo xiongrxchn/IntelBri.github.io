@@ -46,7 +46,7 @@ In this project, the team leverages and collects signals from sensors mounted on
 
   - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
-The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accelerometer and Gyroscope. The features and specifications of this sensor (descriptions from [wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module)) are shown below:
+The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accelerometer and Gyroscope. The features and specifications of this sensor (descriptions refer to [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module) are shown below:
 
 #### Features and Specifications
 ```markdown
@@ -62,14 +62,14 @@ The detailed reference materials are from [MPU6050 Sensor Module Wiki](https://w
 
   - GPS sensor: L76X GPS Module
 
-L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, supports Multi-GNSS systems, such as Global Positioning System (GPS), Quasi-Zenith Satellite System (QZSS), and BeiDou Navigation Satellite System (BDS) [5]. The features and specifications of this sensor (descriptions can be referred to [L76X GPS Module User Manual](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf)) are shown below:
+L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, supports Multi-GNSS systems, such as Global Positioning System (GPS), Quasi-Zenith Satellite System (QZSS), and BeiDou Navigation Satellite System (BDS) [5]. The features and specifications of this sensor (descriptions refer to [L76X GPS Module User Manual](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf)) are shown below:
 
 #### General Features and Specifications
 ```markdown
-  - Baudrate: 4800~115200bps (9600bps by default)
+  - Baud rate: 4800~115200bps (9600bps by default)
   - Update rate: 1Hz (default), 10Hz (max)
   - Power supply voltage: 5V / 3.3V
-  - Horizontal position accuracy: <2.5mCEP
+  - Horizontal position accuracy: <2.5m CEP
   - Sensitivity:
     - Acquisition: -148dBm
     - Tracking: -163dBm
@@ -77,15 +77,14 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
   - Dynamic performance:
     - Altitude (max): 18000m
     - Velocity (max): 515m/s
-    - Acceleration (max): 4G
-  - Supports Multi-GNSS systems: GPS, BDS, and QZSS
-  - 2x LEDs for indicating the working status
+    - Acceleration (max): 4g
+  - 2xLEDs for indicating the working status
   - Dimensions: 32.5mm x 25.5mm
 ```
 
 #### Development Resources
 
-The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module)
+The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module).
 
 ### 3.3 Signal Conditioning and Processing
 
@@ -154,12 +153,14 @@ We have built the sensors and written Python codes to monitor the parameters bas
     
 Connect L76X GPS module to the Raspberry Pi board. Four pins are used: VCC, GND, RX, and TX [5].
 
-| L76X GPS Module | Raspberry Pi Board | Raspberry Pi BCM |
+| PIN | Raspberry Pi Board | Raspberry Pi BCM |
 | :----: | :----: | :----:|
 | VCC | 5v | 5v |
 | GND | GND | GND |
 | RX | 8 | P14 |
 | TX | 10 | P15 |
+
+The detailed interface connections refer to [L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module).
 
    - Running code
 
@@ -173,12 +174,14 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
   
 Connect the MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL [8].
 
-| MPU 6050 | Raspberry Pi Board |
+| PIN | Raspberry Pi BCM |
 | :----: | :----: |
 | VCC | 3.3v |
 | GND | GND |
 | SDA | P3 |
 | SCL | P5 |
+
+The detailed interface connections refer to [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module).
 
    - Running code
 
