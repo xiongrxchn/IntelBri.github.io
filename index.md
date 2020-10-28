@@ -279,7 +279,7 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 ## References
 
-[1] Editor, Swindonian (2018). "More than half a million potholes were reported last year throughout the UK". The Swindonian.
+[1] Editor, Swindonian (2018). ["More than half a million potholes were reported last year throughout the UK"](https://media.rac.co.uk/pressreleases/more-than-half-a-million-potholes-reported-to-councils-in-2017-2818923#:~:text=More%20than%20half%20a%20million%20potholes%20were%20reported%20by%20members,data%20obtained%20by%20the%20RAC.). The Swindonian.
 
 [2] Hingston, Michael (2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus.
 
