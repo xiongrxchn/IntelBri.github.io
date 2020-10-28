@@ -153,7 +153,7 @@ Connect L76X GPS module to the Raspberry Pi board. Four pins are used: VCC, GND,
 | RX | 8 | P14 |
 | TX | 10 | P15 |
 
-The detailed interface connections refer to [L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module).
+The detailed interface connections refer to [L76X GPS Module User Manual](www.waveshare.com/wiki/L76X_GPS_Module).
 
    - Running code
 
