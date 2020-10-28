@@ -119,7 +119,7 @@ The current operating system of Raspberry Pi uses the Linux kernels, which do no
 | Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 | 3 |
 | Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 100 | 
 
-In particular, when the sampling frequency of the accelerometer reaches 200Hz, some data points are collected with zero values with error rate 100%. Here, the team uses 10Hz as the sampling frequency of the accelerometer in the experiments.
+In particular, when the sampling frequency of the accelerometer reaches 200Hz, some data points are collected with zero values with an error rate of 100%. Here, the team uses 10Hz as the sampling frequency of the accelerometer in the experiments.
 
  ![](Images/frequency_test.png)
 
@@ -205,7 +205,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 #### Patrolman system desgin
 
-We design the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), a MPU-6050 accelerometer and a GPS sensor. Also, we use the power bank to supply power of the system.
+We design the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, and a GPS sensor. Also, we use the power bank to supply the power of the system.
 
 ![](Images/car0.png)
 
@@ -215,7 +215,7 @@ For the indoor experiments, the adopted sensors communicate the collected vibrat
 
 ![](Images/equip.png)
 
-Test results of Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
+Test results of the Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
 
 ![](Images/mpu_indoor_test.png)
 
@@ -246,7 +246,7 @@ See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1
 
 ### Outdoor experiments
 
-Our experimental works were conducted separately in Zhangzhou and Nanjing, China. The team collects the hand-labeled signals by continuously moving several known roads and recording raw accelerometer and GPS data. Using mobile phone's network hotspots, we control the Raspberry Pi with remote-control app [Anydeck](https://anydesk.com/) and communicate the collected accelerometer and GPS signals to the OpenChirp.
+Our experimental works were conducted separately in Zhangzhou and Nanjing, China. The team collects the hand-labeled signals by continuously moving several known roads and recording raw accelerometer and GPS data. Using mobile phone's network hotspots, we control the Raspberry Pi with a remote-control app [Anydeck](https://anydesk.com/) and communicate the collected accelerometer and GPS signals to the OpenChirp.
 
 ![](Images/outdoors.png)
 ![](Images/outdoor_7.png)
@@ -257,13 +257,13 @@ The motivation behind our system is that anomalous road conditions are reﬂecte
 
 ![](Images/road_type.png)
 
-After collecting and cleaning all the data sets, we draw the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+After collecting and cleaning all the data sets, we draw the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 ![](Images/pot_holes_upheaval.png)
 
 ![](Images/cracking.png)
 
-In order to analyze the patterns of different signals, Short-time Fourier transform (STFT) is used to divide the long Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude and phase content of the Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency ditributions (amplitude spectrogram) of Z-axis acceleration signal vary between the Upheaval, Potholes and Cracking.
+To analyze the patterns of different signals, Short-time Fourier transform (STFT) is used to divide the long Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude, and phase content of the Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is the frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency distributions (amplitude spectrogram) of the Z-axis acceleration signal vary between the Upheaval, Potholes, and Cracking.
 
 ![](Images/stft.png)
 
@@ -271,7 +271,7 @@ In order to analyze the patterns of different signals, Short-time Fourier transf
 
 ## 5 Discussion
 
-- This project designs and implements the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, a GPS sensor, and a power bank. By continually gathering data from the accelerometer and GPS sensors, the team use collected signals to evaluate road surface conditions.
+- This project designs and implements the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, a GPS sensor, and a power bank. By continually gathering data from the accelerometer and GPS sensors, the team uses collected signals to evaluate road surface conditions.
 
 - We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Anomalous road conditions are reﬂected in features of the acceleration data. Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
 
