@@ -252,7 +252,7 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 - This project designs and implements the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, a GPS sensor, and a power bank. 
 
-- By tracking data from the accelerometer and GPS sensors, the team uses collected signals to evaluate road surface conditions.
+- By tracking data from the accelerometer and GPS sensors, the team uses the captured signals to evaluate road surface conditions.
 
 - We aim to analyze three main types of road defects, including Cracks (CR), Potholes (PH), and Upheaval (UH). The abnormal road conditions can be sensed through the acceleration data during a drive. Comparing hand-labeled signal patterns, the team identifies three typical road defects.
 
@@ -262,7 +262,7 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 ## References
 
-[1] Swindonian (2018). [More than half a million potholes were reported last year throughout the UK](https://media.rac.co.uk/pressreleases/more-than-half-a-million-potholes-reported-to-councils-in-2017-2818923#:~:text=More%20than%20half%20a%20million%20potholes%20were%20reported%20by%20members,data%20obtained%20by%20the%20RAC.).
+[1] Swindonian (2018). [More than half a million potholes were reported last year throughout the UK.](https://media.rac.co.uk/pressreleases/more-than-half-a-million-potholes-reported-to-councils-in-2017-2818923#:~:text=More%20than%20half%20a%20million%20potholes%20were%20reported%20by%20members,data%20obtained%20by%20the%20RAC.).
 
 [2] Japan International Cooperation Agency (2016). Pavement Inspection Guideline. [https://openjicareport.jica.go.jp/pdf/12286001_01.pdf](https://openjicareport.jica.go.jp/pdf/12286001_01.pdf).
 
