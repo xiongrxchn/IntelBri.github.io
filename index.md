@@ -44,11 +44,11 @@ The vibration patterns sensed by driving cars actually reflect the road conditio
 
 In this project, the team leverages and collects signals from sensors mounted on a testing vehicle (we use a toy car instead). The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a power bank for power supply. 
 
-  - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
+#### Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
 MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accelerometer and Gyroscope. The features and specifications of this sensor (descriptions refer to [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module) are shown below:
 
-#### Features and Specifications
+- Features and Specifications
 ```markdown
   - Power voltage: 2.375 – 3.46V 
   - 3-axis Gyroscope values in degrees per second (dps)
@@ -59,11 +59,11 @@ MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accel
 
 The detailed reference materials are from [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module).
 
-  - GPS sensor: L76X GPS Module
+#### GPS sensor: L76X GPS Module
 
 L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, supports Multi-GNSS systems, including Global Positioning System (GPS), Quasi-Zenith Satellite System (QZSS), and BeiDou Navigation Satellite System (BDS) [5]. The features and specifications of this sensor (descriptions refer to [L76X GPS Module User Manual](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf)) are shown below:
 
-#### General Features and Specifications
+- General Features and Specifications
 ```markdown
   - Update rate: 1Hz (default), 10Hz (max)
   - Power voltage: 3.3V / 5V
