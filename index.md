@@ -16,11 +16,11 @@ Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_no
 
 ### 1.1 Motivation
 
-Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system uses the six-axis accelerometer and GPS sensor deployed on the Raspberry Pi system, relying on cars' mobility (we use a toy car) to sense the vibration response of the roads being monitored.
+Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the road potholes. Due to the significant scale of the roadway networks, this method is typically unavailable in terms of labor and cost. Consdiering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system uses the accelerometer and makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
 
 ### 1.2 Goals
 
-This project presents an mobile system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the participating vehicles' mobility, gathering data from the six-axis accelerometer and GPS sensors, and processing the data to assess road surface conditions. This project will provide an affordable sensing method to conduct pavement condition assessments.
+This project presents a mobile system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The patrolman system uses the vehicles' mobility, continually gathering data from the accelerometer and GPS sensors and processing the collected signals to evaluate road surface conditions.
 
 ## 2 For Progress Reports
 
