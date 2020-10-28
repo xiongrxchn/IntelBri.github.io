@@ -50,7 +50,7 @@ The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis A
 
 #### Features and Specifications
 ```markdown
-  - 3-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
+  - 3-Axis angular rate sensor with a full-scale range of ±250, ±500, ±1000, and ±2000dps
   - 3-Axis accelerometer with a programmable full-scale range of ±2g, ±4g, ±8g and ±16g
   - VDD Supply voltage range of 2.375V – 3.46V 
   - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
