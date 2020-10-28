@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton Administration spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even safety hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. The Edmonton Administration spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even safety hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
@@ -57,8 +57,6 @@ The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis A
   - Accelerometer full-scale range: ±2, ±4, ±8, and ±16g
 ```
 
-#### Development Resources
-
 The detailed reference materials are from [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module).
 
   - GPS sensor: L76X GPS Module
@@ -77,8 +75,6 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
   - 2x working status LEDs
   - Dimensions: 32.5mm x 25.5mm
 ```
-
-#### Development Resources
 
 The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module).
 
