@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
@@ -16,11 +16,11 @@ Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_no
 
 ### 1.1 Motivation
 
-Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the road potholes. Due to the significant scale of the roadway networks, this method is typically unavailable in terms of labor and cost. Considering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
+Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. Traditonally, inspectors will visual assess the road conditions and report the road potholes [1]. Due to the significant scale of the roadway networks, this method is typically unavailable in labors and cost. Considering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
 
 ### 1.2 Goals
 
-This project presents a mobile system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The patrolman system uses the vehicles' mobility, continually gathering data from the accelerometer and GPS sensors and processing the collected signals to evaluate road surface conditions.
+This project presents a mobile system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The patrolman system uses the vehicles' mobility, continually collecting data from the accelerometer and GPS sensors and evaluating road surface conditionsthe with the sensing signals.
 
 ## 2 For Progress Reports
 
@@ -46,7 +46,7 @@ In this project, the team leverages and collects signals from sensors mounted on
 
   - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
-The MPU6050 sensor is a 6-axis Motion Tracking module, which combines 3-axis Gyroscope and 3-axis Accelerometer. The features and specifications of this sensor (descriptions from [wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module)) are shown below:
+The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accelerometer and Gyroscope. The features and specifications of this sensor (descriptions from [wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module)) are shown below:
 
 #### Features and Specifications
 ```markdown
@@ -135,7 +135,7 @@ To uncover and identify the signal patterns of acceleration data, the team appli
 
 ### 3.4 Pavement defect patterns
 
-The team focused on collecting a diverse set of samples, including the following event classes [6]:
+The team focuses on three main road defects [6]:
 
   - Smooth road (SM): Good road conditions with smooth pavements.
   
@@ -257,7 +257,7 @@ The motivation behind our system is that anomalous road conditions are reﬂecte
 
 ![](Images/road_type.png)
 
-After collecting and cleaning all the data sets, we draw the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+After collecting and cleaning all the data sets, we draw the X-axis, Y-axis, and Z-axis acceleration of three kinds of defects. We use the moving average method to smooth the accelerometer signals. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 ![](Images/pot_holes_upheaval.png)
 
@@ -279,11 +279,11 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 ## References
 
-[1] Editor, Swindonian (2018). ["More than half a million potholes were reported last year throughout the UK"](https://media.rac.co.uk/pressreleases/more-than-half-a-million-potholes-reported-to-councils-in-2017-2818923#:~:text=More%20than%20half%20a%20million%20potholes%20were%20reported%20by%20members,data%20obtained%20by%20the%20RAC.). The Swindonian.
+[1] Swindonian (2018). [More than half a million potholes were reported last year throughout the UK](https://media.rac.co.uk/pressreleases/more-than-half-a-million-potholes-reported-to-councils-in-2017-2818923#:~:text=More%20than%20half%20a%20million%20potholes%20were%20reported%20by%20members,data%20obtained%20by%20the%20RAC.).
 
-[2] Hingston, Michael (2015). "Asphalt Nerds The alchemy of pavement in Canada's pothole capital". The Walrus.
+[2] 
 
-[3] Kamaljit Kaur S., (2018). "Over 9300 deaths, 25000 injured in 3 years due to potholes". India Today. 
+[3]
 
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
