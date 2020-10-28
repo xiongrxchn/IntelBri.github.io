@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are a common defects for ageing civil infrastrutures around the world. For example, in the UK, more than half a million potholes have been reported in 2017, an increase of 44% in 2015 [1]. The massive amounts of road potholes require additional maintenance capital for traffic departments. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose uncomfort and even hazards to vehicle drivers or commuters,  especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to the serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are a common defects for ageing civil infrastrutures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose uncomfort and even hazards to vehicle drivers or commuters,  especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to the serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
