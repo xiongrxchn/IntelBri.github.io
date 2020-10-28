@@ -16,7 +16,7 @@ Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_no
 
 ### 1.1 Motivation
 
-Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. Traditonally, inspectors will visually assess the road conditions and report the road potholes [1]. Due to the significant scale of the roadway networks, this method is typically unavailable in labor and cost. Considering that road conditions can be reflected and measured in vibrations [4], the team designs a portable Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect vibration signals during a drive.
+Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. Traditonally, inspectors will visually assess the road conditions and report the road potholes [1]. Due to the significant scale of the roadway networks, this method is typically unavailable in labor and cost. Considering that road conditions can be transmitted and measured in vibrations [4], the team designs a portable Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect vibration signals during a drive.
 
 ### 1.2 Goals
 
