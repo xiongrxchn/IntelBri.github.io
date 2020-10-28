@@ -4,6 +4,7 @@
 Created on Sun Oct 18 13:48:47 2020
 
 @author: pi
+@Reference: https://ozzmaker.com/how-to-save-gps-data-to-a-file-using-python/
 """
 
 #! /usr/bin/python
