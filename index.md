@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are common defects for aging civil infrastrutures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
@@ -42,7 +42,7 @@ The vibration patterns sensed by the driving cars actually reflect the road cond
 
 ### 3.2 Sensor(s) Used
 
-In this project, the team leverage and collect signals from sensors mounted on a testing vehicle (we use a toy car instead). The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a power bank for power supply. 
+In this project, the team leverages and collects signals from sensors mounted on a testing vehicle (we use a toy car instead). The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a power bank for power supply. 
 
   - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
@@ -51,7 +51,7 @@ The MPU6050 sensor is a 6-axis Motion Tracking module, which combines 3-axis Gyr
 #### Features and Specifications
 ```markdown
   - Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
-  - Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
+  - Tri-Axis accelerometer with a programmable full-scale range of ±2g, ±4g, ±8g and ±16g
   - VDD Supply voltage range of 2.375V – 3.46V 
   - VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
   - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
@@ -66,7 +66,7 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
   - Supports Multi-GNSS systems: GPS, BDS, and QZSS
   - EASY™, self-track prediction technology, help quick positioning
   - AlwaysLocate™, intelligent controller of periodic mode for power saving
-  - Onboard rechargeable Li battery MS621FE, for preserving ephemeris information and hot starts
+  - Onboard rechargeable Li-battery MS621FE, for preserving ephemeris information and hot starts
   - 2x LEDs for indicating the module working status
   - Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32)
 ```
@@ -119,7 +119,7 @@ The current operating system of Raspberry Pi uses the Linux kernels, which do no
 | Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 | 3 |
 | Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 100 | 
 
-In particular, when the sampling frequenciy of the accelerometer reach 200Hz, some data points are colleted with zero values with error rate 100%. Here, the team uses 10Hz as the sampling frequency of the accelerometer in the experiments.
+In particular, when the sampling frequency of the accelerometer reaches 200Hz, some data points are collected with zero values with error rate 100%. Here, the team uses 10Hz as the sampling frequency of the accelerometer in the experiments.
 
  ![](Images/frequency_test.png)
 
@@ -205,7 +205,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 #### Patrolman system desgin
 
-We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), a MPU-6050 accelerometer and a GPS sensor. Also, we use the power bank to supply power of the system.
+We design the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), a MPU-6050 accelerometer and a GPS sensor. Also, we use the power bank to supply power of the system.
 
 ![](Images/car0.png)
 
@@ -263,7 +263,7 @@ After collecting and cleaning all the data sets, we draw the figures of three ki
 
 ![](Images/cracking.png)
 
-In order to analyze the patterns of different defects, Short-time Fourier transform (STFT) is used to divide the long time Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude and phase content of Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency ditributions (amplitude spectrogram) of Z-axis acceleration signal vary between the Upheaval, Pot Holes and Cracking.
+In order to analyze the patterns of different signals, Short-time Fourier transform (STFT) is used to divide the long Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude and phase content of the Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency ditributions (amplitude spectrogram) of Z-axis acceleration signal vary between the Upheaval, Potholes and Cracking.
 
 ![](Images/stft.png)
 
@@ -271,7 +271,7 @@ In order to analyze the patterns of different defects, Short-time Fourier transf
 
 ## 5 Discussion
 
-- This project designed and implemented the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), a MPU-6050 accelerometer, a GPS sensor, and a power bank. By continually gathering data from the accelerometer and GPS sensors, the team use collected signals to evaluate road surface conditions.
+- This project designs and implements the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, a GPS sensor, and a power bank. By continually gathering data from the accelerometer and GPS sensors, the team use collected signals to evaluate road surface conditions.
 
 - We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Anomalous road conditions are reﬂected in features of the acceleration data. Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
 
@@ -289,7 +289,7 @@ In order to analyze the patterns of different defects, Short-time Fourier transf
 
 [5] L76X GPS Module User Manual. [https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf).
 
-[6] Brett Neal, 13 Pavement Defects and Failures You Shhould Know. [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/).
+[6] Brett Neal, 13 Pavement Defects and Failures You Should Know. [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/).
 
 [7] Simple Device Tutorial, [https://github.com/OpenChirp/docs/wiki/simple-device-tutorial](https://github.com/OpenChirp/docs/wiki/simple-device-tutorial).
 
