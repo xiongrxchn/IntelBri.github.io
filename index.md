@@ -237,7 +237,7 @@ The motivation behind our system is that anomalous road conditions are reﬂecte
 
 ![](Images/road_type.png)
 
-After collecting and cleaning all the data sets, we draw the X, Y, Z axes acceleration of three kinds of defects. We use the moving average method to smooth the accelerometer signals. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+After collecting and cleaning all the data sets, we draw the X, Y, Z axis acceleration of three kinds of defects. We use the moving average method to smooth the accelerometer signals. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 ![](Images/pot_holes_upheaval.png)
 
