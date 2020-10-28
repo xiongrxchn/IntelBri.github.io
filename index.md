@@ -16,7 +16,7 @@ Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_no
 
 ### 1.1 Motivation
 
-Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the road potholes. Due to the significant scale of the roadway networks, this method is typically unavailable in terms of labor and cost. Consdiering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system uses the accelerometer and makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
+Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of the road potholes. Due to the significant scale of the roadway networks, this method is typically unavailable in terms of labor and cost. Consdiering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
 
 ### 1.2 Goals
 
@@ -34,19 +34,19 @@ This project presents a mobile system – Patrolman, using Raspberry Pi to detec
 
 ### 3.1 Phenomena of Interest
 
-Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. The general monitoring metrics intended to measure road condition and performance including:
+The vibration patterns sensed by the driving cars actually reflect the road conditions being monitored [4]. The general sensing signals intended to assess road conditions include:
 
-1. Vibration - Acceleration is the most common measure taken to characterize vibrations. When the vehicle drive on flat road conditions, the three x, y, and z gravity of acceleration values (g) were steady while the three x, y, and z gravity of acceleration values (g) reflect pulse signals on thhe road with potholes.
+1. Vibration - Acceleration is the common measurement in characterizing vibrations. When the participating vehicles move on smooth roads, the acceleration values (g) are typically steady, while acceleration may show fluctuated signals when driving on bad road conditions with potholes.
 
-2. Georeferenced locations - GPS is linked to each accelerometer for data to be georeferenced. Therefore, we record the locations of detected road potholes.
+2. Georeferenced locations - We also use the GPS module to record the trajectory of the moving vehicles. Therefore, we can report the georeferenced locations for each identified road pothole.
 
 ### 3.2 Sensor(s) Used
 
-The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a battery. In this project, the team collects vehicles' driving data (we use a toy car instead) and leverages sensors mounted on a testing vehicle.
+In this project, the team leverage and collect signals from sensor mounted on a testing vehicle (we use a toy car instead).The Patrolman system consists of Raspberry Pi, MPU-6050 six-axis accelerometers, GPS, and a power bank for power supply. 
 
   - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
-The MPU6050 sensor module is a complete 6-axis Motion Tracking Device. It combines 3-axis Gyroscope, 3-axis Accelerometer, and Digital Motion Processor all in a small package. Also, it has an additional feature of the on-chip Temperature sensor. It has an I2C bus interface to communicate with the microcontrollers.
+The MPU6050 sensor is a 6-axis Motion Tracking module, which combines 3-axis Gyroscope and 3-axis Accelerometer. The features and specifications of this sensor (descriptions from [wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module)) are shown below:
 
 #### Features and Specifications
 ```markdown
@@ -54,22 +54,18 @@ The MPU6050 sensor module is a complete 6-axis Motion Tracking Device. It combin
   - Tri-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
   - VDD Supply voltage range of 2.375V – 3.46V 
   - VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
-  - Gyro operating current: 3.6mA (full power, gyro at all rates)
-  - 400kHz Fast Mode I²C or up to 20MHz SPI serial host interfaces
   - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
 ```
 
   - GPS sensor: L76X GPS Module
 
-L76X GPS Module is a general Global Navigation Satellite System (GNSS) module which supports Multi-GNSS systems: GPS, BDS, and QZSS, with advantages such as small size, fast positioning, high accuracy, and low power consumption.
+L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, supports Multi-GNSS systems, such as Global Positioning System (GPS), Quasi-Zenith Satellite System (QZSS), and BeiDou Navigation Satellite System (BDS) [5]. The features and specifications of this sensor (descriptions can be referred to [L76X GPS Module User Manual](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf)) are shown below:
 
 #### Features
 ```markdown
   - Supports Multi-GNSS systems: GPS, BDS, and QZSS
   - EASY™, self track prediction technology, help quick positioning
   - AlwaysLocate™, intelligent controller of periodic mode for power saving
-  - Supports DGPS, SBAS (WAAS/EGNOS/MSAS/GAGAN)
-  - UART communication baudrate: 4800~115200bps (9600bps by default)
   - Onboard rechargeable Li battery MS621FE, for preserving ephemeris information and hot starts
   - 2x LEDs for indicating the module working status
   - Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32)
@@ -77,10 +73,6 @@ L76X GPS Module is a general Global Navigation Satellite System (GNSS) module wh
 
 #### GNSS Specifications
 ```markdown
-  - Band: GPS L1(1575.42Mhz), BD2 B1 (1561.098MHz)
-    - Channels: 33 tracking ch, 99 acquisition ch, 210 PRN ch
-    - C/A code
-    - SBA: WAAS, EGNOS, MSAS, GAGAN
   - Horizontal position accuracy:
     - Autonomous: <2.5mCEP
   - Time-To-First-Fix @-130dBm (EASY™ enabled):
@@ -99,33 +91,24 @@ L76X GPS Module is a general Global Navigation Satellite System (GNSS) module wh
 
 #### General Specifications
 ```markdown
-  - Communication interface: UART
   - Baudrate: 4800~115200bps (9600bps by default)
   - Update rate: 1Hz (default), 10Hz (max)
-  - Protocols: NMEA 0183, PMTK
   - Power supply voltage: 5V / 3.3V
   - Operating current: 11mA
   - Dimensions: 32.5mm x 25.5mm
 ```
 
-#### Applications
-```markdown
-  - Vehicle tracking
-  - Asset tracking
-  - Security system
-  - Industrial PDA
-  - GIS application
-```
 #### Development Resources
-Wiki: [www.waveshare.com/wiki/L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module)
+
+The detailed reference materials are from Wiki: [www.waveshare.com/wiki/L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module)
 
 ### 3.3 Signal Conditioning and Processing
 
 #### Sampling frequency
 
-Current Linux / BSD kernels for the Raspberry Pi do not support real-time. Raspberry Pi has no No Real-Time Clock. It cannot generate deterministic timing pulses to control high-frequency sensors.
+The current operating system of Raspberry Pi uses the Linux kernels, which do not support real-time. So the Raspberry Pi cannot generate real-time pulses to control high-frequency sensors in the experiments.
 
-  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses several sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
+  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses different sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
 
  In the experiments, the sampling frequencies of the Accelerometer are tested for 1Hz, 2Hz, 5Hz, 10Hz, 20Hz, 50Hz, 100Hz and 200Hz. 
  
@@ -136,34 +119,31 @@ Current Linux / BSD kernels for the Raspberry Pi do not support real-time. Raspb
 | Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 | 3 |
 | Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 100 | 
 
-Especially when the sampling frequencies of the Accelerometer are tested for 200Hz, some data points are colleted with zero values with error rate 100%.
+In particular, when the sampling frequenciy of the accelerometer reach 200Hz, some data points are colleted with zero values with error rate 100%. Here, the team uses 10Hz as the sampling frequency of the accelerometer in the experiments.
 
  ![](Images/frequency_test.png)
 
- 
-  - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency due to the low speed of our system.
+  - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency - 1Hz as the sampling frequency of the GPS sensor due to the low speed of our system.
   
-#### Absent value of sensors
+#### Absent values of sensors
 
-GPS receivers often miss some signals, especially when moving various obstructions such as bridges, tunnels, etc. The module loses GPS signals and the positioning may be interrupted. In most cases, this positioning interruption lasts for a short time. In our experiments, we use the linear interpolation between GPS readings as the georeferenced locations due to the testing cars' low speed.
-
-For the zero readings of the accelerometer, the team also ﬁlls the missing values with linear interpolation.
+The sensors, including the GPS module and accelerometer, often miss some signals or receive zero readings during the experiments. For example, when passing through bridges, closed buildings, or tunnels, the GPS module may lose the satellites' connections. In our experiments, we use linear interpolation to the missing values between GPS readings due to the testing cars' low speed. Similarly, for the accelerometer's zero readings, the team also ﬁlls the missing values with linear interpolation.
 
 #### Signal smoothing
 
-To discover important patterns in our data while leaving out the noise, the team applies moving average to smooth the accelerometer signals. The smoothing goal is to produce slow changes in value to reflect data trends.
+To uncover and identify the signal patterns of acceleration data, the team applies the moving average method to smooth the accelerometer signals and remove noisy vales to reflect the overall trends.
 
 ### 3.4 Pavement defect patterns
 
-The team focused on collecting a diverse set of samples, including the following event classes:
+The team focused on collecting a diverse set of samples, including the following event classes [6]:
 
-  - Smooth road (SM): Segments of road surface that are considered smooth.
+  - Smooth road (SM): good road conditions with smooth pavements.
   
-  - Potholes (PH): Missing chunks of pavement, severely sunk in the base of road pavements.
+  - Potholes (PH): Missing chunks of pavement.
   
   - Upheaval (UH): Upheaval is a localized upward movement in the pavement due to the subgrade's swelling.
   
-  - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes. The cracks make it easier for water to damage the road base, leading to more serious problems such as potholes.
+  - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes.
 
 ![](Images/defect_type.png)
 
@@ -175,11 +155,11 @@ Image source: [https://www.pavemanpro.com/article/identifying_asphalt_pavement_d
 
   - Getting hardware
   
-We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 six-axis accelerometer) from [Taobao](https://www.taobao.com/).
+We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 accelerometer) from [Taobao](https://www.taobao.com/).
 
   - Set up the test environment
   
-We have built the sensors (including GPS module and MPU-6050 six-axis accelerometers) and written Python codes to monitor the parameters based on the tutorials. The sampling frequencies of the MPU-6050 accelerometer and GPS module are XXXHz and 1 Hz, respectively.
+We have built the sensors and written Python codes to monitor the parameters based on the tutorials. The sampling frequencies of the MPU-6050 accelerometer and GPS module are 10 Hz and 1 Hz, respectively.
 
 ![](Images/indoor.png)
 
@@ -187,7 +167,7 @@ We have built the sensors (including GPS module and MPU-6050 six-axis accelerome
 
     - Hardware connection
     
-Connect L76X GPS module to the board. Four pins are available for use: VCC, GND, TX, and RX.
+Connect L76X GPS module to the board. Four pins are used: VCC, GND, TX, and RX [5].
 
 | L76X GPS Module  | Raspberry Pi (Board)  | Raspberry Pi (BCM) |
 | :----: | :----: | :----:|
@@ -206,9 +186,9 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
 
   - Hardware connection
   
-Connect the MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL.
+Connect the MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL [8].
 
-| MPU 6050  | Raspberry Pi (Board)  |
+| MPU 6050 | Raspberry Pi (Board) |
 | :----: | :----: |
 | VCC | 3.3v |
 | GND | GND |
@@ -225,7 +205,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 #### Patrolman system desgin
 
-We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. It uses the participating vehicles (we use the toy car in the experiments), gathering data from the MPU-6050 accelerometer and GPS sensors. Also, we use the power bank to supply power of the system.
+We designed the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), a MPU-6050 accelerometer and a GPS sensor. Also, we use the power bank to supply power of the system.
 
 ![](Images/car0.png)
 
@@ -259,28 +239,25 @@ Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.ht
 
 We then publish sensor readings onto OpenChirp, which can timely report and visualize data on the website. 
 
-See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py)and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the complete code. Note: You should use the Device ID and Token of the device you just created.
+See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py)and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the code.
 
 ![](Images/gps_openchirp.png)
 ![](Images/acc_openchirp.png)
 
 ### Outdoor experiments
 
-Our experimental works were conducted separately in Zhangzhou and Nanjing, China. The team collects the hand-labeled data by repeatedly driving down several known roads and continuously recording raw accelerometer traces. Traces were post-processed to select only the sample windows containing a corresponding event that appeared signiﬁcant, in order to eliminate delay and inaccuracy in the human-recorded annotations.
-
-Using mobile phone's network hotspots, we control the Raspberry Pi with remote-control app Anydeck and communicate the collected vibration data and GPS signals to the OpenChirp.
+Our experimental works were conducted separately in Zhangzhou and Nanjing, China. The team collects the hand-labeled signals by continuously moving several known roads and recording raw accelerometer and GPS data. Using mobile phone's network hotspots, we control the Raspberry Pi with remote-control app [Anydeck](https://anydesk.com/) and communicate the collected accelerometer and GPS signals to the OpenChirp.
 
 ![](Images/outdoors.png)
 ![](Images/outdoor_7.png)
 
 ### Pothole detection
 
-The motivation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data. Identifying potholes from accelerometer data is challenging because of the broad variation in road conditions (e.g., various types of road surfaces and anomalies such as potholes, cracks, and upheaval).
+The motivation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data.
 
 ![](Images/road_type.png)
 
-After collecting and cleaning all the data sets, we make the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
-
+After collecting and cleaning all the data sets, we draw the figures of three kinds of defects. The figures are about the X-axis acceleration, Y-axis acceleration, Z-axis acceleration, and the corresponding moving averages. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the duration of acceleration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 ![](Images/pot_holes_upheaval.png)
 
@@ -288,14 +265,13 @@ After collecting and cleaning all the data sets, we make the figures of three ki
 
 ![](Images/stft.png)
 
-
 ![](Images/interfacing_GPS.png)
 
 ## 5 Discussion
 
-- This project designed and implemented the patrolman system, using Raspberry Pi for road pothole inspection. It uses the mobility of the participating vehicles, gathering data from the accelerometer and GPS sensors.
+- This project designed and implemented the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), a MPU-6050 accelerometer, a GPS sensor, and a power bank. By continually gathering data from the accelerometer and GPS sensors, the team use collected signals to evaluate road surface conditions.
 
-- We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
+- We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Anomalous road conditions are reﬂected in features of the acceleration data. Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
 
 - In the future, we will apply a machine-learning based approach for automatic detection of diverse road conditions.
 
@@ -314,3 +290,5 @@ After collecting and cleaning all the data sets, we make the figures of three ki
 [6] Brett Neal, 13 Pavement Defects and Failures You Shhould Know. [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/).
 
 [7] Simple Device Tutorial, [https://github.com/OpenChirp/docs/wiki/simple-device-tutorial](https://github.com/OpenChirp/docs/wiki/simple-device-tutorial).
+
+[8] MPU6050 (Gyroscope + Accelerometer + Temperature) Sensor Module, [https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module). 
