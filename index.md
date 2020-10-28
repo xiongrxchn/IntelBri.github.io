@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. Edmonton Administration spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even safety hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
@@ -50,35 +50,26 @@ The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis A
 
 #### Features and Specifications
 ```markdown
-  - Tri-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
-  - Tri-Axis accelerometer with a programmable full-scale range of ±2g, ±4g, ±8g and ±16g
+  - 3-Axis angular rate sensor with a sensitivity up to 131 LSBs/dps and a full-scale range of ±250, ±500, ±1000, and ±2000dps
+  - 3-Axis accelerometer with a programmable full-scale range of ±2g, ±4g, ±8g and ±16g
   - VDD Supply voltage range of 2.375V – 3.46V 
-  - VLOGIC (MPU-6050) at 1.8V ± 5% or VDD
   - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
 ```
+
+#### Development Resources
+
+The detailed reference materials are from [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module).
 
   - GPS sensor: L76X GPS Module
 
 L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, supports Multi-GNSS systems, such as Global Positioning System (GPS), Quasi-Zenith Satellite System (QZSS), and BeiDou Navigation Satellite System (BDS) [5]. The features and specifications of this sensor (descriptions can be referred to [L76X GPS Module User Manual](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf)) are shown below:
 
-#### Features
+#### General Features and Specifications
 ```markdown
-  - Supports Multi-GNSS systems: GPS, BDS, and QZSS
-  - EASY™, self-track prediction technology, help quick positioning
-  - AlwaysLocate™, intelligent controller of periodic mode for power saving
-  - Onboard rechargeable Li-battery MS621FE, for preserving ephemeris information and hot starts
-  - 2x LEDs for indicating the module working status
-  - Comes with development resources and manual (examples for Raspberry Pi/Arduino/STM32)
-```
-
-#### GNSS Specifications
-```markdown
-  - Horizontal position accuracy:
-    - Autonomous: <2.5mCEP
-  - Time-To-First-Fix @-130dBm (EASY™ enabled):
-    - Cold starts: <15s
-    - Warm starts: <5s
-    - Hot starts: <1s
+  - Baudrate: 4800~115200bps (9600bps by default)
+  - Update rate: 1Hz (default), 10Hz (max)
+  - Power supply voltage: 5V / 3.3V
+  - Horizontal position accuracy: <2.5mCEP
   - Sensitivity:
     - Acquisition: -148dBm
     - Tracking: -163dBm
@@ -87,20 +78,14 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
     - Altitude (max): 18000m
     - Velocity (max): 515m/s
     - Acceleration (max): 4G
-```
-
-#### General Specifications
-```markdown
-  - Baudrate: 4800~115200bps (9600bps by default)
-  - Update rate: 1Hz (default), 10Hz (max)
-  - Power supply voltage: 5V / 3.3V
-  - Operating current: 11mA
+  - Supports Multi-GNSS systems: GPS, BDS, and QZSS
+  - 2x LEDs for indicating the working status
   - Dimensions: 32.5mm x 25.5mm
 ```
 
 #### Development Resources
 
-The detailed reference materials are from Wiki: [www.waveshare.com/wiki/L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module)
+The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wiki/L76X_GPS_Module)
 
 ### 3.3 Signal Conditioning and Processing
 
@@ -167,14 +152,14 @@ We have built the sensors and written Python codes to monitor the parameters bas
 
     - Hardware connection
     
-Connect L76X GPS module to the board. Four pins are used: VCC, GND, TX, and RX [5].
+Connect L76X GPS module to the Raspberry Pi board. Four pins are used: VCC, GND, RX, and TX [5].
 
-| L76X GPS Module  | Raspberry Pi (Board)  | Raspberry Pi (BCM) |
+| L76X GPS Module | Raspberry Pi Board | Raspberry Pi BCM |
 | :----: | :----: | :----:|
-| VCC | 5v | 5 |
+| VCC | 5v | 5v |
 | GND | GND | GND |
-| TX | 10 | P15 |
 | RX | 8 | P14 |
+| TX | 10 | P15 |
 
    - Running code
 
@@ -188,7 +173,7 @@ Run the test code [GPS.py](https://github.com/xiongrxchn/IntelBri.github.io/blob
   
 Connect the MPU 6050 sensor to the board. Four pins are available for use: VCC, GND, SDA, and SCL [8].
 
-| MPU 6050 | Raspberry Pi (Board) |
+| MPU 6050 | Raspberry Pi Board |
 | :----: | :----: |
 | VCC | 3.3v |
 | GND | GND |
@@ -263,6 +248,8 @@ After collecting and cleaning all the data sets, we draw the X-axis, Y-axis, and
 
 ![](Images/cracking.png)
 
+#### Short-time Fourier transform (STFT) analysis
+
 To analyze the patterns of different signals, Short-time Fourier transform (STFT) is used to divide the long Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude, and phase content of the Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is the frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency distributions (amplitude spectrogram) of the Z-axis acceleration signal vary between the Upheaval, Potholes, and Cracking.
 
 ![](Images/stft.png)
@@ -293,4 +280,4 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 [7] Simple Device Tutorial, [https://github.com/OpenChirp/docs/wiki/simple-device-tutorial](https://github.com/OpenChirp/docs/wiki/simple-device-tutorial).
 
-[8] MPU6050 (Gyroscope + Accelerometer + Temperature) Sensor Module, [https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module). 
+[8] MPU6050 (Gyroscope + Accelerometer + Temperature) Sensor Module Wiki, [https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module). 
