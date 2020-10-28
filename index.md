@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are a common nuisance experienced by vehicle drivers or commuters. In the United Kingdom, more than half a million potholes were reported in 2017, an increase of 44% in 2015 [1]. The self-proclaimed pothole capital, Edmonton, Alberta, Canada, reportedly spends $4.8 million on 450,000 potholes annually, as of 2015 [2]. Serious road accidents can occur due to surface potholes, especially under high speed or low visibility conditions. Every year India loses approximately 1,100 people to accidents caused by potholes [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are a common defects for ageing civil infrastrutures around the world. For example, in the UK, more than half a million potholes have been reported in 2017, an increase of 44% in 2015 [1]. The massive amounts of road potholes require additional maintenance capital for traffic departments. Edmonton in Canada spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose uncomfort and even hazards to vehicle drivers or commuters,  especially under high speed or low visibility conditions. For instance, approximately 1,100 people died due to the serious traffic accidents caused by road potholes in India [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
@@ -16,7 +16,7 @@ Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_no
 
 ### 1.1 Motivation
 
-Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. Patrolman uses the six-axis accelerometer and GPS sensor deployed on the Raspberry Pi system, relying on cars' mobility (we use a toy car) to sense the vibration response of the roads being monitored.
+Reliable and cost-effective routine monitoring of road conditions can lead to timely preventive action. The traditional approach to road damage detection is to use manual reporting of potholes on the roads. Due to the sheer size of the roadway networks, manual inspections are typically unavailable in labor and cost. Road conditions are naturally sensed from a moving entity that can measure vibrations and impulses during a drive [4]. We design a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system uses the six-axis accelerometer and GPS sensor deployed on the Raspberry Pi system, relying on cars' mobility (we use a toy car) to sense the vibration response of the roads being monitored.
 
 ### 1.2 Goals
 
@@ -257,7 +257,7 @@ Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.ht
 | lat | degree | false |
 | lon | degree | false |
 
-We publish sensor readings onto OpenChirp, which can visualize data in the Visualization tab. 
+We then publish sensor readings onto OpenChirp, which can timely report and visualize data on the website. 
 
 See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py)and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the complete code. Note: You should use the Device ID and Token of the device you just created.
 
