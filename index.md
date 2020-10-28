@@ -79,7 +79,7 @@ The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wi
 
 ### 3.3 Signal Conditioning and Processing
 
-#### Sampling frequency
+#### 3.3.1 Sampling frequency
 
 The current operating system of Raspberry Pi uses Linux kernels, which do not support real-time. So the Raspberry Pi cannot generate real-time pulses to control high-frequency sensors in the experiments.
 
@@ -100,11 +100,11 @@ In particular, when the sampling frequency of the accelerometer reaches 200Hz, s
 
   - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1Hz. Here, the team uses the default frequency - 1Hz as the sampling frequency due to the low speed of the mobile toy car.
   
-#### Absent values of sensors
+#### 3.3.2 Absent values of sensors
 
 The sensors, including the GPS module and accelerometer, often miss some signals or receive zero readings during the experiments. For example, when passing through bridges, closed buildings, or tunnels, the GPS module may lose its connections. In our experiments, we use linear interpolation to the missing values between GPS readings due to the testing cars' low speed. Similarly, for the accelerometer's zero readings, the team also fills the missing values with linear interpolation.
 
-#### Signal smoothing
+#### 3.3.3 Signal smoothing
 
 To uncover and identify the signal patterns of acceleration data, the team applies the moving average method to smooth the accelerometer signals and remove noisy values to reflect the overall trends.
 
@@ -128,7 +128,7 @@ Image source: [https://www.pavemanpro.com/article/identifying_asphalt_pavement_d
 
 ## 4 Experiments and Results
 
-### Data collection
+### 4.1 Data collection
 
   - Getting hardware
   
@@ -182,15 +182,15 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 ![](Images/mpu_test1.png)
 
-### Indoor experiments
+### 4.2 Indoor experiments
 
-#### Patrolman system desgin
+#### 4.2.1 Patrolman system desgin
 
 We design the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, and a GPS sensor. Also, we use the power bank to provide the power of the system.
 
 ![](Images/car0.png)
 
-#### Indoor testing results
+#### 4.2.2 Indoor testing results
 
 For the indoor experiments, the adopted sensors communicate the captured accelerometer signals to the computer through Wi-Fi.
 
@@ -202,7 +202,7 @@ The Z-axis acceleration shows significant patterns when the car crosses over the
 
 ![](Images/acc_indoor.png)
 
-#### Set up IoT device
+### 4.3 Set up IoT device
 
 Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.html), we create a device named "Patrolman" on [OpenChirp](https://openchirp.io/).
 
@@ -225,14 +225,14 @@ See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1
 ![](Images/gps_openchirp.png)
 ![](Images/acc_openchirp.png)
 
-### Outdoor experiments
+### 4.4 Outdoor experiments
 
 Our experimental works were conducted independently in Zhangzhou and Nanjing, China. The team collects the hand-labeled signals by consistently moving several known roads and recording accelerometer and GPS data. Using mobile phone's network hotspots, we control the Raspberry Pi with a remote-control app [Anydeck](https://anydesk.com/) and communicate the captured accelerometer and GPS signals to OpenChirp.
 
 ![](Images/outdoors.png)
 ![](Images/outdoor_7.png)
 
-### Pothole detection
+### 4.5 Pothole detection
 
 First, we fill the missing values with linear interpolation and then use the moving average method to smooth the accelerometer signals.The X, Y, Z axis acceleration of all defects are shown below. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Potholes have the shortest period, especially with dramatic changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more mild compared to the Pot Holes. The changing patterns of acceleration for the Upheaval are moderate between the Potholes and Cracking.
 
