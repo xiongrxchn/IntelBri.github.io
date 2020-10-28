@@ -99,7 +99,7 @@ In particular, when the sampling frequency of the accelerometer reaches 200Hz, s
 
  ![](Images/frequency_test.png)
 
-  - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency - 1Hz as the sampling frequency of the GPS sensor due to the low speed of our system.
+  - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency - 1Hz as the sampling frequency due to the low speed of the mobile toy car.
   
 #### Absent values of sensors
 
