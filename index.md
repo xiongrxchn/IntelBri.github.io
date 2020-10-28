@@ -50,10 +50,11 @@ The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis A
 
 #### Features and Specifications
 ```markdown
-  - 3-Axis angular rate sensor with a full-scale range of ±250, ±500, ±1000, and ±2000dps
-  - 3-Axis accelerometer with a programmable full-scale range of ±2g, ±4g, ±8g and ±16g
-  - VDD Supply voltage range of 2.375V – 3.46V 
-  - Gyroscope readings are in degrees per second (dps) unit; Accelerometer readings are in g unit.
+  - Power voltage: 2.375 – 3.46V 
+  - 3-axis Gyroscope values in degrees per second (dps)
+  - 3-axis Accelerometer values are in gravity force (g)
+  - Gyroscope full-scale range: ±250, ±500, ±1000, and ±2000dps
+  - Accelerometer full-scale range: ±2, ±4, ±8, and ±16g
 ```
 
 #### Development Resources
@@ -66,19 +67,14 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
 
 #### General Features and Specifications
 ```markdown
-  - Baud rate: 4800~115200bps (9600bps by default)
   - Update rate: 1Hz (default), 10Hz (max)
-  - Power supply voltage: 5V / 3.3V
-  - Horizontal position accuracy: <2.5m CEP
-  - Sensitivity:
-    - Acquisition: -148dBm
-    - Tracking: -163dBm
-    - Re-acquisition: -160dBm
+  - Power voltage: 3.3V / 5V
+  - Horizontal position accuracy: <2.5m circular error probable(CEP)
   - Dynamic performance:
-    - Altitude (max): 18000m
+    - Altitude (max): 18,000m
     - Velocity (max): 515m/s
     - Acceleration (max): 4g
-  - 2xLEDs for indicating the working status
+  - 2x working status LEDs
   - Dimensions: 32.5mm x 25.5mm
 ```
 
@@ -245,7 +241,7 @@ The motivation behind our system is that anomalous road conditions are reﬂecte
 
 ![](Images/road_type.png)
 
-After collecting and cleaning all the data sets, we draw the X-axis, Y-axis, and Z-axis acceleration of three kinds of defects. We use the moving average method to smooth the accelerometer signals. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+After collecting and cleaning all the data sets, we draw the X, Y, Z axes acceleration of three kinds of defects. We use the moving average method to smooth the accelerometer signals. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
 
 ![](Images/pot_holes_upheaval.png)
 
