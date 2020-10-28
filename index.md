@@ -281,9 +281,9 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 [1] Swindonian (2018). [More than half a million potholes were reported last year throughout the UK](https://media.rac.co.uk/pressreleases/more-than-half-a-million-potholes-reported-to-councils-in-2017-2818923#:~:text=More%20than%20half%20a%20million%20potholes%20were%20reported%20by%20members,data%20obtained%20by%20the%20RAC.).
 
-[2] 
+[2] Japan International Cooperation Agency (2016). Pavement Inspection Guideline. [https://openjicareport.jica.go.jp/pdf/12286001_01.pdf](https://openjicareport.jica.go.jp/pdf/12286001_01.pdf).
 
-[3]
+[3] Ho, C. H., Snyder, M., & Zhang, D. (2020). Application of Vehicle-Based Sensing Technology in Monitoring Vibration Response of Pavement Conditions. Journal of Transportation Engineering, Part B: Pavements, 146(3), 04020053.
 
 [4] Eriksson, J., Girod, L., Hull, B., Newton, R., Madden, S., & Balakrishnan, H. (2008). The Pothole Patrol: Using a mobile sensor network for road surface monitoring. In MobiSys’08 - Proceedings of the 6th International Conference on Mobile Systems, Applications, and Services (pp. 29–39).
 
