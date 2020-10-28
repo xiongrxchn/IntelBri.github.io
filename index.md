@@ -245,7 +245,7 @@ After collecting and cleaning all the data sets, we draw the X, Y, Z axes accele
 
 #### Short-time Fourier transform (STFT) analysis
 
-To analyze the patterns of different signals, Short-time Fourier transform (STFT) is used to divide the long Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude, and phase content of the Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is the frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency distributions (amplitude spectrogram) of the Z-axis acceleration signal vary between the Upheaval, Potholes, and Cracking.
+To analyze the patterns of different signals, Short-time Fourier transform (STFT) [9] is used to divide the long Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude, and phase content of the Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is the frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency distributions (amplitude spectrogram) of the Z-axis acceleration signal vary between the Upheaval, Potholes, and Cracking.
 
 ![](Images/stft.png)
 
@@ -275,4 +275,6 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 [7] Simple Device Tutorial, [https://github.com/OpenChirp/docs/wiki/simple-device-tutorial](https://github.com/OpenChirp/docs/wiki/simple-device-tutorial).
 
-[8] MPU6050 (Gyroscope + Accelerometer + Temperature) Sensor Module Wiki, [https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module). 
+[8] MPU6050 (Gyroscope + Accelerometer + Temperature) Sensor Module Wiki, [https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module).
+
+[9]Short-time Fourier transform, [https://en.wikipedia.org/wiki/Short-time_Fourier_transform](https://en.wikipedia.org/wiki/Short-time_Fourier_transform).
