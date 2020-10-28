@@ -61,7 +61,7 @@ The detailed reference materials are from [MPU6050 Sensor Module Wiki](https://w
 
   - GPS sensor: L76X GPS Module
 
-L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, supports Multi-GNSS systems, such as Global Positioning System (GPS), Quasi-Zenith Satellite System (QZSS), and BeiDou Navigation Satellite System (BDS) [5]. The features and specifications of this sensor (descriptions refer to [L76X GPS Module User Manual](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf)) are shown below:
+L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, supports Multi-GNSS systems, including Global Positioning System (GPS), Quasi-Zenith Satellite System (QZSS), and BeiDou Navigation Satellite System (BDS) [5]. The features and specifications of this sensor (descriptions refer to [L76X GPS Module User Manual](https://www.waveshare.com/w/upload/5/5b/L76X_GPS_Module_user_manual_en.pdf)) are shown below:
 
 #### General Features and Specifications
 ```markdown
@@ -69,7 +69,6 @@ L76X GPS Module, as a common Global Navigation Satellite System (GNSS) module, s
   - Power voltage: 3.3V / 5V
   - Horizontal position accuracy: <2.5m circular error probable(CEP)
   - Dynamic performance:
-    - Altitude (max): 18,000m
     - Velocity (max): 515m/s
     - Acceleration (max): 4g
   - 2x working status LEDs
@@ -84,7 +83,7 @@ The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wi
 
 The current operating system of Raspberry Pi uses Linux kernels, which do not support real-time. So the Raspberry Pi cannot generate real-time pulses to control high-frequency sensors in the experiments.
 
-  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses different sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
+  - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the Z-axis. To determine the limitation of the Raspberry Pi system, the team uses different sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
 
  In the experiments, the sampling frequencies of the Accelerometer are tested for 1Hz, 2Hz, 5Hz, 10Hz, 20Hz, 50Hz, 100Hz and 200Hz. 
  
@@ -95,11 +94,11 @@ The current operating system of Raspberry Pi uses Linux kernels, which do not su
 | Actual sampling time (s) | 301 | 151 | 62 | 32 | 17 | 8 | 5 | 3 |
 | Error rate (%) | 0.33 | 0.67 | 3.33 | 6.67 | 13.33 | 33.33 | 66.67 | 100 | 
 
-In particular, when the sampling frequency of the accelerometer reaches 200Hz, some data points are collected with zero values with an error rate of 100%. Here, the team uses 10Hz as the sampling frequency of the accelerometer in the experiments.
+In particular, when the sampling frequency of the accelerometer reaches 200Hz, some data points are collected with zero values with an error rate of 100%. Here, the team uses 10Hz as the sampling frequency in the experiments.
 
  ![](Images/frequency_test.png)
 
-  - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1 Hz. Here, the team uses the default frequency - 1Hz as the sampling frequency due to the low speed of the mobile toy car.
+  - GPS sensor: The GPS module's max frequency is 10Hz, and the default frequency is 1Hz. Here, the team uses the default frequency - 1Hz as the sampling frequency due to the low speed of the mobile toy car.
   
 #### Absent values of sensors
 
