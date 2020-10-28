@@ -139,11 +139,11 @@ The team focused on collecting a diverse set of samples, including the following
 
   - Smooth road (SM): Good road conditions with smooth pavements.
   
-  - Potholes (PH): Missing chunks of pavement.
+  - Potholes (PH): Missing chunks of the pavements.
   
-  - Upheaval (UH): Localized upward swelling in the pavements.
+  - Upheaval (UH): Localized upward swelling on the roads.
   
-  - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes.
+  - Cracking (CR): Road cracks often result from frequent vehicle movements and temperature changes.
 
 ![](Images/defect_type.png)
 
