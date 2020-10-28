@@ -263,8 +263,7 @@ After collecting and cleaning all the data sets, we draw the figures of three ki
 
 ![](Images/cracking.png)
 
-
-In order to analyze the patterns of different defects, Short-time Fourier transform (STFT) is used to divide the long time Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude and phase content of Z-axis acceleration signal developing with time. As shown in the figure, the time-frequency ditributions of Z-axis acceleration signal vary between the Upheaval, Pot Holes and Cracking.
+In order to analyze the patterns of different defects, Short-time Fourier transform (STFT) is used to divide the long time Z-axis acceleration signal into short parts and calculate the Fourier transform on each part to get the complex frequency, amplitude and phase content of Z-axis acceleration signal developing with time. As shown in the figure, the Y-axis is frequency (Hz) of the Z-axis acceleration signal, and the X-axis is time (s). The time-frequency ditributions (amplitude spectrogram) of Z-axis acceleration signal vary between the Upheaval, Pot Holes and Cracking.
 
 ![](Images/stft.png)
 
