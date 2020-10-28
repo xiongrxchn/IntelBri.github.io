@@ -8,7 +8,7 @@
 
 ## 1 Introduction
 
-Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require additional maintenance capital for the traffic department. The Edmonton Administration spent $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even safety hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. This project designs and implements a mobile Raspberry Pi system called Patrolman for road pothole inspection.
+Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require increased maintenance capital for the traffic department. The Edmonton Administration used $4.8 million on repairing 450,000 potholes in 2015 [2]. The bad road conditions also pose discomfort and even safety hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. This project designs and implements a portable Raspberry Pi system called Patrolman for road pothole inspection.
 
 ![](Images/background.png)
 
@@ -16,11 +16,11 @@ Image source:[Pothole - Wikipedia](https://en.wikipedia.org/wiki/Pothole#cite_no
 
 ### 1.1 Motivation
 
-Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. Traditonally, inspectors will visual assess the road conditions and report the road potholes [1]. Due to the significant scale of the roadway networks, this method is typically unavailable in labors and cost. Considering that road conditions can be reflected and measured in vibrations [4], the team designs a mobile Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect the vibration signals during a drive.
+Reliable routine monitoring and assessments of road conditions can lead to timely preventive action. Traditonally, inspectors will visually assess the road conditions and report the road potholes [1]. Due to the significant scale of the roadway networks, this method is typically unavailable in labor and cost. Considering that road conditions can be reflected and measured in vibrations [4], the team designs a portable Raspberry Pi system - Patrolman, for road pothole inspection. The Patrolman system makes use of the mobility of cars (we use a toy car) to collect vibration signals during a drive.
 
 ### 1.2 Goals
 
-This project presents a mobile system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The patrolman system uses the vehicles' mobility, continually collecting data from the accelerometer and GPS sensors and evaluating road surface conditionsthe with the sensing signals.
+This project presents a mobile system – Patrolman, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The patrolman system uses the vehicles' mobility, continually collecting data from the accelerometer and GPS sensors and evaluating road surface conditions the with the sensing signals.
 
 ## 2 For Progress Reports
 
@@ -34,11 +34,11 @@ This project presents a mobile system – Patrolman, using Raspberry Pi to detec
 
 ### 3.1 Phenomena of Interest
 
-The vibration patterns sensed by the driving cars actually reflect the road conditions being monitored [4]. The general sensing signals intended to assess road conditions include:
+The vibration patterns sensed by driving cars actually reflect the road conditions being monitored [4]. The general sensing signals intended to assess road conditions include:
 
-1. Vibration - Acceleration is the common measurement in characterizing vibrations. When the participating vehicles move on smooth roads, the acceleration values (g) are typically steady, while acceleration may show fluctuated signals when driving on bad road conditions with potholes.
+1. Vibration - Acceleration is a common measurement in characterizing vibrations. When the participating vehicles move on smooth roads, the acceleration values (g) are typically steady, while acceleration may show fluctuating signals when driving on bad road conditions with potholes.
 
-2. Georeferenced locations - We also use the GPS module to record the trajectory of the moving vehicles. Therefore, we can report the georeferenced locations for each identified road pothole.
+2. Georeferenced locations - We also use the GPS module to record the trajectory of moving vehicles. Therefore, we can report the georeferenced locations for each identified road pothole.
 
 ### 3.2 Sensor(s) Used
 
@@ -46,7 +46,7 @@ In this project, the team leverages and collects signals from sensors mounted on
 
   - Accelerometer: MPU-6050 Six-Axis (Gyro + Accelerometer) MEMS
 
-The MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accelerometer and Gyroscope. The features and specifications of this sensor (descriptions refer to [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module) are shown below:
+MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accelerometer and Gyroscope. The features and specifications of this sensor (descriptions refer to [MPU6050 Sensor Module Wiki](https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module) are shown below:
 
 #### Features and Specifications
 ```markdown
@@ -82,7 +82,7 @@ The detailed reference materials are from [L76X_GPS_Module](www.waveshare.com/wi
 
 #### Sampling frequency
 
-The current operating system of Raspberry Pi uses the Linux kernels, which do not support real-time. So the Raspberry Pi cannot generate real-time pulses to control high-frequency sensors in the experiments.
+The current operating system of Raspberry Pi uses Linux kernels, which do not support real-time. So the Raspberry Pi cannot generate real-time pulses to control high-frequency sensors in the experiments.
 
   - Accelerometer: The accelerator sensor is installed on the moving cars to test its vibration on the z-axis. To determine the limitation of the Raspberry Pi system, the team uses different sampling frequencies and conducts a host of pre-experiments. The team counts the actual sampling time for receiving 300 signals and compares it with the theoretical values.
 
@@ -103,11 +103,11 @@ In particular, when the sampling frequency of the accelerometer reaches 200Hz, s
   
 #### Absent values of sensors
 
-The sensors, including the GPS module and accelerometer, often miss some signals or receive zero readings during the experiments. For example, when passing through bridges, closed buildings, or tunnels, the GPS module may lose the satellites' connections. In our experiments, we use linear interpolation to the missing values between GPS readings due to the testing cars' low speed. Similarly, for the accelerometer's zero readings, the team also ﬁlls the missing values with linear interpolation.
+The sensors, including the GPS module and accelerometer, often miss some signals or receive zero readings during the experiments. For example, when passing through bridges, closed buildings, or tunnels, the GPS module may lose its connections. In our experiments, we use linear interpolation to the missing values between GPS readings due to the testing cars' low speed. Similarly, for the accelerometer's zero readings, the team also fills the missing values with linear interpolation.
 
 #### Signal smoothing
 
-To uncover and identify the signal patterns of acceleration data, the team applies the moving average method to smooth the accelerometer signals and remove noisy vales to reflect the overall trends.
+To uncover and identify the signal patterns of acceleration data, the team applies the moving average method to smooth the accelerometer signals and remove noisy values to reflect the overall trends.
 
 ### 3.4 Pavement defect patterns
 
@@ -115,7 +115,7 @@ The team focuses on three main road defects [6]:
 
   - Smooth road (SM): Good road conditions with smooth pavements.
   
-  - Potholes (PH): Missing chunks of the pavements.
+  - Potholes (PH): Missing chunks of the pavement.
   
   - Upheaval (UH): Localized upward swelling on the roads.
   
@@ -124,6 +124,8 @@ The team focuses on three main road defects [6]:
 ![](Images/defect_type.png)
 
 Image source: [https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/](https://www.pavemanpro.com/article/identifying_asphalt_pavement_defects/)
+
+![](Images/road_type.png)
 
 ## 4 Experiments and Results
 
@@ -135,7 +137,7 @@ We have purchased Raspberry Pi and sensors (GPS module and MPU-6050 acceleromete
 
   - Set up the test environment
   
-We have built the sensors and written Python codes to monitor the parameters based on the tutorials. The sampling frequencies of the MPU-6050 accelerometer and GPS module are 10 Hz and 1 Hz, respectively.
+We have built all sensors and written Python codes to monitor the parameters based on the tutorials. The sampling frequencies of the MPU-6050 accelerometer and GPS module are 10 Hz and 1 Hz, respectively.
 
 ![](Images/indoor.png)
 
@@ -185,17 +187,17 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 #### Patrolman system desgin
 
-We design the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, and a GPS sensor. Also, we use the power bank to supply the power of the system.
+We design the Patrolman system, using Raspberry Pi to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, and a GPS sensor. Also, we use the power bank to provide the power of the system.
 
 ![](Images/car0.png)
 
 #### Indoor testing results
 
-For the indoor experiments, the adopted sensors communicate the collected vibration data to the PC via a Wi-Fi router.
+For the indoor experiments, the adopted sensors communicate the captured accelerometer signals to the computer through Wi-Fi.
 
 ![](Images/equip.png)
 
-Test results of the Z-axis acceleration show significant patterns when the car crosses over the road obstacle compared to the smooth road surface.
+The Z-axis acceleration shows significant patterns when the car crosses over the road obstacle contrasted to the smooth road surface.
 
 ![](Images/mpu_indoor_test.png)
 
@@ -217,7 +219,7 @@ Following the [tuturial](https://inferlab.github.io/12740/tutorials/openchirp.ht
 | lat | degree | false |
 | lon | degree | false |
 
-We then publish sensor readings onto OpenChirp, which can timely report and visualize data on the website. 
+We then release sensor values onto OpenChirp, which can timely report and visualize data on the website. 
 
 See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/acc_openchirp.py)and [gps_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/code/gps_openchirp.py) for the code.
 
@@ -226,18 +228,14 @@ See [acc_openchirp.py](https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1
 
 ### Outdoor experiments
 
-Our experimental works were conducted separately in Zhangzhou and Nanjing, China. The team collects the hand-labeled signals by continuously moving several known roads and recording raw accelerometer and GPS data. Using mobile phone's network hotspots, we control the Raspberry Pi with a remote-control app [Anydeck](https://anydesk.com/) and communicate the collected accelerometer and GPS signals to the OpenChirp.
+Our experimental works were conducted independently in Zhangzhou and Nanjing, China. The team collects the hand-labeled signals by consistently moving several known roads and recording accelerometer and GPS data. Using mobile phone's network hotspots, we control the Raspberry Pi with a remote-control app [Anydeck](https://anydesk.com/) and communicate the captured accelerometer and GPS signals to OpenChirp.
 
 ![](Images/outdoors.png)
 ![](Images/outdoor_7.png)
 
 ### Pothole detection
 
-The motivation behind our system is that anomalous road conditions are reﬂected in features of the acceleration data.
-
-![](Images/road_type.png)
-
-After collecting and cleaning all the data sets, we draw the X, Y, Z axis acceleration of three kinds of defects. We use the moving average method to smooth the accelerometer signals. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially multiple massive changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing pattern of acceleration for the Upheaval is somewhere between the Pot Holes and Cracking.
+First, we fill the missing values with linear interpolation and then use the moving average method to smooth the accelerometer signals.The X, Y, Z axis acceleration of all defects are shown below. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially with dramatic changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing patterns of acceleration for the Upheaval are moderate between the Potholes and Cracking.
 
 ![](Images/pot_holes_upheaval.png)
 
@@ -255,7 +253,7 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 - This project designs and implements the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, a GPS sensor, and a power bank. By continually gathering data from the accelerometer and GPS sensors, the team uses collected signals to evaluate road surface conditions.
 
-- We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Anomalous road conditions are reﬂected in features of the acceleration data. Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
+- We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Anomalous road conditions are reflected in features of the acceleration data. Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
 
 - In the future, we will apply a machine-learning based approach for automatic detection of diverse road conditions.
 
