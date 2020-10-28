@@ -235,7 +235,7 @@ Our experimental works were conducted independently in Zhangzhou and Nanjing, Ch
 
 ### Pothole detection
 
-First, we fill the missing values with linear interpolation and then use the moving average method to smooth the accelerometer signals.The X, Y, Z axis acceleration of all defects are shown below. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Pot Holes have the shortest period, especially with dramatic changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more moderate compared to the Pot Holes. The changing patterns of acceleration for the Upheaval are moderate between the Potholes and Cracking.
+First, we fill the missing values with linear interpolation and then use the moving average method to smooth the accelerometer signals.The X, Y, Z axis acceleration of all defects are shown below. 95% confidence interval of the Z-axis acceleration of three kinds of defects are also drawn. Different defects have different data distributions and patterns. As for the acceleration duration, the Potholes have the shortest period, especially with dramatic changes in amplitude in a short time. The durations of acceleration of the Cracking last for the longest time, but the variation range of acceleration is more mild compared to the Pot Holes. The changing patterns of acceleration for the Upheaval are moderate between the Potholes and Cracking.
 
 ![](Images/pot_holes_upheaval.png)
 
@@ -251,11 +251,15 @@ To analyze the patterns of different signals, Short-time Fourier transform (STFT
 
 ## 5 Discussion
 
-- This project designs and implements the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, a GPS sensor, and a power bank. By continually gathering data from the accelerometer and GPS sensors, the team uses collected signals to evaluate road surface conditions.
+- This project designs and implements the patrolman system, using Raspberry Pi for road pothole inspection. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, a GPS sensor, and a power bank. 
 
-- We focus on analyzing three typical types of road conditions, including Cracks (CR), Potholes (PH), and Upheaval (UH). Anomalous road conditions are reflected in features of the acceleration data. Comparing different hand-labeled signal patterns, the team identifies the features of different road conditions.
+- By tracking data from the accelerometer and GPS sensors, the team uses collected signals to evaluate road surface conditions.
 
-- In the future, we will apply a machine-learning based approach for automatic detection of diverse road conditions.
+- We aim to analyze three main types of road defects, including Cracks (CR), Potholes (PH), and Upheaval (UH). The abnormal road conditions can be sensed through the acceleration data during a drive. Comparing hand-labeled signal patterns, the team identifies three typical road defects.
+
+- We pubilsh all sensor values onto OpenChirp to visualize captured data on the website.
+
+- In the future, we will apply a machine-learning based approach for automated detection of diverse road conditions.
 
 ## References
 
