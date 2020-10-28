@@ -137,11 +137,11 @@ To uncover and identify the signal patterns of acceleration data, the team appli
 
 The team focused on collecting a diverse set of samples, including the following event classes [6]:
 
-  - Smooth road (SM): good road conditions with smooth pavements.
+  - Smooth road (SM): Good road conditions with smooth pavements.
   
   - Potholes (PH): Missing chunks of pavement.
   
-  - Upheaval (UH): Upheaval is a localized upward movement in the pavement due to the subgrade's swelling.
+  - Upheaval (UH): Localized upward swelling in the pavements.
   
   - Cracking (CR): Road cracks typically result from natural vehicle movement and temperature changes.
 
