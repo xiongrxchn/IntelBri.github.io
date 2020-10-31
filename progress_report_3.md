@@ -2,8 +2,6 @@
 
 
 ## Current progress
-This project is interested in the relationship between road condition and cars dynamic behaviors. Instead of using traditional video or camera systems, this project uses the inherent mobility of the participating vehicles, opportunistically gathering data from vibration and GPS sensors, and processing the data to assess road surface conditions.
-
 
 ### (1) Getting the toy car
 We have purchased the toy car from [Taobao](https://www.taobao.com/).
