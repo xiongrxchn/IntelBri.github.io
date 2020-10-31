@@ -188,7 +188,7 @@ Run the test code [Acceleration.py](https://github.com/xiongrxchn/IntelBri.githu
 
 #### 4.2.1 Patrolman system desgin
 
-We design the Patrolman system to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, and a GPS sensor. Also, we use the power bank to provide the power of the system.
+We design the Patrolman system to detect and report road potholes with their georeferenced locations. The system consists of a mobile platform (we use the toy car in the experiments), an MPU-6050 accelerometer, and a GPS sensor. Also, we use the power bank as the power supply to the whole system.
 
 ![](Images/car0.png)
 
