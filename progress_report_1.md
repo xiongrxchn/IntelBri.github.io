@@ -5,7 +5,7 @@
 
 ### Narrow down the goal of project
 
-We design a system named Patrolman to monitor the road surface conditions. In specific, the team makes use of the inherent mobility of the vehicles to gather signals from vibration and GPS sensors.
+We design a system named Patrolman to monitor the road surface conditions. In specific, the team makes use of the inherent mobility of the vehicles to gather signals from the accelerometer and GPS sensors.
 
 ### New developed theme with same sensors: Automatic detection of road pothole
 
