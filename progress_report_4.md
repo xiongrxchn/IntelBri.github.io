@@ -17,17 +17,15 @@ Install the remote control application Anydeck on the mobile phone to control th
 
 There are three kinds of defeats: Cracking, Pot Holes, and Upheaval.
 
-#### Cracking
-Referring to a variety of types of pavement distresses that occur on the surface of pavements. Different types of pavements develop different cracks. Type of cracking is also correlated with the type of climate and traffic.
+The team focuses on three main road defects [6]:
 
-#### Upheaval
-A localized upward movement in the pavement due to swelling of the subgrade. This can be due to expansive soils that swell due to moisture or frost heave (ice under the pavement).
+Smooth road (SM): Good road conditions with smooth road surface.
 
-#### Potholes
-Missing chunks of pavement, severely sunk in or protruding manhole covers, other significant road surface anomalies.
+Potholes (PH): Missing chunks of the road surface.
 
-#### Smooth road
-Segments of road surfaces that are considered smooth.
+Upheaval (UH): Localized upward swelling on the roads.
+
+Cracking (CR): Road cracks often result from frequent vehicle movements and temperature changes.
 
 <div align="center"><img width="1500" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/outdoor_7.png"/></div>
 
