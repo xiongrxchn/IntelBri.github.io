@@ -36,7 +36,7 @@ This project presents a mobile system – Patrolman, using Raspberry Pi to detec
 
 The vibration patterns sensed by driving cars actually reflect the road conditions being monitored [4]. The general sensing signals intended to assess road conditions include:
 
-1. Vibration - Acceleration is a common measurement in characterizing vibrations. When the participating vehicles move on smooth roads, the acceleration values (g) are typically steady, while acceleration may show fluctuating signals when driving on bad road conditions with potholes.
+1. Vibration - Acceleration is a common measurement in characterizing vibrations. When the participating vehicles move on smooth roads, the acceleration values (g) are typically steady, while acceleration may show fluctuating patterns when driving on bad road conditions with potholes.
 
 2. Georeferenced locations - We also use the GPS module to record the trajectories of moving vehicles. Therefore, we can report the georeferenced locations for each identified road pothole.
 
