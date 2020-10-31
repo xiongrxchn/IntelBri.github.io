@@ -17,8 +17,6 @@ Install the remote control application Anydeck on the mobile phone to control th
 
 There are three kinds of defeats: Cracking, Pot Holes, and Upheaval.
 
-The team focuses on three main road defects [6]:
-
 Smooth road (SM): Good road conditions with smooth road surface.
 
 Potholes (PH): Missing chunks of the road surface.
