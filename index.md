@@ -38,7 +38,7 @@ The vibration patterns sensed by driving cars actually reflect the road conditio
 
 1. Vibration - Acceleration is a common measurement in characterizing vibrations. When the participating vehicles move on smooth roads, the acceleration values (g) are typically steady, while acceleration may show fluctuating signals when driving on bad road conditions with potholes.
 
-2. Georeferenced locations - We also use the GPS module to record the trajectory of moving vehicles. Therefore, we can report the georeferenced locations for each identified road pothole.
+2. Georeferenced locations - We also use the GPS module to record the trajectories of moving vehicles. Therefore, we can report the georeferenced locations for each identified road pothole.
 
 ### 3.2 Sensor(s) Used
 
