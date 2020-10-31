@@ -4,9 +4,8 @@
 ## Current progress
 
 ### Narrow down the goal of project
-Due to monitoring the bridge vibration requiring high sampling frequencies, the sampling frequencies of Raspberry Pi is not sufficient. We would focus on part of the bridge health monitoring, for example, the bridge road surface monitoring. 
 
-We investigates an application of mobile sensing: detecting and reporting the surface conditions of roads. We describe a system and associated algorithms to monitor this important bridge using a collection of sensor-equipped vehicles. In specific, uses the inherent mobility of the participating vehicles, opportunistically gathering data from vibration and GPS sensors, and processing the data to assess road surface conditions.
+We design a system named Patrolman to monitor the road surface conditions. In specific, the team makes use of the inherent mobility of the vehicles and gather signals from vibration and GPS sensors, and assesses road surface conditions.
 
 ### New developed theme with same sensors: Automatic detection of road pothole
 
