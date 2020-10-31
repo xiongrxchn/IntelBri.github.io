@@ -10,7 +10,7 @@ We have purchased the toy car from [Taobao](https://www.taobao.com/).
 
 ### (2) Install the raspberry pi and sensors on the toy car
 
-We have installed the raspberry pi，the sensor MPU-6050 Six-Axis (Gyro + Accelerometer) and GPS module on the toy car.
+We have installed the raspberry pi, the sensor MPU-6050 Six-Axis (Gyro + Accelerometer), and GPS module on the toy car.
 
 <div align="center"><img width="600" src="https://github.com/xiongrxchn/IntelBri.github.io/blob/gh1-pages/Images/sensor_all_2.png"/></div>
 
