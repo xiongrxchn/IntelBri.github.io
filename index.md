@@ -52,7 +52,7 @@ MPU6050 sensor is a 6-axis motion tracking module, which has both a 3-axis Accel
 ```markdown
   - Power voltage: 2.375 – 3.46V 
   - 3-axis Gyroscope values in degrees per second (dps)
-  - 3-axis Accelerometer values are in gravity force (g)
+  - 3-axis Accelerometer values in gravity force (g)
   - 3-axis Gyroscope full-scale range: ±250, ±500, ±1000, and ±2000dps
   - 3-axis Accelerometer full-scale range: ±2, ±4, ±8, and ±16g
 ```
