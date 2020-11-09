@@ -8,7 +8,12 @@
 
 ## 1 Introduction
 
+Road potholes are common defects for aging civil infrastructures around the world. Furthermore, it is quite cost and labor intensive to repair potholes [2]. The bad road conditions also lead to discomfort and even safety hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. Current researches are
+ trying to use computer visions to detect the defects of the civil infrastructures, however the computer vision may fail in the night and need the expensive equipment. Therefore, this project designs and implements a portable Raspberry Pi system named Patrolman for more efficient and less-expensive road pothole inspection.
+
+
 Road potholes are common defects for aging civil infrastructures around the world. For example, in 2017, more than half a million potholes have been reported to local departments in the UK [1]. The massive amounts of road potholes require increased maintenance capital from the management authorities. The Edmonton Administration used $4.8 million to repair 450,000 potholes in 2015 [2]. The bad road conditions also lead to discomfort and even safety hazards to vehicle drivers or commuters, especially under high speed or low visibility conditions [3]. Therefore, this project designs and implements a portable Raspberry Pi system named Patrolman for road pothole inspection.
+
 
 ![](Images/background.png)
 
